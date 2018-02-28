@@ -8,7 +8,7 @@ header, section, article, nav, aside, footer, div{
 }
 
 header, footer{
-  background-image: url("diner.jpg");
+  background-color: Bisque;
 }
 
 .bold{font-weight:bold;}
