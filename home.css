@@ -83,9 +83,6 @@ button {
   display: block;
 }
 
-button:hover {
-  background-color: white;
-}
 
 .Continental button {
   background-color: Brown;
@@ -97,9 +94,6 @@ button:hover {
   display: block;
 }
 
-button:hover {
-  background-color: white;
-}
 
 .Time button {
   background-color: Brown;
