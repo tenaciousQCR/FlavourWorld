@@ -20,7 +20,12 @@
 
 <!-- MAIN STARTS -->
   <main id="Page" class="grid-container">
-    <div class="sidebarContainer grid-30 mobile-grid-100">
+      <div class="sidebarButton">
+          <button class="sideButton" onclick="menu_open()">☰</button>
+      </div>
+
+    <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
+      <button onclick="menu_close()" class="menuItemClose">Close</button>
 
       <h1 id="dietary">Dietary Restrictions</h1>
 
@@ -91,6 +96,15 @@
   </footer>
 
 </div>
+
+  <script>
+    function menu_open() {
+      document.getElementById("sidebar").style.display = "block";
+  }
+    function menu_close() {
+      document.getElementById("sidebar").style.display = "none";
+  }
+</script>
 
   </body>
 </html>
