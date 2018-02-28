@@ -1,0 +1,30 @@
+body{
+  margin: auto;
+  width:1500px;
+}
+
+header, section, article, nav, aside, footer, div{
+  font-family: sans-serif;
+}
+
+header, footer{
+  background-color: Bisque;
+}
+
+body {
+    background-color: BurlyWood;
+}
+
+main {
+  height: 750px;
+}
+
+#Page{
+  background-color: AntiqueWhite;
+}
+
+#recipeImage {
+  padding-left: : 50px;
+  padding-right: : 50px;
+  width:100%;
+}
