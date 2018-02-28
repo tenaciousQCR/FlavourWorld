@@ -51,4 +51,13 @@ text-align: right;
 
 #sidebar {
   display: none;
+<<<<<<< HEAD
+=======
+  height: 800px;
+  background-color: white;
+}
+
+button {
+  vertical-align: text-top;
+>>>>>>> eda23752501cb7584e196cb0d964fc06ae05e072
 }
