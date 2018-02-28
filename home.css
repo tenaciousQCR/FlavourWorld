@@ -7,6 +7,10 @@ header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
+header, footer{
+  background-image: url("diner.jpg");
+}
+
 .bold{font-weight:bold;}
 
 #first-para {font-weight:bold;}
