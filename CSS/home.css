@@ -33,6 +33,10 @@ li {
   background-color: AntiqueWhite;
 }
 
+#Header{
+  width: 100%;
+}
+
 #SiteTitle{
 display: inline-block;
 font-size: 50px;
@@ -60,5 +64,14 @@ text-align: right;
 }
 
 button {
+<<<<<<< HEAD:home.css
 
+=======
+  text-align:center;
+  background-color: AntiqueWhite;
+  color: Brown;
+  cursor:pointer;
+  display:inline-block;
+  font:bold 12px/100% Arial, sans-serif;
+>>>>>>> a167a1e64f0e707037aef68a85b3e444cb3b74c5:CSS/home.css
 }
