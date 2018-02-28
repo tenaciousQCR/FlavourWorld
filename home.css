@@ -64,3 +64,45 @@ button {
   color: Brown;
   background-color: AntiqueWhite;
 }
+
+.Dietary button {
+  background-color: Brown;
+  border: 1px solid Black;
+  color: Black;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.Dietary button :hover {
+  background-color: white;
+}
+
+.Continental button {
+  background-color: Brown;
+  border: 1px solid Black;
+  color: Black;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.Continental button :hover {
+  background-color: white;
+}
+
+.Time button {
+  background-color: Brown;
+  border: 1px solid Black;
+  color: Black;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.Time button :hover {
+  background-color: white;
+}
