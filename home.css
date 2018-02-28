@@ -7,6 +7,10 @@ header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
+header, footer{
+  background-image: url("diner.jpg");
+}
+
 .bold{font-weight:bold;}
 
 #first-para {font-weight:bold;}
@@ -35,7 +39,7 @@ text-align: center;
 display: inline-block;
 float: right;
 font-size: 20px;
-
+text-align: right;
 }
 
 
@@ -47,6 +51,4 @@ font-size: 20px;
 
 #sidebar {
   display: none;
-  height: 100%;
-  width: 200px;
 }
