@@ -56,5 +56,10 @@ text-align: right;
 }
 
 button {
-  
+  text-align:center;
+  background-color: AntiqueWhite;
+  color: Brown;
+  cursor:pointer;
+  display:inline-block;
+  font:bold 12px/100% Arial, sans-serif;
 }
