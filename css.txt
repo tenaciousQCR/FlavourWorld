@@ -1,0 +1,37 @@
+body {
+  margin: auto;
+  width:960px;
+}
+
+header, section, article, nav, aside, footer, div{
+  font-family: sans-serif;
+}
+
+.bold{font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
+body {
+    background-color: linen;
+}
+
+
+#SiteTitle{
+display: inline-block;
+font-size: 50px;
+text-align: center;
+}
+
+#loginbar{
+display: inline-block;
+float: right;
+font-size: 20px;
+text-align: right;
+}
+
+
+#interactivemap {
+        padding-left: : 50px;
+        padding-right: : 50px;
+        width:100%;
+}
