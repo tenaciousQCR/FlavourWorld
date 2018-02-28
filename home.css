@@ -47,6 +47,10 @@ text-align: right;
 
 #sidebar {
   display: none;
-  height: 100%;
-  width: 200px;
+  height: 800px;
+  background-color: white;
+}
+
+button {
+  vertical-align: text-top;
 }
