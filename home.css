@@ -21,8 +21,12 @@ body {
 
 li {
   display: inline;
-  margin: 50px;
+  margin: 40px;
   font-weight: bold;
+}
+
+#searchBar{
+  float:right;
 }
 
 #Page{
@@ -56,5 +60,5 @@ text-align: right;
 }
 
 button {
-  
+
 }
