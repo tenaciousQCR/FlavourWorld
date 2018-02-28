@@ -19,6 +19,14 @@ body {
     background-color: BurlyWood;
 }
 
+main {
+  height: 750px;
+}
+
+h4 {
+  margin: 10px;
+}
+
 li {
   display: inline;
   margin: 40px;
@@ -55,7 +63,7 @@ li {
 
 #sidebar {
   display: none;
-  height: 800px;
+  height: 750px;
   background-color: Bisque;
 }
 
