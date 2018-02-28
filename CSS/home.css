@@ -29,6 +29,10 @@ li {
   background-color: AntiqueWhite;
 }
 
+#Header{
+  width: 100%;
+}
+
 #SiteTitle{
 display: inline-block;
 font-size: 50px;
