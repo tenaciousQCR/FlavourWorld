@@ -15,6 +15,12 @@ body {
     background-color: BurlyWood;
 }
 
+li {
+  display: inline;
+  margin: 50px;
+  font-weight: bold;
+}
+
 
 #SiteTitle{
 display: inline-block;
