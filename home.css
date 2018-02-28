@@ -21,6 +21,9 @@ li {
   font-weight: bold;
 }
 
+#Page{
+  background-color: AntiqueWhite;
+}
 
 #SiteTitle{
 display: inline-block;
