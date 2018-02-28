@@ -75,7 +75,7 @@ button {
   display: block;
 }
 
-.Dietary button :hover {
+button:hover {
   background-color: white;
 }
 
@@ -89,7 +89,7 @@ button {
   display: block;
 }
 
-.Continental button :hover {
+button:hover {
   background-color: white;
 }
 
@@ -103,6 +103,6 @@ button {
   display: block;
 }
 
-.Time button :hover {
+button:hover {
   background-color: white;
 }
