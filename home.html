@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
@@ -109,7 +111,7 @@
     </nav>
 
     <!--Map Image-->
-    <div class="mapContainer grid-70 mobile-grid-100">
+    <div class="mapContainer grid-70 mobile-grid-100" id="mapContainer">
       <img src="map.png" id="interactivemap">
     </div>
   </main>
@@ -128,17 +130,9 @@
 </div>
 
 <!--JS-->
-  <script>
-    function menu_toggle() {
-      if(document.getElementById("sidebar").style.display == "none") {
-              document.getElementById("sidebar").style.display = "block";
-      }
-      else {
-              document.getElementById("sidebar").style.display = "none";
-      }
-  }
 
-  </script>
+  <script src="scripting.js"></script>
+
 
   </body>
 </html>

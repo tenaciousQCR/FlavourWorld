@@ -62,9 +62,10 @@ li {
 }
 
 #sidebar {
-  display: none;
-  height: 750px;
+  display: block;
   background-color: Bisque;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 button {
