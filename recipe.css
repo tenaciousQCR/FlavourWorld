@@ -1,22 +1,44 @@
+/* General CSS */
+header, section, article, nav, aside, footer, div{
+  font-family: sans-serif;
+}
+
+
+/* Header and Footer */
+header, footer{
+  background-color: Bisque;
+}
+
+
+/*  Header CSS */
+#SiteTitle{
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+}
+
+#loginbar{
+   display: inline-block;
+   float: right;
+   font-size: 20px;
+   text-align: right;
+}
+
+
+/* Body CSS */
 body{
   margin: auto;
   width:1500px;
 }
 
-header, section, article, nav, aside, footer, div{
-  font-family: sans-serif;
-}
 
-header, footer{
-  background-color: Bisque;
-}
-
+/* Content */
 body {
     background-color: BurlyWood;
 }
 
 main {
-  height: 750px;
+  height: 1600px;
 }
 
 #Page{
@@ -27,4 +49,12 @@ main {
   padding-left: : 50px;
   padding-right: : 50px;
   width:100%;
+}
+
+
+/*  Footer CSS  */
+li {
+  display: inline;
+  margin: 40px;
+  font-weight: bold;
 }

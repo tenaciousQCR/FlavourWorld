@@ -1,46 +1,16 @@
-body{
-  margin: auto;
-  width:1500px;
-}
-
+/* General CSS */
 header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
+
+/* Header and Footer */
 header, footer{
   background-color: Bisque;
 }
 
-.bold{font-weight:bold;}
 
-#first-para {font-weight:bold;}
-
-body {
-    background-color: BurlyWood;
-}
-
-main {
-  height: 750px;
-}
-
-h4 {
-  margin: 10px;
-}
-
-li {
-  display: inline;
-  margin: 40px;
-  font-weight: bold;
-}
-
-#searchBar{
-  float:right;
-}
-
-#Page{
-  background-color: AntiqueWhite;
-}
-
+/* Header CSS */
 #SiteTitle{
   display: inline-block;
   font-size: 50px;
@@ -55,10 +25,29 @@ li {
 }
 
 
-#interactivemap {
-  padding-left: : 50px;
-  padding-right: : 50px;
-  width:100%;
+/* Body CSS */
+.bold{font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
+body{
+  margin: auto;
+  width:1500px;
+  background-color: BurlyWood;
+}
+
+
+/* Content */
+main {
+  height: 750px;
+}
+
+#Page{
+  background-color: AntiqueWhite;
+}
+
+#searchBar{
+  float:right;
 }
 
 #sidebar {
@@ -66,6 +55,18 @@ li {
   background-color: Bisque;
   white-space: nowrap;
   overflow: hidden;
+}
+
+#interactivemap {
+  padding-left: : 50px;
+  padding-right: : 50px;
+  width:100%;
+}
+
+
+/* Sidebar */
+h4 {
+  margin: 10px;
 }
 
 button {
@@ -108,4 +109,11 @@ button {
 
 button:hover {
   background-color: white;
+}
+
+/* Footer CSS */
+li {
+  display: inline;
+  margin: 40px;
+  font-weight: bold;
 }
