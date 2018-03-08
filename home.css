@@ -6,19 +6,24 @@ header, section, article, nav, aside, footer, div{
 
 /* Header and Footer */
 header, footer{
-  background-color: Bisque;
+  background-color: Brown;
 }
 
 
 /* Header CSS */
 #SiteTitle{
   display: inline-block;
+  color: NavajoWhite;
+  font-family: 'Poiret One';
   font-size: 50px;
+  font-weight: 900;
   text-align: center;
 }
 
 #loginbar{
    display: inline-block;
+   font-family: 'Poiret One';
+   color: NavajoWhite;
    float: right;
    font-size: 20px;
    text-align: right;
@@ -33,26 +38,29 @@ header, footer{
 body{
   margin: auto;
   width:1500px;
-  background-color: BurlyWood;
+  background-color: NavajoWhite;
 }
 
 
 /* Content */
 main {
-  height: 750px;
+  height: 800px;
 }
 
 #Page{
-  background-color: AntiqueWhite;
+  background-color: NavajoWhite;
 }
+
 
 #searchBar{
   float:right;
+  font-family: 'Poiret One';
+  color: Brown;
 }
 
 #sidebar {
   display: block;
-  background-color: Bisque;
+  background-color: NavajoWhite;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -67,6 +75,10 @@ main {
 /* Sidebar */
 h4 {
   margin: 10px;
+  font-family: 'Poiret One';
+  font-size: 20px;
+  font-weight: bold;
+  color: Brown;
 }
 
 button {
@@ -78,7 +90,10 @@ button {
 .Dietary button {
   background-color: Brown;
   border: 1px solid Black;
-  color: Black;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  font-weight: bold;
+  color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
   width: 100%;
@@ -89,7 +104,10 @@ button {
 .Continental button {
   background-color: Brown;
   border: 1px solid Black;
-  color: Black;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  font-weight: bold;
+  color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
   width: 100%;
@@ -100,7 +118,10 @@ button {
 .Time button {
   background-color: Brown;
   border: 1px solid Black;
-  color: Black;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  font-weight: bold;
+  color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
   width: 100%;
@@ -108,12 +129,19 @@ button {
 }
 
 button:hover {
-  background-color: white;
+  background-color: Maroon;
 }
 
 /* Footer CSS */
-li {
-  display: inline;
-  margin: 40px;
+
+ .grid-100 button {
+  display: inline-block;
+  font-family: 'Poiret One';
+  font-size: 20px;
   font-weight: bold;
+  margin: 40px;
+  padding: 10px 24px;
+  color: NavajoWhite;
+  background-color: Brown;
+  cursor: pointer;
 }
