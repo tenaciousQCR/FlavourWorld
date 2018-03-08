@@ -3,7 +3,6 @@ header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
-
 /* Header and Footer */
 header, footer{
   background-color: Brown;
@@ -16,7 +15,6 @@ header, footer{
   color: NavajoWhite;
   font-family: 'Poiret One';
   font-size: 50px;
-  font-weight: 900;
   text-align: center;
 }
 
@@ -37,7 +35,7 @@ header, footer{
 
 body{
   margin: auto;
-  width:1500px;
+  min-width:1500px;
   background-color: NavajoWhite;
 }
 
@@ -77,7 +75,6 @@ h4 {
   margin: 10px;
   font-family: 'Poiret One';
   font-size: 20px;
-  font-weight: bold;
   color: Brown;
 }
 
@@ -92,7 +89,6 @@ button {
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
-  font-weight: bold;
   color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
@@ -106,7 +102,6 @@ button {
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
-  font-weight: bold;
   color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
@@ -120,7 +115,6 @@ button {
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
-  font-weight: bold;
   color: NavajoWhite;
   padding: 10px 24px;
   cursor: pointer;
@@ -134,11 +128,10 @@ button:hover {
 
 /* Footer CSS */
 
- .grid-100 button {
+.grid-100 button {
   display: inline-block;
   font-family: 'Poiret One';
   font-size: 20px;
-  font-weight: bold;
   margin: 40px;
   padding: 10px 24px;
   color: NavajoWhite;
