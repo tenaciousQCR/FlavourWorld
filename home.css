@@ -134,6 +134,8 @@ button:hover {
   font-size: 20px;
   margin: 40px;
   padding: 10px 24px;
+  margin-right: 200px;
+  margin-left: 250px;
   color: NavajoWhite;
   background-color: Brown;
   cursor: pointer;
