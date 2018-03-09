@@ -37,9 +37,6 @@ body{
 
 
 /* Content */
-body {
-    background-color: NavajoWhite;
-}
 
 main {
   height: 1600px;
@@ -51,7 +48,7 @@ main {
     margin: 25px;
 }
 
-#Page{
+#Page {
   background-color: NavajoWhite;
 }
 
@@ -60,6 +57,22 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+h1 {
+  font-family: 'Poiret One';
+}
+
+#dietaryNotes {
+  font-family: 'Poiret One';
+}
+
+#ingredientsList {
+  font-family: 'Poiret One';
+}
+
+#preparationSteps {
+  font-family: 'Poiret One';
 }
 
 
