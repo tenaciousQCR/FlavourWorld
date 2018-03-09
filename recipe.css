@@ -22,6 +22,7 @@ header, footer{
 #loginbar{
    display: inline-block;
    float: right;
+   color: NavajoWhite;
    font-family: 'Poiret One';
    font-size: 20px;
    text-align: right;
@@ -32,7 +33,7 @@ header, footer{
 body{
   margin: auto;
   font-family: 'Poiret One';
-  background-color: NavajoWhite;
+  background-color: navajoWhite;
 }
 
 
@@ -49,7 +50,11 @@ main {
 }
 
 #Page {
-  background-color: NavajoWhite;
+  background-color: AntiqueWhite;
+}
+
+#recipeTitle {
+  color: Brown;
 }
 
 #recipeImage {
@@ -61,24 +66,44 @@ main {
 
 h1 {
   font-family: 'Poiret One';
+  color: Brown;
+}
+
+h3 {
+  font-family: 'Poiret One';
+  color: Brown;
 }
 
 #dietaryNotes {
   font-family: 'Poiret One';
+  color: Brown;
+  font-size: 30px;
 }
 
 #ingredientsList {
   font-family: 'Poiret One';
+  color: Brown;
+  font-size: 30px;
 }
 
 #preparationSteps {
   font-family: 'Poiret One';
+  color: Brown;
+  font-size: 30px;
 }
 
 /* Paragraph Content */
 
 .contentRecipe {
   font-family: 'Poiret One';
+  color: Brown;
+}
+
+/* Review */
+
+#review {
+  font-family: 'Poiret One';
+  color: Brown;
 }
 
 /*  Footer CSS  */
