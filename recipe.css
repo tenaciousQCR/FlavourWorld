@@ -22,6 +22,7 @@ header, footer{
 #loginbar{
    display: inline-block;
    float: right;
+   font-family: 'Poiret One';
    font-size: 20px;
    text-align: right;
 }
@@ -30,14 +31,14 @@ header, footer{
 /* Body CSS */
 body{
   margin: auto;
-
+  font-family: 'Poiret One';
   background-color: NavajoWhite;
 }
 
 
 /* Content */
 body {
-    background-color: BurlyWood;
+    background-color: NavajoWhite;
 }
 
 main {
@@ -51,7 +52,7 @@ main {
 }
 
 #Page{
-  background-color: AntiqueWhite;
+  background-color: NavajoWhite;
 }
 
 #recipeImage {
