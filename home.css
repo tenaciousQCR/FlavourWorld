@@ -1,15 +1,18 @@
 /* General CSS */
+
 header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
 /* Header and Footer */
+
 header, footer{
   background-color: Brown;
 }
 
 
 /* Header CSS */
+
 #SiteTitle{
   display: inline-block;
   color: NavajoWhite;
@@ -29,6 +32,7 @@ header, footer{
 
 
 /* Body CSS */
+
 .bold{font-weight:bold;}
 
 #first-para {font-weight:bold;}
@@ -41,6 +45,7 @@ body{
 
 
 /* Content */
+
 main {
   height: 800px;
 }
@@ -83,6 +88,7 @@ main {
 
 
 /* Sidebar */
+
 h4 {
   margin: 10px;
   font-family: 'Poiret One';
@@ -137,6 +143,7 @@ button {
 button:hover {
   background-color: Maroon;
 }
+
 
 /* Footer CSS */
 

@@ -1,16 +1,19 @@
 /* General CSS */
+
 header, section, article, nav, aside, footer, div{
   font-family: sans-serif;
 }
 
 
 /* Header and Footer */
+
 header, footer{
   background-color: Brown;
 }
 
 
 /*  Header CSS */
+
 #SiteTitle{
   display: inline-block;
   color: NavajoWhite;
@@ -30,6 +33,7 @@ header, footer{
 
 
 /* Body CSS */
+
 body{
   margin: auto;
   font-family: 'Poiret One';
@@ -92,12 +96,14 @@ h3 {
   font-size: 30px;
 }
 
+
 /* Paragraph Content */
 
 .contentRecipe {
   font-family: 'Poiret One';
   color: Brown;
 }
+
 
 /* Review */
 
@@ -106,13 +112,17 @@ h3 {
   color: Brown;
 }
 
+
 /*  Footer CSS  */
+
 .grid-100 button {
   display: inline-block;
   font-family: 'Poiret One';
   font-size: 20px;
   margin: 40px;
   padding: 10px 24px;
+  margin-right: 200px;
+  margin-left: 250px;
   color: NavajoWhite;
   background-color: Brown;
   cursor: pointer;
