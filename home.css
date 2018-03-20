@@ -92,3 +92,11 @@ button {
 button:hover {
   background-color: Maroon;
 }
+
+.sideButton {
+  width: 5%;
+  padding: 5px;
+  background-color: Brown;
+  color: AntiqueWhite;
+  font-size: 20px;
+}
