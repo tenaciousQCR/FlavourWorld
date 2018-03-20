@@ -72,6 +72,16 @@ header, footer {
 
 /* Body CSS */
 
+h2 {
+  font-family: 'Poiret One';
+  color: Brown;
+}
+
+p {
+  font-family: 'Poiret One';
+  color: Brown;
+}
+
 #Page {
   background-color: AntiqueWhite;
   font-family: 'Poiret One';
