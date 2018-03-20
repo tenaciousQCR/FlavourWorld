@@ -29,3 +29,17 @@ header, footer{
    font-size: 20px;
    text-align: right;
 }
+
+/* Body CSS */
+
+.bold{font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
+body{
+  margin: auto;
+  min-width:1500px;
+  background-color: NavajoWhite;
+  background-image: url(wood.png);
+  float: center;
+}

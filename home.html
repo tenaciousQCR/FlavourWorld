@@ -13,7 +13,9 @@
 
   <body>
 
+
 <!-- HEADER STARTS -->
+
   <header class="custom-grid-container">
     <div class="grid-100">
     <h1 id="SiteTitle">FlavourWorld</h1>
@@ -21,90 +23,93 @@
     </div>
   </header>
 
+
 <!-- MAIN STARTS -->
+
   <main id="Page" class="grid-container">
+
       <div class="sidebarButton">
           <button class="sideButton" onclick="menu_toggle()">☰</button>
       </div>
 
-    <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
+      <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
+        <h4 id="dietary">Dietary Restrictions</h4>
+         <div class="Dietary">
+            <button>
+             Meat
+            </button>
 
-      <h4 id="dietary">Dietary Restrictions</h4>
+            <button>
+             Gluten
+            </button>
 
- <div class="Dietary">
-      <button>
-       Meat
-      </button>
+            <button>
+             Dairy
+            </button>
+          </div>
 
-      <button>
-       Gluten
-      </button>
+        <h4 id="continental">Continental Restrictions</h4>
+          <div class="Continental">
+            <button type="button">
+             Asia
+            </button>
 
-      <button>
-       Dairy
-      </button>
-</div>
+            <button type="button">
+             Africa
+            </button>
 
-      <h4 id="continental">Continental Restrictions</h4>
- <div class="Continental">
-      <button type="button">
-       Asia
-      </button>
+            <button type="button">
+             North America
+            </button>
 
-      <button type="button">
-       Africa
-      </button>
+            <button type="button">
+             South America
+            </button>
 
-      <button type="button">
-       North America
-      </button>
+            <button type="button">
+             Antartica
+            </button>
 
-      <button type="button">
-       South America
-      </button>
+            <button type="button">
+             Europe
+            </button>
 
-      <button type="button">
-       Antartica
-      </button>
+            <button type="button">
+             Australasia
+            </button>
+          </div>
 
-      <button type="button">
-       Europe
-      </button>
+        <h4 id="time">Time Restrictions</h4>
+          <div class="Time">
+            <button type="button">
+             Breakfast
+            </button>
 
-      <button type="button">
-       Australasia
-      </button>
-    </div>
+            <button type="button">
+             Brunch
+            </button>
 
-      <h4 id="time">Time Restrictions</h4>
-  <div class="Time">
-      <button type="button">
-       Breakfast
-      </button>
+            <button type="button">
+             Lunch
+            </button>
 
-      <button type="button">
-       Brunch
-      </button>
+            <button type="button">
+             Dinner
+            </button>
 
-      <button type="button">
-       Lunch
-      </button>
+            <button type="button">
+             Supper
+            </button>
 
-      <button type="button">
-       Dinner
-      </button>
+            <button type="button">
+             Snack
+            </button>
+          </div>
+      </div>
 
-      <button type="button">
-       Supper
-      </button>
 
-      <button type="button">
-       Snack
-      </button>
-    </div>
-    </div>
+    <!--SITE NAVIGATION-->
 
-    <!--Site navigation-->
     <nav id="SiteNavigation">
       <div class="searchbox">
         <span class="icon"> <i class="searchContainer"></i></span>
@@ -112,26 +117,28 @@
       </div>
     </nav>
 
-    <!--Map Image-->
+
+    <!--MAP IMAGE-->
+
     <div class="mapContainer grid-70 mobile-grid-100" id="mapContainer">
       <img src="map.png" id="interactivemap">
     </div>
   </main>
 
-<!-- FOOTER STARTS -->
-  <footer id="PageFooter" class="custom-grid-container">
-    <div class="grid-100">
-        <button>Legal Stuff</button>
-        <button>About</button>
-        <button>Contact</button>
-    </div>
-  </footer>
 
-</div>
+<!-- FOOTER STARTS -->
+
+    <footer id="PageFooter" class="custom-grid-container">
+      <div class="grid-100">
+          <button>Legal Stuff</button>
+          <button>About</button>
+          <button>Contact</button>
+      </div>
+    </footer>
+
 
 <!--JS-->
 
-  <script src="scripting.js"></script>
-
+    <script src="scripting.js"></script>
   </body>
 </html>

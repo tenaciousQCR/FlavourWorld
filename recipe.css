@@ -34,10 +34,16 @@ header, footer{
 
 /* Body CSS */
 
+.bold{font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
 body{
   margin: auto;
-  font-family: 'Poiret One';
-  background-color: navajoWhite;
+  min-width:1500px;
+  background-color: NavajoWhite;
+  background-image: url(wood.png);
+  float: center;
 }
 
 
