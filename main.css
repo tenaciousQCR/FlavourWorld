@@ -73,6 +73,8 @@ header, footer {
 
 #Page {
   background-color: AntiqueWhite;
+  font-family: 'Poiret One';
+  color: Brown;
 }
 
 .bold {font-weight:bold;}
