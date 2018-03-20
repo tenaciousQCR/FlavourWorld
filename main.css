@@ -37,6 +37,26 @@ header, footer {
   width: 30%;
 }
 
+
+/* Body CSS */
+
+#Page {
+  background-color: AntiqueWhite;
+}
+
+.bold {font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
+body {
+  margin: auto;
+  min-width:1500px;
+  background-color: NavajoWhite;
+  background-image: url(images/wood.png);
+  float: center;
+}
+
+
 /* Footer CSS */
 
 .grid-100 button {
@@ -52,17 +72,4 @@ header, footer {
   cursor: pointer;
 }
 
-/* Body CSS */
-
-.bold {font-weight:bold;}
-
-#first-para {font-weight:bold;}
-
-body {
-  margin: auto;
-  min-width:1500px;
-  background-color: NavajoWhite;
-  background-image: url(images/wood.png);
-  float: center;
-}
 /*---------------------more-------------------*/

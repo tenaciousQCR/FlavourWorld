@@ -4,11 +4,6 @@ main {
   height: 800px;
 }
 
-#Page {
-  background-color: AntiqueWhite;
-}
-
-
 #SiteNavigation {
   float:right;
   font-family: 'Poiret One';
