@@ -25,42 +25,46 @@ header, footer {
 .loginButton {
   font-family: 'Poiret One';
   cursor: pointer;
-  background-color: NavajoWhite;
-  color: Brown;
+  background-color: Brown;
+  color: NavajoWhite;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
 
 .loginOptions {
+  margin-top: 73px;
+  margin-right: 30px;
+  float: right;
   position: relative;
-  display: inline-block;
 }
 
-.profileMenu{
-  display: block;
+.profileMenu {
+  display: none;
+  right: 0;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  background-color: NavajoWhite;
-
+  background-color: Brown;
+  color: NavajoWhite;
 }
 
-.profileMenu a {
-  color: Brown;
-  background-color: NavajoWhite;
+.profileMenu button {
+  width: 100%;
+  color: NavajoWhite;
+  background-color: Brown;
   padding: 12px 16px;
   display: block;
 }
 
+.loginOptions:hover .profileMenu {
+  display: block;
+}
 
 
 #logoImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 35%;
   width: 30%;
 }
 
