@@ -41,6 +41,8 @@ body{
   margin: auto;
   min-width:1500px;
   background-color: NavajoWhite;
+  background-image: url(wood.png);
+  float: center;
 }
 
 
