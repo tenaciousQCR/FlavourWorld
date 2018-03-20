@@ -50,6 +50,7 @@ header, footer {
 }
 
 .profileMenu button {
+  font-family: 'Poiret One';
   width: 100%;
   color: NavajoWhite;
   background-color: Brown;
