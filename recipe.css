@@ -1,4 +1,12 @@
 /* Content */
+button {
+    font-family: 'Poiret One';
+    font-size: 20px;
+    padding: 10px 24px;
+    color: NavajoWhite;
+    background-color: Brown;
+    cursor: pointer;
+}
 
 main {
   height: 1600px;
