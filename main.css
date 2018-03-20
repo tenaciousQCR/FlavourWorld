@@ -21,14 +21,35 @@ header, footer {
   text-align: center;
 }
 
-#loginbar {
-   display: inline-block;
-   font-family: 'Poiret One';
-   color: NavajoWhite;
-   float: right;
-   font-size: 20px;
-   text-align: right;
+
+.loginButton {
+  float: right;
+  font-family: 'Poiret One';
+  cursor: pointer;
+  background-color: NavajoWhite;
+  color: Brown;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
+
+.profileMenu{
+  float: right;
+  display: block;
+  background-color: NavajoWhite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.profileMenu a {
+  color: Brown;
+  background-color: NavajoWhite;
+  padding: 12px 16px;
+  display: block;
+}
+
+
 
 #logoImage {
   display: block;
