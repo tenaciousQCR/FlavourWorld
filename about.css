@@ -1,0 +1,45 @@
+/* General CSS */
+
+header, section, article, nav, aside, footer, div{
+  font-family: sans-serif;
+}
+
+/* Header and Footer */
+
+header, footer{
+  background-color: Brown;
+}
+
+
+/* Header CSS */
+
+#SiteTitle{
+  display: inline-block;
+  color: NavajoWhite;
+  font-family: 'Poiret One';
+  font-size: 50px;
+  text-align: center;
+}
+
+#loginbar{
+   display: inline-block;
+   font-family: 'Poiret One';
+   color: NavajoWhite;
+   float: right;
+   font-size: 20px;
+   text-align: right;
+}
+
+/* Body CSS */
+
+.bold{font-weight:bold;}
+
+#first-para {font-weight:bold;}
+
+body{
+  margin: auto;
+  min-width:1500px;
+  background-color: NavajoWhite;
+  background-image: url(wood.png);
+  float: center;
+}
