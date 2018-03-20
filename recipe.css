@@ -1,20 +1,20 @@
 /* General CSS */
 
-header, section, article, nav, aside, footer, div{
+header, section, article, nav, aside, footer, div {
   font-family: sans-serif;
 }
 
 
 /* Header and Footer */
 
-header, footer{
+header, footer {
   background-color: Brown;
 }
 
 
 /*  Header CSS */
 
-#SiteTitle{
+#SiteTitle {
   display: inline-block;
   color: NavajoWhite;
   font-family: 'Poiret One';
@@ -22,7 +22,7 @@ header, footer{
   text-align: center;
 }
 
-#loginbar{
+#loginbar {
    display: inline-block;
    float: right;
    color: NavajoWhite;
@@ -31,14 +31,20 @@ header, footer{
    text-align: right;
 }
 
+#logoImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 
 /* Body CSS */
 
-.bold{font-weight:bold;}
+.bold {font-weight:bold;}
 
 #first-para {font-weight:bold;}
 
-body{
+body {
   margin: auto;
   font-family: 'Poiret One';
   min-width:1500px;
