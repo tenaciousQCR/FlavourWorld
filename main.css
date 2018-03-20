@@ -23,7 +23,6 @@ header, footer {
 
 
 .loginButton {
-  float: right;
   font-family: 'Poiret One';
   cursor: pointer;
   background-color: NavajoWhite;
@@ -31,15 +30,22 @@ header, footer {
   padding: 16px;
   font-size: 16px;
   border: none;
-  cursor: pointer;
+}
+
+.loginOptions {
+  position: relative;
+  display: inline-block;
 }
 
 .profileMenu{
-  float: right;
   display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   background-color: NavajoWhite;
-  white-space: nowrap;
-  overflow: hidden;
+
 }
 
 .profileMenu a {
