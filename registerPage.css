@@ -6,20 +6,12 @@ body {
 }
 
 
-/* Avatar Image */
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-
 /* Form */
+
+h1 {
+  color: Brown;
+  font-family: 'Poiret One';
+}
 
 form {
   border: 3px solid #f1f1f1;
