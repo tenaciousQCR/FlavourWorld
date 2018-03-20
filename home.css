@@ -1,6 +1,3 @@
-<<<<<<< current
-/* Content */
-
 main {
   height: 800px;
 }
@@ -101,69 +98,3 @@ button:hover {
   color: AntiqueWhite;
   font-size: 20px;
 }
-=======
-body{
-  margin: auto;
-  width:960px;
-}
-
-header, section, article, nav, aside, footer, div{
-  font-family: sans-serif;
-}
-
-header, footer{
-  background-image: url("diner.jpg");
-}
-
-.bold{font-weight:bold;}
-
-#first-para {font-weight:bold;}
-
-body {
-    background-color: BurlyWood;
-}
-
-li {
-  display: inline;
-  margin: 40px;
-  font-weight: bold;
-}
-
-#searchBar{
-  float:right;
-}
-
-#Page{
-  background-color: AntiqueWhite;
-}
-
-#SiteTitle{
-  display: inline-block;
-  font-size: 50px;
-  text-align: center;
-}
-
-#loginbar{
-  display: inline-block;
-  float: right;
-  font-size: 20px;
-  text-align: right;
-}
-
-
-#interactivemap {
-  padding-left: : 50px;
-  padding-right: : 50px;
-  width:100%;
-}
-
-#sidebar {
-  display: none;
-  height: 800px;
-  background-color: white;
-}
-
-button {
-
-}
->>>>>>> before discard
