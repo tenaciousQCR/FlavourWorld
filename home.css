@@ -30,6 +30,12 @@ header, footer{
    text-align: right;
 }
 
+#logoImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 
 /* Body CSS */
 
