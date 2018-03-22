@@ -5,3 +5,12 @@ main {
 .checked {
     color: orange;
 }
+
+#star {
+  cursor: pointer;
+  border: 10px;
+}
+
+#star:hover {
+  background-color: Maroon;
+}
