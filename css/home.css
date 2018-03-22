@@ -2,6 +2,16 @@ main {
   height: 800px;
 }
 
+ @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    main {
+      height: 800px;
+    }
+}
+
+
+
+
 #SiteNavigation {
   float:right;
   font-family: 'Poiret One';

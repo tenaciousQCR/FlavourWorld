@@ -36,4 +36,4 @@ Esri_WorldGrayCanvas.addTo(mymap);
 
 mymap.setMinZoom(2);
 
-mymap.setMaxBounds([[80,180], [-80,-179]])
+mymap.setMaxBounds([[90,180], [-90,-179]])
