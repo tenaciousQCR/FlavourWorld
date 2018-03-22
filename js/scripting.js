@@ -48,12 +48,11 @@ function main_resize(){
   document.getElementById('Page').style.height= windowHeight*3 + 'px';
 }
 
-/*
-    if($("#mapContainer").hasClass("grid-70")){
-      $("#mapContainer").removeClass("mapContainer grid-70 mobile-grid-100");
-      $("#mapContainer").addClass("mapContainer grid-100 mobile-grid-100");
-    }
-    else if($("#mapContainer").hasClass("mapContainer grid-100 mobile-grid-100")){
-      $("#mapContainer").addClass("mapContainer grid-70 mobile-grid-100");
-      $("#mapContainer").removeClass("mapContainer grid-100 mobile-grid-100");
-    }
+    // if($("#mapContainer").hasClass("grid-70")){
+    //   $("#mapContainer").removeClass("mapContainer grid-70 mobile-grid-100");
+    //   $("#mapContainer").addClass("mapContainer grid-100 mobile-grid-100");
+    // }
+    // else if($("#mapContainer").hasClass("mapContainer grid-100 mobile-grid-100")){
+    //   $("#mapContainer").addClass("mapContainer grid-70 mobile-grid-100");
+    //   $("#mapContainer").removeClass("mapContainer grid-100 mobile-grid-100");
+    // }
