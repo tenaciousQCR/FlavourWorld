@@ -45,7 +45,6 @@ header, footer {
 
 .profileMenu {
   display: none;
-  left: 0;
   position: absolute;
   min-width: 160px;
   z-index: 1;
