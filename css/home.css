@@ -1,5 +1,5 @@
 main {
-  height: 2450px;
+  /* height: 2450px; */
   /* bottom: 0; */
 }
 
@@ -115,8 +115,17 @@ button:hover {
    main {
      height: 800px;
    }
+
    .sidebarButton{
      display: none;
+   }
+
+   #sidebar{
+     margin-top: 10px;
+   }
+
+   #lastButton{
+     margin-bottom: 10px;
    }
 
    #mapid {

@@ -1,4 +1,5 @@
 var menuToggled = false;
+var height = $(window).height();
 
 
 $(function(){
@@ -20,6 +21,15 @@ $( window ).resize(function() {
 });
 
 
+
+$( window ).resize(function() {
+  if($(window).height() != height && $(window).width() < 765){
+    main_resize();
+    height = $(window).height();
+  }
+});
+
+
 function menu_toggle(){
 
     $("#sidebar").animate({width: "toggle", height: "toggle"}, 50);
@@ -30,7 +40,13 @@ function menu_toggle(){
       menuToggled = true;
     }
 }
+var windowHeight;
 
+function main_resize(){
+  windowHeight = $(window).height();
+  console.log(windowHeight);
+  document.getElementById('Page').style.height= windowHeight*3 + 'px';
+}
 
 /*
     if($("#mapContainer").hasClass("grid-70")){
