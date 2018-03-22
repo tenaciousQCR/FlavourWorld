@@ -1,10 +1,17 @@
 $(function(){
-    $("#sidebar").animate({width: "toggle"}, 1);
+    if($(window).width() < 768){
+      menu_toggle();
+    }
 });
+
+$( window ).resize(function() {
+   menu_toggle();
+});
+
 
 function menu_toggle(){
 
-    $("#sidebar").animate({width: "toggle", height: "toggle"}, 200);
+    $("#sidebar").animate({width: "toggle", height: "toggle"}, 50);
 }
 
 
