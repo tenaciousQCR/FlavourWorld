@@ -3,20 +3,20 @@ var height = $(window).height();
 
 
 $(function(){
-    if($(window).width() < 765){
+    if($(window).width() < 1024){
       menu_toggle();
     }
     main_resize();
 });
 
 $( window ).resize(function() {
-  if($(window).width() > 765 && menuToggled){
+  if($(window).width() > 1024 && menuToggled){
     menu_toggle();
   }
 });
 
 $( window ).resize(function() {
-  if($(window).width() < 765 && !menuToggled){
+  if($(window).width() < 1024 && !menuToggled){
     menu_toggle();
   }
 });
@@ -24,7 +24,7 @@ $( window ).resize(function() {
 
 
 $( window ).resize(function() {
-  if($(window).height() != height && $(window).width() < 765){
+  if($(window).height() != height && $(window).width() < 1024){
     main_resize();
     height = $(window).height();
   }

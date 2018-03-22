@@ -15,26 +15,17 @@
     <link rel="stylesheet" href="css/leaflet-geojson-selector.css" />
     <meta name="viewport" content="width=device-width">
   </head>
+
   <body>
 
 
 <!-- HEADER STARTS -->
 
   <header class="custom-grid-container">
-    <div >
-      <a href="home.html">
+    <div>
+      <a href="home.html"  id="logoLink">
         <img src="images/logo.png" id="logoImage">
       </a>
-      <div class="loginOptions">
-        <button class="loginButton">Profile</button>
-        <div class="profileMenu">
-           <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-           target="_blank">
-           <button>Login</button></a>
-           <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-           target="_blank"><button>Register</button> </a>
-        </div>
-       </div>
     </div>
   </header>
 
@@ -42,10 +33,21 @@
 <!-- MAIN STARTS -->
 
   <main id="Page" class="grid-container">
-
-    <div class="sidebarButton">
-        <button class="sideButton" onclick="menu_toggle()">☰</button>
-    </div>
+    <div id="optionsBar">
+      <button class="sideButton" onclick="menu_toggle()">☰</button>
+      <button class="loginButton">Profile</button>
+      <div class="profileMenu">
+         <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+         target="_blank">
+         <button>Login</button></a>
+         <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+         target="_blank"><button>Register</button> </a>
+      </div>
+      <div class="searchbox" id='SiteNavigation'>
+        <span class="icon"> <i class="searchContainer"></i></span>
+        <input type="search" id="search" placeholder="Search..." />
+      </div>
+     </div>
 
     <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
       <h4 id="dietary">Dietary Restrictions</h4>
@@ -125,12 +127,7 @@
 
 <!--SITE NAVIGATION-->
 
-    <nav id="SiteNavigation">
-      <div class="searchbox">
-        <span class="icon"> <i class="searchContainer"></i></span>
-        <input type="search" id="search" placeholder="Search..." />
-      </div>
-    </nav>
+
 
 
 <!--MAP IMAGE-->

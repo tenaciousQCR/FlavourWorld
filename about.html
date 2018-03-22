@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
@@ -18,16 +19,6 @@
             <a href="home.html">
               <img src="images/logo.png" id="logoImage">
             </a>
-            <div class="loginOptions">
-                 <button class="loginButton">Profile</button>
-                 <div class="profileMenu">
-                    <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-                    target="_blank">
-                    <button>Login</button></a>
-                    <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-                    target="_blank"><button>Register</button> </a>
-                 </div>
-            </div>
           </div>
         </header>
 
@@ -35,6 +26,16 @@
 <!-- MAIN STARTS -->
 
     <main id="Page" class="grid-container">
+      <div id="optionsBar">
+        <button class="loginButton">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank">
+           <button>Login</button></a>
+           <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank"><button>Register</button> </a>
+        </div>
+       </div>
       <div>
         <h2 id="whatIsIt">What is FLAVOURWORLD.COM?</h2>
         <p>

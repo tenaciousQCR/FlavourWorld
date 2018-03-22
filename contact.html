@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
@@ -18,16 +19,6 @@
           <a href="home.html">
             <img src="images/logo.png" id="logoImage">
           </a>
-          <div class="loginOptions">
-               <button class="loginButton">Profile</button>
-               <div class="profileMenu">
-                  <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-                  target="_blank">
-                  <button>Login</button></a>
-                  <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-                  target="_blank"><button>Register</button> </a>
-               </div>
-          </div>
         </div>
       </header>
 
@@ -35,6 +26,16 @@
 <!-- MAIN STARTS -->
 
     <main id="Page" class="grid-container">
+      <div id="optionsBar">
+        <button class="loginButton">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank">
+           <button>Login</button></a>
+           <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank"><button>Register</button> </a>
+        </div>
+       </div>
       <div class="">
         <h2>Contact Us</h2>
         <p>
@@ -65,7 +66,7 @@
           <label for="message"><b>Message</b></label>
           <input type="text" placeholder="Enter Message" name="message" required>
 
-          <button type="submit">Submit</button>
+          <button type="submit" class="thisPage">Submit</button>
         </div>
 
         <div class="container">
@@ -78,14 +79,13 @@
 
 <!-- FOOTER STARTS -->
 
-    <footer id="PageFooter" class="custom-grid-container">
-      <div class="grid-100">
-          <a href="legal.html"><button>Legal</button></a>
-          <a href="about.html"><button>About</button></a>
-          <a href="contact.html"><button>Contact</button></a>
-      </div>
-    </footer>
-
+<footer id="PageFooter" class="custom-grid-container">
+  <div class="grid-100">
+      <a href="legal.html"><button>Legal</button></a>
+      <a href="about.html"><button>About</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+  </div>
+</footer>
 
 <!--JS-->
 

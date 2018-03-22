@@ -19,16 +19,6 @@
       <a href="home.html">
         <img src="images/logo.png" id="logoImage">
       </a>
-      <div class="loginOptions">
-           <button class="loginButton">Profile</button>
-           <div class="profileMenu">
-              <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-              target="_blank">
-              <button>Login</button></a>
-              <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
-              target="_blank"><button>Register</button> </a>
-           </div>
-      </div>
     </div>
   </header>
 
@@ -36,7 +26,16 @@
 <!-- MAIN STARTS -->
 
     <main id="Page" class="grid-container">
-
+      <div id="optionsBar">
+        <button class="loginButton">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank">
+           <button>Login</button></a>
+           <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           target="_blank"><button>Register</button> </a>
+        </div>
+       </div>
         <div class="Title grid-100 mobile-gride-50">
           <h1 id="recipeTitle">Pigs in Blankets</h1>
         </div>
@@ -121,7 +120,7 @@
 
     </main>
 
-  </body>
+
 
 
 <!-- FOOTER STARTS -->
@@ -133,4 +132,5 @@
        <a href="contact.html"><button>Contact</button></a>
    </div>
   </footer>
+  </body>
 </html>
