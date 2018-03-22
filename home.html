@@ -2,6 +2,8 @@
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="leaflet-geojson-selector.js"></script>
 
   <head>
     <meta charset="UTF-8">
@@ -9,10 +11,11 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="leaflet-geojson-selector.css" />
   </head>
 
   <body>
-
 
 <!-- HEADER STARTS -->
 
@@ -128,8 +131,9 @@
 
 <!--MAP IMAGE-->
 
-    <div class="mapContainer grid-70 mobile-grid-100" id="mapContainer">
-      <img src="images/map.png" id="interactivemap">
+    <div class="mapContainer grid-70 mobile-grid-100" id="mapid">
+      <!-- <img src="images/map.png" id="interactivemap"> -->
+      <!-- Map goes here -->
     </div>
   </main>
 

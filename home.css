@@ -31,10 +31,11 @@ main {
   overflow: hidden;
 }
 
-#interactivemap {
+#mapid {
   padding-left: : 50px;
   padding-right: : 50px;
-  width:100%;
+  width:70%;
+  height:85%;
 }
 
 
