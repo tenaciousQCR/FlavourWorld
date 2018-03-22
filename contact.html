@@ -10,7 +10,7 @@
   <body>
 
 
-    <!-- HEADER STARTS -->
+<!-- HEADER STARTS -->
 
       <header class="custom-grid-container">
         <div >
@@ -20,8 +20,11 @@
           <div class="loginOptions">
                <button class="loginButton">Profile</button>
                <div class="profileMenu">
-                 <a href="loginPage.html"><button>Login</button></a>
-                 <a href="registerPage.html"><button>Register</button> </a>
+                  <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+                  target="_blank">
+                  <button>Login</button></a>
+                  <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+                  target="_blank"><button>Register</button> </a>
                </div>
           </div>
         </div>
@@ -29,6 +32,7 @@
 
 
 <!-- MAIN STARTS -->
+
     <main id="Page" class="grid-container">
       <div class="">
         <h2>Contact Us</h2>
@@ -51,6 +55,23 @@
           pharetra aliquet elit.
         </p>
       </div>
+      <form>
+
+        <div class="container">
+          <label for="object"><b>Object</b></label>
+          <input type="text" placeholder="Enter Object" name="object" required>
+
+          <label for="message"><b>Message</b></label>
+          <input type="text" placeholder="Enter Message" name="message" required>
+
+          <button type="submit">Submit</button>
+        </div>
+
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancel</button>
+        </div>
+
+      </form>
     </main>
 
 
