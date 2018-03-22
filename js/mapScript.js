@@ -63,7 +63,7 @@ function onEachFeature(feature, layer) {
 
 
 $.getJSON('../js/custom.geo.json',function(data){
-            mymap = L.map('mapid').setView([32,-35], 3);
+            mymap = L.map('mapid').setView([32,-35], 3).setMinZoom(2).setMaxBounds([[90,180], [-90,-179]]);
             var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ', maxZoom: 16 });
 
             Esri_WorldGrayCanvas.addTo(mymap);
@@ -75,7 +75,3 @@ $.getJSON('../js/custom.geo.json',function(data){
 // var Esri_WorldGrayCanvas = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ', maxZoom: 16 });
 //
 // Esri_WorldGrayCanvas.addTo(mymap);
-
-mymap.setMinZoom(2);
-
-mymap.setMaxBounds([[90,180], [-90,-179]])
