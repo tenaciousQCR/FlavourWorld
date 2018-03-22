@@ -6,6 +6,7 @@ $(function(){
     if($(window).width() < 765){
       menu_toggle();
     }
+    main_resize();
 });
 
 $( window ).resize(function() {
