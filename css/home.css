@@ -31,7 +31,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
-  z-index: 50;
+  z-index: 5000;
 }
 
 #mapid {
