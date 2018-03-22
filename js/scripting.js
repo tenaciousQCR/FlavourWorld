@@ -46,7 +46,7 @@ var windowHeight;
 function main_resize(){
   windowHeight = $(window).height();
   console.log(windowHeight);
-  document.getElementById('Page').style.height= windowHeight*3 + 'px';
+  document.getElementById('Page').style.height= windowHeight + 'px';
 }
 
     // if($("#mapContainer").hasClass("grid-70")){
