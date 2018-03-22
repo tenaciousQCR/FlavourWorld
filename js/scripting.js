@@ -23,12 +23,12 @@ $( window ).resize(function() {
 
 
 
-$( window ).resize(function() {
-  if($(window).height() != height && $(window).width() < 765){
-    main_resize();
-    height = $(window).height();
-  }
-});
+// $( window ).resize(function() {
+//   if($(window).height() != height && $(window).width() < 765){
+//     main_resize();
+//     height = $(window).height();
+//   }
+// });
 
 
 function menu_toggle(){
@@ -43,11 +43,10 @@ function menu_toggle(){
 }
 var windowHeight;
 
-function main_resize(){
-  windowHeight = $(window).height();
-  console.log(windowHeight);
-  document.getElementById('Page').style.height= windowHeight + 'px';
-}
+// function main_resize(){
+//   windowHeight = $(window).height();
+//   document.getElementById('Page').style.height= windowHeight + 'px';
+// }
 
     // if($("#mapContainer").hasClass("grid-70")){
     //   $("#mapContainer").removeClass("mapContainer grid-70 mobile-grid-100");
