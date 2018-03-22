@@ -2,15 +2,6 @@ main {
   height: 1800px;
 }
 
- @media only screen and (min-width: 768px) {
-    main {
-      height: 800px;
-    }
-}
-
-
-
-
 #SiteNavigation {
   float:right;
   font-family: 'Poiret One';
@@ -43,8 +34,8 @@ main {
 #mapid {
   padding-left: : 50px;
   padding-right: : 50px;
-  width:70%;
-  height:85%;
+  width:100%;
+  height:93%;
 }
 
 
@@ -111,4 +102,26 @@ button:hover {
   background-color: Brown;
   color: AntiqueWhite;
   font-size: 20px;
+}
+
+.sidebarButton{
+  display:block;
+}
+
+/* new responsive stuff ;) ;) ;) */
+
+@media only screen and (min-width: 768px) {
+   main {
+     height: 800px;
+   }
+   .sidebarButton{
+     display: none;
+   }
+
+   #mapid {
+     padding-left: : 50px;
+     padding-right: : 50px;
+     width:70%;
+     height:85%;
+   }
 }

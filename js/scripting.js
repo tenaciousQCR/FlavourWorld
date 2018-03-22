@@ -1,10 +1,12 @@
-// $(function(){
-//     $("#sidebar").animate({width: "toggle"}, 1);
-// });
-//
-// function menu_toggle(){
-//
-//     $("#sidebar").animate({width: "toggle", height: "toggle"}, 200);
+$(function(){
+    $("#sidebar").animate({width: "toggle"}, 1);
+});
+
+function menu_toggle(){
+
+    $("#sidebar").animate({width: "toggle", height: "toggle"}, 200);
+}
+
 
 /*
     if($("#mapContainer").hasClass("grid-70")){
