@@ -3,14 +3,40 @@ main {
 }
 
 .checked {
-    color: orange;
+  color: orange;
 }
 
-#star {
+#star1 {
+  height: 30px;
+  width: 30px;
   cursor: pointer;
   border: 10px;
 }
 
-#star:hover {
-  background-color: Maroon;
+#star2 {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 10px;
+}
+
+#star3 {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 10px;
+}
+
+#star4 {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 10px;
+}
+
+#star5 {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 10px;
 }
