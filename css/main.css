@@ -96,7 +96,7 @@ body {
   margin: auto;
   min-width:1500px;
   background-color: NavajoWhite;
-  background-image: url(images/wood.png);
+  background-image: url(../images/wood.png);
   float: center;
 }
 
