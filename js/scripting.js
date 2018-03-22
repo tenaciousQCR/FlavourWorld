@@ -1,17 +1,34 @@
+var menuToggled = false;
+
+
 $(function(){
-    if($(window).width() < 768){
+    if($(window).width() < 765){
       menu_toggle();
     }
 });
 
 $( window ).resize(function() {
-   menu_toggle();
+  if($(window).width() > 765 && menuToggled){
+    menu_toggle();
+  }
+});
+
+$( window ).resize(function() {
+  if($(window).width() < 765 && !menuToggled){
+    menu_toggle();
+  }
 });
 
 
 function menu_toggle(){
 
     $("#sidebar").animate({width: "toggle", height: "toggle"}, 50);
+    if(menuToggled){
+      menuToggled = false;
+    }
+    else{
+      menuToggled = true;
+    }
 }
 
 
