@@ -127,8 +127,8 @@ button:hover {
 @media only screen and (max-width: 1024px) {
   /* For mobile: */
   #sidebar {
-    /* position: absolute; */
-    z-index: 5000;
+    position: absolute;
+    z-index: 1000;
   }
 }
 
