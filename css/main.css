@@ -141,6 +141,9 @@ body {
       position:fixed;
       bottom: 0;
     }
+  body{
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -157,6 +160,9 @@ body {
     #logoImage {
       margin-left: 35%;
       width: 30%;
+    }
+    body{
+      height: 1200px;
     }
 }
 /*---------------------more-------------------*/
