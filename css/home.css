@@ -128,7 +128,7 @@ button:hover {
   /* For mobile: */
   #sidebar {
     position: absolute;
-    z-index: 1000;
+    z-index: 1500;
   }
   body{
     height:1000px;

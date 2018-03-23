@@ -47,7 +47,7 @@ header, footer {
   display: none;
   position: absolute;
   min-width: 160px;
-  z-index: 1001;
+  z-index: 1501;
   background-color: Brown;
   color: NavajoWhite;
 }
