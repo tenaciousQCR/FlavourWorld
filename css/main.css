@@ -91,7 +91,7 @@ p {
 }
 
 #Page {
-  background-color: AntiqueWhite;
+  background-color: NavajoWhite;
   font-family: 'Poiret One';
   color: Brown;
 }
@@ -104,7 +104,7 @@ body {
   margin: auto;
   min-width:100%;
   background-color: NavajoWhite;
-  background-image: url(../images/wood.png);
+  /* background-image: url(../images/wood.png); */
   float: center;
   /* bottom: 0; */
 }
@@ -127,6 +127,13 @@ body {
   cursor: pointer;
 }
 
+#PageFooter{
+  z-index:1000;
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+}
+
 @media only screen and (max-width: 1024px) {
     /* For mobile phones: */
     #PageFooter{
@@ -134,6 +141,9 @@ body {
       position:fixed;
       bottom: 0;
     }
+  body{
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -150,6 +160,9 @@ body {
     #logoImage {
       margin-left: 35%;
       width: 30%;
+    }
+    body{
+      height: 1200px;
     }
 }
 /*---------------------more-------------------*/

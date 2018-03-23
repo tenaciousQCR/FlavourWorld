@@ -8,6 +8,10 @@ button {
     cursor: pointer;
 }
 
+body{
+  height: 2000px
+}
+
 main {
   height: 2400px;
 }
