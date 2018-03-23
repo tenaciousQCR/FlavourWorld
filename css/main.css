@@ -127,6 +127,13 @@ body {
   cursor: pointer;
 }
 
+#PageFooter{
+  z-index:1000;
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+}
+
 @media only screen and (max-width: 1024px) {
     /* For mobile phones: */
     #PageFooter{
