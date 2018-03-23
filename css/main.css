@@ -91,7 +91,7 @@ p {
 }
 
 #Page {
-  background-color: AntiqueWhite;
+  background-color: NavajoWhite;
   font-family: 'Poiret One';
   color: Brown;
 }
@@ -104,7 +104,7 @@ body {
   margin: auto;
   min-width:100%;
   background-color: NavajoWhite;
-  background-image: url(../images/wood.png);
+  /* background-image: url(../images/wood.png); */
   float: center;
   /* bottom: 0; */
 }
