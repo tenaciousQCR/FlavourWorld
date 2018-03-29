@@ -5,52 +5,59 @@ var star3 = false;
 var star4 = false;
 var star5 = false;
 
+var rating = 0;
+
 function showStar() {
   //star 1
   console.log("STAR MAN");
-//  var x = document.getElementById("#star1").src;
+ var x = $('#star1')
   console.log(x);
   if (star1) {
-    $('#star1').src = "images/star-filled-single.png";
+    rating = 1;
+    $('#star1').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star1').src = "images/star-empty-single.png";
+      $('#star1').attr("src", "images/star-empty-single.png");
   }
 
 //star2
   if (star2) {
-    $('#star2').src = "images/star-filled-single.png";
+    rating = 2;
+    $('#star2').attr("src",  "images/star-filled-single.png");
   }
   else {
-    $('#star2').src = "images/star-empty-single.png";
+    $('#star2').attr("src", "images/star-empty-single.png");
   }
 
 //star3
   if (star3) {
-    $('#star3').src = "images/star-filled-single.png";
+    rating = 3;
+    $('#star3').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star3').src = "images/star-empty-single.png";
+    $('#star3').attr("src", "images/star-empty-single.png");
   }
 
 //star4
   if (star4) {
-    $('#star4').src = "images/star-filled-single.png";
+    rating = 4;
+    $('#star4').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star4').src = "images/star-empty-single.png";
+    $('#star4').attr("src", "images/star-empty-single.png");
   }
 
 //star5
   if (star5) {
-    $('#star5').src = "images/star-filled-single.png";
+    rating = 5;
+    $('#star5').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star5').src = "images/star-empty-single.png";
+    $('#star5').attr("src", "images/star-empty-single.png");
   }
 }
 $("#star1").click(function() {
-  console.log("fuck you");
+  console.log("why tho?");
   star1 = true;
   star2 = false;
   star3 = false;
