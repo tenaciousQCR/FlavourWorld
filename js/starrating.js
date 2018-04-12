@@ -101,3 +101,14 @@ $("#star5").click(function() {
   star5 = true;
   showStar();
 });
+
+
+
+  $("#submitButton").click(function() {
+    if (rating == 0){
+      console.log("You didn't enter a rating yet");
+    }
+    else{
+      //insert it to the database to store
+      console.log("Rating submitted successfully.");
+    }});
