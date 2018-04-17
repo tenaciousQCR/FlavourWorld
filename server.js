@@ -20,8 +20,7 @@ app.get('/', function(req, res) {
     //res.redirect('/loginPage');
     return;
   }
-
-
+    $(".loginButton").css("background-color", "AntiqueWhite");
 });
 
 
@@ -53,10 +52,7 @@ var datatostore = {
 "email":req.body.email,
 "login":{"username":req.body.street, "password":req.body.password}}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 8bf40e35b58c20aa2fcbec83364f488b9d915a1c
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').save(datatostore, function(err, result) {
     if (err) throw err;
