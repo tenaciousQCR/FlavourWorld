@@ -17,10 +17,10 @@ MongoClient.connect(url, function(err, database){
 app.get('/', function(req, res) {
   //if the user is not logged in redirect them to the login page
   if(!req.session.loggedin){
-    //res.redirect('/loginPage');
+    res.redirect('/loginPage');
     return;
   }
-    $(".loginButton").css("background-color", "AntiqueWhite");
+    
 });
 
 
