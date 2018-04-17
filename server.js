@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
     res.redirect('/loginPage');
     return;
   }
-    
+
 });
 
 
@@ -50,7 +50,7 @@ app.post('/registeruser', function(req, res) {
 var datatostore = {
 "name":{"first":req.body.fname,"last":req.body.lname},
 "email":req.body.email,
-"login":{"username":req.body.street, "password":req.body.password}}
+"login":{"username":req.body.uname, "password":req.body.psw}}
 
 
 //once created we just run the data string against the database and all our new data will be saved/
