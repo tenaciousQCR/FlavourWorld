@@ -6,7 +6,6 @@ main {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: NavajoWhite;
   height: 1000px;
 }
 
@@ -39,7 +38,7 @@ label{
 /* Login Button */
 .thisPage{
     background-color: Brown;
-    color: NavajoWhite;
+    color: White;
     font-family: 'Poiret One';
     padding: 14px 20px;
     margin: 8px 0;
@@ -54,7 +53,7 @@ button:hover {
 
 .cancelbtn {
     width: auto;
-    color: NavajoWhite;
+    color: White;
     font-family: 'Poiret One';
     padding: 10px 18px;
     background-color: Brown;

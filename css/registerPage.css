@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: NavajoWhite;
+  background-color: AntiqueWhite;
 }
 
 
@@ -33,7 +33,7 @@ input[type=text], input[type=password] {
 
 button {
     background-color: Brown;
-    color: NavajoWhite;
+    color: White;
     font-family: 'Poiret One';
     padding: 14px 20px;
     margin: 8px 0;
