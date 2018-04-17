@@ -12,6 +12,20 @@ MongoClient.connect(url, function(err, database){
  app.listen(8080);
 });
 
+
+//this is our root route -- code goes here for logged in stuff
+app.get('/', function(req, res) {
+  //if the user is not logged in redirect them to the login page
+  if(!req.session.loggedin){
+    //res.redirect('/loginPage');
+    return;
+  }
+
+
+});
+
+
+
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.uname;
@@ -38,8 +52,6 @@ var datatostore = {
 "name":{"first":req.body.fname,"last":req.body.lname},
 "email":req.body.email,
 "login":{"username":req.body.street, "password":req.body.password}}
-
-
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').save(datatostore, function(err, result) {
