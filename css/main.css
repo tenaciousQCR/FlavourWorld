@@ -18,7 +18,7 @@ header, footer {
   font-family: 'Poiret One';
   cursor: pointer;
   background-color: Brown;
-  color: NavajoWhite;
+  color: AntiqueWhite;
   padding: 5px;
   font-size: 25px;
   z-index: 10;
@@ -49,13 +49,13 @@ header, footer {
   min-width: 160px;
   z-index: 1501;
   background-color: Brown;
-  color: NavajoWhite;
+  color: White;
 }
 
 .profileMenu button {
   font-family: 'Poiret One';
   width: 100%;
-  color: NavajoWhite;
+  color: AntiqueWhite;
   background-color: Brown;
   padding: 12px 16px;
   display: block;
@@ -91,7 +91,7 @@ p {
 }
 
 #Page {
-  background-color: NavajoWhite;
+  background-color: AntiqueWhite;
   font-family: 'Poiret One';
   color: Brown;
 }
@@ -103,7 +103,7 @@ p {
 body {
   margin: auto;
   min-width:100%;
-  background-color: NavajoWhite;
+  background-color: White;
   /* background-image: url(../images/wood.png); */
   float: center;
   /* bottom: 0; */
@@ -122,7 +122,7 @@ body {
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  color: NavajoWhite;
+  color: AntiqueWhite;
   background-color: Brown;
   cursor: pointer;
 }
