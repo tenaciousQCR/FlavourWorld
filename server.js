@@ -40,7 +40,6 @@ var datatostore = {
 "login":{"username":req.body.street, "password":req.body.password}}
 
 
-
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').save(datatostore, function(err, result) {
     if (err) throw err;
