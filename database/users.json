@@ -1,1 +1,1 @@
-{"userid":1,"firstname":"Quentin","lastname":"Robertson","uname":"tastyboi118","email":"1600961@rgu.ac.uk","password":"tasteword","dietary":["Gluten Free","Peanut Free"]}
+{"userid":1,"name":{"firstname":"Quentin","lastname":"Robertson"},"email":"1600961@rgu.ac.uk","login":{"username":"tastyboi118","password":"tasteword"},"dietary":["Gluten Free","Peanut Free"]}
