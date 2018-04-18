@@ -2,6 +2,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/users";
 const express = require('express');
+const session = require('express-session');
 const app = express();
 app.use(express.static('public'))
 var db;
@@ -10,6 +11,7 @@ MongoClient.connect(url, function(err, database){
  if(err) throw err;
  db = database;
  app.listen(8080);
+ console.log('listening on 8080');
 });
 
 
@@ -20,10 +22,19 @@ app.get('/', function(req, res) {
     res.redirect('/loginPage');
     return;
   }
-
 });
 
+//------------------------------------------------------------------------------
 
+//logour route cause the page to Logout.
+//it sets our session.loggedin to false and then redirects the user to the login
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
+//------------------------------------------------------------------------------
 
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
@@ -41,6 +52,8 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+//------------------------------------------------------------------------------
+
 app.post('/registeruser', function(req, res) {
   //check we are logged in
   //if(!req.session.loggedin){res.redirect('/login');return;}
@@ -50,8 +63,7 @@ app.post('/registeruser', function(req, res) {
 var datatostore = {
 "name":{"first":req.body.fname,"last":req.body.lname},
 "email":req.body.email,
-"login":{"username":req.body.uname, "password":req.body.psw}}
-
+"login":{"username":req.body.street, "password":req.body.password}}
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').save(datatostore, function(err, result) {
