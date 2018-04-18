@@ -45,7 +45,7 @@ function popupFeature(e){
       var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + searchterms;
       $.getJSON(url, function(jsondata){
         var htmlstring = addResultTitles(jsondata, e);
-
+        console.log(htmlstring);
         popup
             .setLatLng(e.latlng)
             .setContent(htmlstring)
