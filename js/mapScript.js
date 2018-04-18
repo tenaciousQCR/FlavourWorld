@@ -40,10 +40,29 @@ function highlightFeature(e) {
 }
 
 function popupFeature(e){
-    popup
-        .setLatLng(e.latlng)
-        .setContent('<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../css/popup.css"></head><body id=\'popupBody\'><h1>Recipes</h1><div id=\'popupDiv\'><ol id= \'popupList\'><li><a href="recipe-1.html"><button>Pigs in Blanket</button></a></li><li><a href="recipe-2.html"><button>Goulash</button></a></li><li><a href="recipe-3.html"><button>Cacio e Pepe</button></a></li></ol></div></body></html>')
-        .openOn(mymap);
+    var targetcountry = e.target.name;
+    function getResultsFromYummly(targetcountry){
+      var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + searchterms;
+      $.getJSON(url, function(jsondata){
+        addResultTitles(jsondata);
+      });
+    }
+
+}
+
+function addResultTitles(jsondata){
+  var htmlstring = "";
+  var length = jsondata.matches.length;
+
+  for (var i = 0; i < length; i++){
+    var title = jsondata.matches[i].recipeName;
+    console.log(title);
+    htmlstring += "<li>" + title + "</li>";
+  }
+  popup
+      .setLatLng(e.latlng)
+      .setContent(htmlstring)
+      .openOn(mymap);
 }
 
 
