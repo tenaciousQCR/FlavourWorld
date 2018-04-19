@@ -112,6 +112,13 @@ app.get('/loginPage', function(req, res) {
   res.render('loginPage');
 });
 
+app.get('/recipe', function(req, res){
+  var url = "https://api.yummly.com/v1/api/recipe/" + req.recipeID + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
+  $.getJSON(url, function(jsondata){
+    console.log(JSON.stringify(jsondata));
+  });
+})
+
 //------------------------------------------------------------------------------
 
 app.post('/registeruser', function(req, res) {

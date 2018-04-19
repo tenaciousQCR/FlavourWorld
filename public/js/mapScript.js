@@ -86,10 +86,14 @@ function addResultTitles(jsondata, e){
 }
 
 function getRecipe(button){
-  var url = "https://api.yummly.com/v1/api/recipe/" + button.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
-  $.getJSON(url, function(jsondata){
-    console.log(JSON.stringify(jsondata));
-  });
+  $.ajax({
+        type: 'POST',
+        url: 'recipe',
+        data: { recipeID: button.id},
+        success: function(response) {
+            $('#result').html(response);
+        }
+    });
 }
 //
 // function popupFeature(e){
