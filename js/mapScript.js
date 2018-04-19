@@ -51,7 +51,6 @@ function getResultsFromYummly(targetcountry, e){
   var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry;
   $.getJSON(url, function(jsondata){
     var htmlstring = addResultTitles(jsondata, e);
-    console.log(htmlstring);
     popup
         .setLatLng(e.latlng)
         .setContent(htmlstring)
@@ -60,7 +59,7 @@ function getResultsFromYummly(targetcountry, e){
 }
 
 function addResultTitles(jsondata, e){
-  var htmlstring = "";
+  var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1>";
   var length = jsondata.matches.length;
 
   for (var i = 0; i < length; i++){
