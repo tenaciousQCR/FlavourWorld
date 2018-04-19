@@ -88,7 +88,7 @@ function addResultTitles(jsondata, e){
 function getRecipe(button){
   $.ajax({
         type: 'POST',
-        url: 'recipe',
+        url: 'pages/recipe',
         data: { recipeID: button.id},
         success: function(response) {
             console.log(response);
