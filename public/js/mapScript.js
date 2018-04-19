@@ -2,7 +2,6 @@
 var geojson;
 var popup = L.popup();
 var mymap;
-var jsondata;
 
 //------------------------SYLISTIC CODE-------------------------------
 
