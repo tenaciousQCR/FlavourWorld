@@ -74,20 +74,19 @@ function getResultsFromYummly(targetcountry, e){
 
 //Adds the found recipes from the JSON file to an HTML string and returns it
 function addResultTitles(jsondata, e){
-  var jsondata = jsondata;
   var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1>";
   var length = jsondata.matches.length;
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    console.log(jsondata);
-    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this, jsondata)\">" + title + "</button>";
+    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this)\">" + title + "</button>";
   }
   return htmlstring;
 
 }
 
-function getRecipe(button, jsondata){
+function getRecipe(button){
+  console.log(jsondata);
   var selectedRecipe = jsondata.matches[button].id;
   console.log(selectedRecipe);
 }
