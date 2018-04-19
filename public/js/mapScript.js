@@ -74,7 +74,6 @@ function getResultsFromYummly(targetcountry, e){
 
 //Adds the found recipes from the JSON file to an HTML string and returns it
 function addResultTitles(jsondata, e){
-  var jsondata = jsondata;
   var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1>";
   var length = jsondata.matches.length;
 
