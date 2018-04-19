@@ -2,7 +2,6 @@
 var geojson;
 var popup = L.popup();
 var mymap;
-var jsondata;
 
 //------------------------SYLISTIC CODE-------------------------------
 
@@ -80,6 +79,7 @@ function addResultTitles(jsondata, e){
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
+    console.log(jsondata);
     htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this, jsondata)\">" + title + "</button>";
   }
   return htmlstring;
