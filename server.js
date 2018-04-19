@@ -1,9 +1,9 @@
 //User database
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/users";
-const express = require('express');
-const session = require('express-session');
-const bodyParser = require('body-parser'); //npm install body-parsernpm insta
+const express = require('express'); //npm install express
+const session = require('express-session'); //npm install express-session
+const bodyParser = require('body-parser'); //npm install body-parser
 const app = express();
 app.use(express.static('public'))
 var db;
@@ -58,13 +58,24 @@ app.post('/dologin', function(req, res) {
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
-    if(!result){res.redirect('/loginPage');return}
+    if(!result){
+      res.redirect('/loginPage');
+      return
+    }
+
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
-    if(result.login.password == pword){ req.session.loggedin = true; res.redirect('/') }
+    if(result.login.password == pword){
+      req.session.loggedin = true;
+      console.log("you are logged in");
+      res.redirect('/')
+    }
+
     //otherwise send them back to login
     else{res.redirect('/loginPage')}
   });
 });
+
+//------------------------------------------------------------------------------
 
 app.get('/home', function(req, res) {
   res.render('home');
