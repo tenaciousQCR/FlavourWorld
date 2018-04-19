@@ -64,6 +64,11 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+
+app.get('/loginPage', function(req, res) {
+  res.render('public/loginPage');
+});
+
 //------------------------------------------------------------------------------
 
 app.post('/registeruser', function(req, res) {
