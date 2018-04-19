@@ -66,12 +66,37 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+//Render pages
 app.get('/home', function(req, res) {
   res.render('home');
 });
 
 app.get('/about', function(req, res) {
   res.render('about');
+});
+
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
+app.get('/recipe-1', function(req, res) {
+  res.render('recipe-1');
+});
+
+app.get('/recipe-2', function(req, res) {
+  res.render('recipe-2');
+});
+
+app.get('/recipe-3', function(req, res) {
+  res.render('recipe-3');
+});
+
+app.get('/legal', function(req, res) {
+  res.render('legal');
+});
+
+app.get('/registerPage', function(req, res) {
+  res.render('registerPage');
 });
 
 app.get('/loginPage', function(req, res) {
