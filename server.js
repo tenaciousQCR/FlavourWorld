@@ -78,7 +78,7 @@ app.post('/dologin', function(req, res) {
 
 //Render pages
 app.get('/home', function(req, res) {
-  res.render('pages/home');
+  res.render('views/pages/home');
 });
 
 app.get('/about', function(req, res) {
