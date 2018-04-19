@@ -9,7 +9,7 @@ main {
   width: 50%;
   float:right;
   font-family: 'Poiret One';
-  color: Brown;
+  color: GoldenRod;
   float:right;
   background: Brown;
   font-size: 10pt;
@@ -73,7 +73,7 @@ button {
 }
 
 .Dietary button {
-  background-color: Brown;
+  background-color: GoldenRod;
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
@@ -86,7 +86,7 @@ button {
 
 
 .Continental button {
-  background-color: Brown;
+  background-color: GoldenRod;
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
@@ -99,7 +99,7 @@ button {
 
 
 .Time button {
-  background-color: Brown;
+  background-color: GoldenRod;
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
@@ -111,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: Maroon;
+  background-color: DarkGoldenRod;
 }
 
 .sideButton {
