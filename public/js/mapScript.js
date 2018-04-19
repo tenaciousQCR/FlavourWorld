@@ -3,6 +3,9 @@ var geojson;
 var popup = L.popup();
 var mymap;
 
+//------------------------SYLISTIC CODE-------------------------------
+
+//Applies the chosen styles to each of the country objects on the map
 function style(feature) {
     return {
         fillColor: getColour(feature.properties.continent),
@@ -14,6 +17,7 @@ function style(feature) {
     };
 }
 
+//The associated colours with continents
 function getColour(continent) {
     return continent == "North America" ? '#ff0000' :
            continent == "South America"  ? '#179a13' :
@@ -24,6 +28,7 @@ function getColour(continent) {
                       '#808080';
 }
 
+//When clicked, the country chosen will be highlighted
 function highlightFeature(e) {
     var layer = e.target;
 
@@ -39,12 +44,21 @@ function highlightFeature(e) {
     }
 }
 
+//Unhighlights a feature when clicked off
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+}
+
+//---------------------------POPUP CODE-----------------------------------
+
+//Called when a country is clicked, finds the country that is clicked and passes it to the next function
 function popupFeature(e){
     var targetcountry = e.target.feature.properties.name;
     getResultsFromYummly(targetcountry, e);
 
 }
 
+//Uses the country name to search the Yummly API for recipes and then initiates the popup
 function getResultsFromYummly(targetcountry, e){
   var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry;
   $.getJSON(url, function(jsondata){
@@ -56,13 +70,14 @@ function getResultsFromYummly(targetcountry, e){
   });
 }
 
+//Adds the found recipes from the JSON file to an HTML string and returns it
 function addResultTitles(jsondata, e){
-  var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1>";
+  var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1><form action=\"/quotes\" method=\"POST\">";
   var length = jsondata.matches.length;
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<li>" + title + "</li>";
+    htmlstring += "<button type=\"submit\" value=\"" + jsondata.matches[i].id + "\">" + title + "</button>";
   }
   return htmlstring;
 
@@ -78,10 +93,11 @@ function addResultTitles(jsondata, e){
 
 
 
-function resetHighlight(e) {
-    geojson.resetStyle(e.target);
-}
 
+
+//----------------------------CREATING AND POPULATING MAP---------------------------------
+
+//adds functionality to each feature on the map
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
@@ -90,8 +106,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-
-
+//initiates and populates the map
 $.getJSON('../js/custom.geo.json',function(data){
             mymap = L.map('mapid').setMinZoom(2).setMaxBounds([[90,180], [-90,-179]]).setView([32,-35], 3);
             var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ', maxZoom: 16 });
