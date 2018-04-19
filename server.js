@@ -66,6 +66,9 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+app.get('/', function(req, res) {
+  res.render('home');
+});
 
 app.get('/loginPage', function(req, res) {
   res.render('loginPage');
