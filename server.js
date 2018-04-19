@@ -33,7 +33,7 @@ MongoClient.connect(url, function(err, database){
 app.get('/', function(req, res) {
   //if the user is not logged in redirect them to the login page
   if(!req.session.loggedin){
-    res.redirect('/home');
+    res.redirect('/loginPage');
     return;
   }
 });
@@ -67,6 +67,10 @@ app.post('/dologin', function(req, res) {
 });
 
 //Render pages
+app.get('/', function(req, res) {
+  res.render('home');
+});
+
 app.get('/home', function(req, res) {
   res.render('home');
 });
