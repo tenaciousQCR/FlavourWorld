@@ -67,7 +67,7 @@ app.post('/dologin', function(req, res) {
     if(result.login.password == pword){
       req.session.loggedin = true;
       console.log("you are logged in");
-      loginPage.close();
+      window.close();
     }
 
     //otherwise send them back to login
