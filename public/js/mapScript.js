@@ -86,7 +86,7 @@ function addResultTitles(jsondata, e){
 }
 
 function getRecipe(button){
-  console.log(this.id);
+  console.log(button.id);
 }
 //
 // function popupFeature(e){
