@@ -80,13 +80,13 @@ function addResultTitles(jsondata, e){
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this)\">" + title + "</button>";
+    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this, jsondata)\">" + title + "</button>";
   }
   return htmlstring;
 
 }
 
-function getRecipe(button){
+function getRecipe(button, jsondata){
   var selectedRecipe = jsondata.matches[button].id;
   console.log(selectedRecipe);
 }
