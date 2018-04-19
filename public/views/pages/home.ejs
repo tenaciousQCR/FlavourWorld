@@ -1,19 +1,14 @@
 <!doctype html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="js/leaflet-geojson-selector.js"></script>
-<script src="js/mapScript.js"></script>
 
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="js/leaflet-geojson-selector.js"></script>
+    <script src="js/mapScript.js"></script>
     <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="css/leaflet-geojson-selector.css" />
-    <meta name="viewport" content="width=device-width">
+    <% include ../partials/head %>
   </head>
 
   <body>
@@ -22,11 +17,7 @@
 <!-- HEADER STARTS -->
 
   <header class="custom-grid-container">
-    <div>
-      <a href="home"  id="logoLink">
-        <img src="images/logo.png" id="logoImage">
-      </a>
-    </div>
+    <% include ../partials/header %>
   </header>
 
 
@@ -136,11 +127,7 @@
 <!-- FOOTER STARTS -->
 
     <footer id="PageFooter" class="custom-grid-container">
-      <div class="grid-100">
-          <a href="legal"><button>Legal</button></a>
-          <a href="about"><button class="middleButton">About</button></a>
-          <a href="contact"><button>Contact</button></a>
-      </div>
+      <% include ../partials/footer %>
     </footer>
 
 
