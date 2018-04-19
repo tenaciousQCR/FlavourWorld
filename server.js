@@ -78,39 +78,39 @@ app.post('/dologin', function(req, res) {
 
 //Render pages
 app.get('/home', function(req, res) {
-  res.render('home');
+  res.render('pages/home');
 });
 
 app.get('/about', function(req, res) {
-  res.render('about');
+  res.render('pages/about');
 });
 
 app.get('/contact', function(req, res) {
-  res.render('contact');
+  res.render('pages/contact');
 });
 
 app.get('/recipe-1', function(req, res) {
-  res.render('recipe-1');
+  res.render('pages/recipe-1');
 });
 
 app.get('/recipe-2', function(req, res) {
-  res.render('recipe-2');
+  res.render('pages/recipe-2');
 });
 
 app.get('/recipe-3', function(req, res) {
-  res.render('recipe-3');
+  res.render('pages/recipe-3');
 });
 
 app.get('/legal', function(req, res) {
-  res.render('legal');
+  res.render('pages/legal');
 });
 
 app.get('/registerPage', function(req, res) {
-  res.render('registerPage');
+  res.render('pages/registerPage');
 });
 
 app.get('/loginPage', function(req, res) {
-  res.render('loginPage');
+  res.render('pages/loginPage');
 });
 
 app.post('/recipe', function(req, res){
