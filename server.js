@@ -3,9 +3,21 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/users";
 const express = require('express');
 const session = require('express-session');
+const bodyParser = require('body-parser'); //npm install body-parsernpm insta
 const app = express();
 app.use(express.static('public'))
 var db;
+
+//this tells express we are using sesssions. These are variables that only belong to one user of the site at a time.
+app.use(session({ secret: 'example' }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+var db;
+
+//------------------------------------------------------------------------------
 
 MongoClient.connect(url, function(err, database){
  if(err) throw err;

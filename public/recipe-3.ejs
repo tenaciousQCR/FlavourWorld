@@ -13,10 +13,12 @@
 
   <body>
 
+
 <!-- HEADER STARTS -->
+
   <header class="custom-grid-container">
     <div >
-      <a href="home.html">
+      <a href="home.ejs">
         <img src="images/logo.png" id="logoImage">
       </a>
     </div>
@@ -29,15 +31,15 @@
       <div id="optionsBar">
         <button class="loginButton" onclick="login_menu()">Profile</button>
         <div class="profileMenu">
-           <a href="loginPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           <a href="loginPage.ejs" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
            target="_blank">
            <button>Login</button></a>
-           <a href="registerPage.html" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+           <a href="registerPage.ejs" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
            target="_blank"><button>Register</button> </a>
         </div>
        </div>
         <div class="Title grid-100 mobile-gride-50">
-          <h1 id="recipeTitle">Beef goulash soup</h1>
+          <h1 id="recipeTitle">Cacio e Pepe</h1>
         </div>
 
         <div class="recipeImg">
@@ -47,25 +49,18 @@
         <div class="contentRecipe">
           <h2 id="dietaryNotes">Dietary Notes</h2>
           <p>
-            #european #hungarian #peanut_free
+            #european #italian #gluten_free #peanut_free #vegetarian
           </p>
         </div>
 
         <div class="contentRecipe">
           <h2 id="ingredientsList">Ingredients</h2>
           <ul>
-            <li>1 tbsp rapeseed oil</li>
-            <li>1 large onion, halved and sliced</li>
-            <li>3 garlic cloves, sliced</li>
-            <li>200g extra lean stewing beef, finely diced</li>
-            <li>1 tsp caraway seeds</li>
-            <li>2 tsp smoked paprika</li>
-            <li>400g chopped tomatoes</li>
-            <li>600ml beef stock</li>
-            <li>1 medium sweet potato, peeled and diced</li>
-            <li>1 green pepper, deseeded and diced</li>
-            <li>150g pot natural bio yogurt (optional)</li>
-            <li>good handful parsley, chopped (optional)</li>
+            <li>Kosher salt</li>
+            <li>egg taggliolini, bucatini, or spaghetti</li>
+            <li>3 tsp. freshly cracked black pepper</li>
+            <li>3/4 cup finely grated Grana Padano or Parmesan</li>
+            <li>1/3 cup finely grated pecorino</li>
           </ul>
         </div>
 
@@ -73,37 +68,42 @@
           <h2 id="preparationSteps">Preparation</h2>
           <h3>Step 1</h3>
           <p>
-            Heat the oil in a large pan, add the onion and garlic,
-            and fry for 5 mins until starting to colour.
-            Stir in the beef, increase the heat and fry, stirring, to brown it.
+            Bring 3 quarts water to boil in a 5-qt. pot.
+            Season with salt; add pasta and cook, stirring occasionally,
+            until about 2 minutes before tender.
+            Drain, reserving 3/4 cup pasta cooking water.
           </p>
           <h3>Step 2</h3>
           <p>
-            Add the caraway and paprika, stir well,
-            then tip in the tomatoes and stock.
-            Cover and leave to cook gently for 30 mins.
+            Meanwhile, melt 2 tbsp. butter in a large heavy skillet
+            over medium heat. Add pepper and cook, swirling pan, until toasted,
+            for about 1 minute.
           </p>
           <h3>Step 3</h3>
           <p>
-            Stir in the sweet potato and green pepper,
-            cover and cook for 20 mins more or until tender.
-            Allow to cool a little, then serve topped with the yogurt and parsley
-            (if the soup is too hot, it will kill the beneficial bacteria in the yogurt).
+            Add 1/2 cup reserved pasta water to skillet and bring to a simmer.
+            Add pasta and the remaining butter. Reduce heat to low and add Grana Padano,
+            stirring and tossing with tongs until melted.
+            Remove pan from heat; add Pecorino, stirring and tossing until cheese melts,
+            the sauce coats the pasta, and pasta is al dente.
+            (Add more pasta water if sauce seems dry.)
+            Transfer pasta to warm bowls and serve.
           </p>
         </div>
 
-        <a href="review.html"><button>Your Review!</button></a>
+        <a href="review.ejs"><button>Your Review!</button></a>
 
         <div class="contentRecipe">
           <h2 id="review">User Reviews</h2>
           <p>
-            Hungarians unite! Bojler eladó!
+            Nice little recipe, though it isn't perfectly true to the name
+            Cacio e Pepe, but it doesn't matter, so 4/5 stars fro me.
           </p>
           <p>
-            Adok érte ket szamarat!
+            Thanks for the recipe, it was nice and easy to follow!
           </p>
           <p>
-            What kind of language is that?
+            I wish they added english names too...
           </p>
         </div>
 
@@ -111,12 +111,14 @@
 
   </body>
 
+
 <!-- FOOTER STARTS -->
+
  <footer id="PageFooter" class="custom-grid-container">
    <div class="grid-100">
-       <a href="legal.html"><button>Legal</button></a>
-       <a href="about.html"><button>About</button></a>
-       <a href="contact.html"><button>Contact</button></a>
+       <a href="legal.ejs"><button>Legal</button></a>
+       <a href="about.ejs"><button>About</button></a>
+       <a href="contact.ejs"><button>Contact</button></a>
    </div>
   </footer>
 </html>
