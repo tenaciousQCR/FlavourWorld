@@ -60,6 +60,7 @@ app.post('/dologin', function(req, res) {
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){
       res.redirect('/loginPage');
+      console.log("you are not logged in");
       return
     }
 
@@ -71,18 +72,17 @@ app.post('/dologin', function(req, res) {
     }
 
     //otherwise send them back to login
-    else{res.redirect('/loginPage')}
+    else{
+      console.log("you are damned");
+      res.redirect('/loginPage')
+    }
   });
 });
 
-<<<<<<< HEAD
-//------------------------------------------------------------------------------
-=======
 //Render pages
 app.get('/', function(req, res) {
   res.render('home');
 });
->>>>>>> bfb0eb94aa329e26f622cc85b1ad7dd47aab6b6b
 
 app.get('/home', function(req, res) {
   res.render('home');
