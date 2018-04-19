@@ -37,7 +37,8 @@
       <button class="sideButton" onclick="menu_toggle()">☰</button>
       <button class="loginButton" onclick="login_menu()">Profile</button>
       <div class="profileMenu">
-         <a href="loginPage" target="_blank">
+         <a href="loginPage"  onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+          target="_blank">
          <button>Login</button></a>
          <a href="registerPage" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
          target="_blank"><button>Register</button> </a>
