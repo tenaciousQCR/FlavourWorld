@@ -67,6 +67,7 @@ app.post('/dologin', function(req, res) {
     if(result.login.password == pword){
       req.session.loggedin = true;
       console.log("you are logged in");
+      res.redirect("/home");
     }
 
     //otherwise send them back to login
