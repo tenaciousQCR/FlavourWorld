@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('public'))
 var db;
 
-app.set('views', path.join(__dirname, '/public'));
+app.set('views', __dirname + '/public');
 
 //this tells express we are using sesssions. These are variables that only belong to one user of the site at a time.
 app.use(session({ secret: 'example' }));
