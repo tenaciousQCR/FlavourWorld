@@ -33,7 +33,7 @@ MongoClient.connect(url, function(err, database){
 app.get('/', function(req, res) {
   //if the user is not logged in redirect them to the login page
   if(!req.session.loggedin){
-    res.redirect('/loginPage');
+    res.redirect('/home');
     return;
   }
 });
@@ -75,7 +75,14 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+<<<<<<< HEAD
 //------------------------------------------------------------------------------
+=======
+//Render pages
+app.get('/', function(req, res) {
+  res.render('home');
+});
+>>>>>>> bfb0eb94aa329e26f622cc85b1ad7dd47aab6b6b
 
 app.get('/home', function(req, res) {
   res.render('home');
@@ -83,6 +90,30 @@ app.get('/home', function(req, res) {
 
 app.get('/about', function(req, res) {
   res.render('about');
+});
+
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
+app.get('/recipe-1', function(req, res) {
+  res.render('recipe-1');
+});
+
+app.get('/recipe-2', function(req, res) {
+  res.render('recipe-2');
+});
+
+app.get('/recipe-3', function(req, res) {
+  res.render('recipe-3');
+});
+
+app.get('/legal', function(req, res) {
+  res.render('legal');
+});
+
+app.get('/registerPage', function(req, res) {
+  res.render('registerPage');
 });
 
 app.get('/loginPage', function(req, res) {
@@ -107,6 +138,6 @@ var datatostore = {
     if (err) throw err;
     console.log('saved to database')
     //when complete redirect to the index
-    res.redirect('/')
+    res.redirect('/loginPage')
   })
 });

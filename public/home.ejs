@@ -23,7 +23,7 @@
 
   <header class="custom-grid-container">
     <div>
-      <a href="home.ejs"  id="logoLink">
+      <a href="home"  id="logoLink">
         <img src="images/logo.png" id="logoImage">
       </a>
     </div>
@@ -37,9 +37,10 @@
       <button class="sideButton" onclick="menu_toggle()">☰</button>
       <button class="loginButton" onclick="login_menu()">Profile</button>
       <div class="profileMenu">
-         <a href="loginPage" target="_blank">
+         <a href="loginPage"  onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+          target="_blank">
          <button>Login</button></a>
-         <a href="registerPage.ejs" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
+         <a href="registerPage" onclick="return !window.open(this.href, 'somesite', 'width=500,height=500')"
          target="_blank"><button>Register</button> </a>
       </div>
       <div class="searchbox" id='SiteNavigation'>
@@ -137,9 +138,9 @@
 
     <footer id="PageFooter" class="custom-grid-container">
       <div class="grid-100">
-          <a href="legal.ejs"><button>Legal</button></a>
-          <a href="about.ejs"><button class="middleButton">About</button></a>
-          <a href="contact.ejs"><button>Contact</button></a>
+          <a href="legal"><button>Legal</button></a>
+          <a href="about"><button class="middleButton">About</button></a>
+          <a href="contact"><button>Contact</button></a>
       </div>
     </footer>
 
