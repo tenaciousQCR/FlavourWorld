@@ -70,6 +70,10 @@ app.get('/home', function(req, res) {
   res.render('home');
 });
 
+app.get('/about', function(req, res) {
+  res.render('about');
+});
+
 app.get('/loginPage', function(req, res) {
   res.render('loginPage');
 });
