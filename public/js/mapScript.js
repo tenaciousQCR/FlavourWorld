@@ -86,7 +86,7 @@ function addResultTitles(jsondata, e){
 
 }
 
-function getRecipe(button, jsondata){
+function getRecipe(button){
   var selectedRecipe = jsondata.matches[button].id;
   console.log(selectedRecipe);
 }
