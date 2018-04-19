@@ -2,6 +2,7 @@
 var geojson;
 var popup = L.popup();
 var mymap;
+var jsondata;
 
 //------------------------SYLISTIC CODE-------------------------------
 
@@ -62,6 +63,7 @@ function popupFeature(e){
 function getResultsFromYummly(targetcountry, e){
   var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry;
   $.getJSON(url, function(jsondata){
+    jsondata = jsondata;
     var htmlstring = addResultTitles(jsondata, e);
     popup
         .setLatLng(e.latlng)
@@ -78,7 +80,7 @@ function addResultTitles(jsondata, e){
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this, jsondata)\">" + title + "</button>";
+    htmlstring += "<button id=\"" + i + "\" onclick=\"getRecipe(this)\">" + title + "</button>";
   }
   return htmlstring;
 
