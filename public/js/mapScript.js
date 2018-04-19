@@ -91,7 +91,7 @@ function getRecipe(button){
         url: 'recipe',
         data: { recipeID: button.id},
         success: function(response) {
-            $('#result').html(response);
+            console.log(response);
         }
     });
 }
