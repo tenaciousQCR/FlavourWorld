@@ -77,11 +77,6 @@ app.post('/dologin', function(req, res) {
 
 
 //Render pages
-app.get('/', function(req, res) {
-  res.render('home');
-});
->>>>>>> bfb0eb94aa329e26f622cc85b1ad7dd47aab6b6b
-
 app.get('/home', function(req, res) {
   res.render('home');
 });
