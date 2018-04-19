@@ -82,35 +82,35 @@ app.get('/home', function(req, res) {
 });
 
 app.get('/about', function(req, res) {
-  res.render('pages/about');
+  res.render('views/pages/about');
 });
 
 app.get('/contact', function(req, res) {
-  res.render('pages/contact');
+  res.render('views/pages/contact');
 });
 
 app.get('/recipe-1', function(req, res) {
-  res.render('pages/recipe-1');
+  res.render('views/pages/recipe-1');
 });
 
 app.get('/recipe-2', function(req, res) {
-  res.render('pages/recipe-2');
+  res.render('views/pages/recipe-2');
 });
 
 app.get('/recipe-3', function(req, res) {
-  res.render('pages/recipe-3');
+  res.render('views/pages/recipe-3');
 });
 
 app.get('/legal', function(req, res) {
-  res.render('pages/legal');
+  res.render('views/pages/legal');
 });
 
 app.get('/registerPage', function(req, res) {
-  res.render('pages/registerPage');
+  res.render('views/pages/registerPage');
 });
 
 app.get('/loginPage', function(req, res) {
-  res.render('pages/loginPage');
+  res.render('views/pages/loginPage');
 });
 
 app.post('/recipe', function(req, res){
