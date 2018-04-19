@@ -54,6 +54,7 @@ app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.uname;
   var pword = req.body.psw;
+  var window = global; 
 
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
