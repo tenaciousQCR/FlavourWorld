@@ -1,6 +1,6 @@
 //User database
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/users";
+const url = "mongodb://localhost:27017/profiles";
 const express = require('express'); //npm install express
 const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
