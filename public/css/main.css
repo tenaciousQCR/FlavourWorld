@@ -106,7 +106,7 @@ body {
   min-width:100%;
   background-color: White;
   background: url(https://preview.ibb.co/cenYBn/background2.jpg);
-  background-size: auto;
+  background-size: 100%;
   float: center;
   /* bottom: 0; */
 }
