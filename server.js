@@ -116,12 +116,12 @@ app.get('/loginPage', function(req, res) {
 app.post('/findrecipeinfo', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.body.recipe + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
   console.log(url);
-  res.redirect('/recipe?id=' + req.body.recipe);
+  res.redirect('/recipe?id=' + req.body.id);
 })
 
 app.get('/recipe', function(req, res){
-  console.log(req.query.recipe)
-  res.render('pages/recipe-1');
+  console.log(req.query.id)
+  res.render('pages/recipe');
 })
 
 //------------------------------------------------------------------------------

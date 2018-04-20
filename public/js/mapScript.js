@@ -79,7 +79,7 @@ function addResultTitles(jsondata, e){
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<a href=\"/recipe?=" + jsondata.matches[i].id + "\">" + title + "</a>";
+    htmlstring += "<a href=\"/recipe?id=" + jsondata.matches[i].id + "\">" + title + "</a>";
   }
   return htmlstring;
 
