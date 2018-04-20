@@ -95,14 +95,14 @@ function getRecipe(button){
   //       }
   //   });
   var recipe = button.id;
-  console.log("It ran" + recipe);
+  console.log("It ran " + recipe);
   $.post("/recipe",
   {
     recipe : "recipe"
-  },
-  function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
-  });
+  }.done(
+  function(data){
+    alert("This sent data I think " + data);
+  )});
 };
 //
 // function popupFeature(e){
