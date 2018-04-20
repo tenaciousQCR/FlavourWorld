@@ -96,7 +96,7 @@ function getRecipe(button){
         success: function(response) {
             console.log(response);
         }
-        failure: function(response){
+        error: function(response){
           console.log(response);
         }
     });
