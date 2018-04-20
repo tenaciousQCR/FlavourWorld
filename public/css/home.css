@@ -6,11 +6,11 @@ main {
 .searchbox input#search{
   width: 300px;
   height: 50px;
-  background: #2b303b;
+  background: Brown;
   border: none;
   font-size: 10pt;
-  float: left;
-  color: #63717f;
+  float: right;
+  color: GoldenRod;
   padding-left: 45px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
