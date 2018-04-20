@@ -105,7 +105,7 @@ body {
   margin: auto;
   min-width:100%;
   background-color: White;
-  /* background-image: url(../images/wood.png); */
+  background-image: url("background.jpeg");
   float: center;
   /* bottom: 0; */
 }
