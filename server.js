@@ -78,45 +78,45 @@ app.post('/dologin', function(req, res) {
 
 //Render pages
 app.get('/home', function(req, res) {
-  res.render('views/pages/home');
+  res.render('pages/home');
 });
 
 app.get('/about', function(req, res) {
-  res.render('views/pages/about');
+  res.render('pages/about');
 });
 
 app.get('/contact', function(req, res) {
-  res.render('views/pages/contact');
+  res.render('pages/contact');
 });
 
 app.get('/recipe-1', function(req, res) {
-  res.render('views/pages/recipe-1');
+  res.render('pages/recipe-1');
 });
 
 app.get('/recipe-2', function(req, res) {
-  res.render('views/pages/recipe-2');
+  res.render('pages/recipe-2');
 });
 
 app.get('/recipe-3', function(req, res) {
-  res.render('views/pages/recipe-3');
+  res.render('pages/recipe-3');
 });
 
 app.get('/legal', function(req, res) {
-  res.render('views/pages/legal');
+  res.render('pages/legal');
 });
 
 app.get('/registerPage', function(req, res) {
-  res.render('views/pages/registerPage');
+  res.render('pages/registerPage');
 });
 
 app.get('/loginPage', function(req, res) {
-  res.render('views/pages/loginPage');
+  res.render('pages/loginPage');
 });
 
 app.post('/recipe', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.body.recipe + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
   console.log(url);
-  res.redirect('views/pages/legal');
+  res.redirect('pages/legal');
 })
 
 //------------------------------------------------------------------------------
