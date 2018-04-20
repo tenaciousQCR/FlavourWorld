@@ -20,14 +20,6 @@ main {
   border-radius: 5px;
 }
 
-.searchbox .icon {
-  position: absolute;
-  right: 20;
-  margin-left: 17px;
-  margin-bottom: 5px;
-  z-index: 1;
-  color: Brown;
-}
 
 #Page{
   height: 100%;
