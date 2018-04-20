@@ -79,7 +79,7 @@ function addResultTitles(jsondata, e){
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<button id=\"" + jsondata.matches[i].id + "\" onclick=\"getRecipe(this)\">" + title + "</button>";
+    htmlstring += "<a href=\"/recipe?=" + jsondata.matches[i].id + "\">" + title + "</a>";
   }
   return htmlstring;
 
@@ -90,7 +90,7 @@ function getRecipe(button){
   console.log("It ran " + recipe);
   $.ajax({
         type: 'GET',
-        url: '/recipe?id=' + recipe,
+        url: '/recipe',
         success: function() {
             window.console.log('Success');
         },
