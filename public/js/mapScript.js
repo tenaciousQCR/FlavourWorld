@@ -93,11 +93,11 @@ function getRecipe(button){
         type: 'GET',
         url: '/recipe',
         data: {recipe: recipe},
-        success: function(response) {
-            console.log(response);
+        success: function() {
+            window.console.log('Success');
         },
-        error: function(response){
-          console.log(response);
+        error: function(){
+          window.console.log('Failure');
         }
     });
 
