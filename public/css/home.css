@@ -21,9 +21,8 @@ main {
 
 .searchbox .icon {
   position: absolute;
-  right:0;
+  right: 70;
   margin-left: 17px;
-  margin-top: 17px;
   z-index: 1;
   color: Brown;
 }
