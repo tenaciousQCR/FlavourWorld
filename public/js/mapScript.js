@@ -86,22 +86,24 @@ function addResultTitles(jsondata, e){
 }
 
 function getRecipe(button){
-  // $.ajax({
-  //       type: 'POST',
-  //       url: 'views/pages/recipe.ejs',
-  //       data: { recipeID: button.id},
-  //       success: function(response) {
-  //           console.log(response);
-  //       }
-  //   });
   var recipe = button.id;
   console.log("It ran " + recipe);
-  $.post("/recipe",
-  {
-    recipe : "recipe"
-  }).done(function(data){
-    alert("This sent data I think " + data);
-  });
+
+  $.ajax({
+        type: 'POST',
+        url: '/recipe',
+        data: { recipe: recipe},
+        success: function(response) {
+            console.log(response);
+        }
+    });
+
+  // $.post("/recipe",
+  // {
+  //   recipe: "recipe"
+  // }).done(function(data){
+  //   alert("This sent data I think " + data);
+  // });
 };
 //
 // function popupFeature(e){
