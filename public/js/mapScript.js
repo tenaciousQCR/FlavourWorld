@@ -88,11 +88,10 @@ function addResultTitles(jsondata, e){
 function getRecipe(button){
   var recipe = button.id;
   console.log("It ran " + recipe);
-  var data = {'recipe': recipe, 'other': 'some bullshit'}
   $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: '/recipe',
-        data:{data: jsonString},
+        data:{'recipe': recipe, 'other': 'some bullshit'},
         success: function() {
             window.console.log('Success');
         },
