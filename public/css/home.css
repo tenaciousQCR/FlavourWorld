@@ -19,11 +19,10 @@ main {
   border-radius: 5px;
 }
 
-.searchbox .icon{
+.icon{
   float: right;
-  top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
+  margin-bottom: 5px;
+  margin-top: -50px;
   z-index: 1;
   color: Brown;
 }
