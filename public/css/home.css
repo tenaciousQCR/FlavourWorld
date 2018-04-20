@@ -4,7 +4,6 @@ main {
 }
 
 .searchbox input#search{
-  position: relative;
   width: 220px;
   height: 50px;
   background: GoldenRod;
