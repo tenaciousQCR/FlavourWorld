@@ -43,6 +43,18 @@ function menu_toggle(){
     }
 }
 
+$(".loginButton").on("click",function(){
+  $( ".profileMenu" ).show();
+});
+
+$( ".profileMenu" ).hover(
+  function() {
+
+  }, function() {
+    $( ".profileMenu" ).hide();
+  }
+);
+
 function login_menu(){
   if(!loginMenu){
       $(".profileMenu").css("display", "block");
