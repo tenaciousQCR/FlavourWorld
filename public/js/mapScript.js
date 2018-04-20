@@ -91,7 +91,7 @@ function getRecipe(button){
   $.ajax({
         type: 'POST',
         url: '/recipe',
-        data:{'recipe': recipe, 'other': 'some bullshit'},
+        data:{'recipe': recipe},
         success: function() {
             window.console.log('Success');
         },
