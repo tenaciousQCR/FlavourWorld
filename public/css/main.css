@@ -59,6 +59,7 @@ header, footer {
   background-color: GoldenRod;
   padding: 12px 16px;
   display: block;
+  cursor: pointer;
 }
 
 .loginOptions:hover .profileMenu {
