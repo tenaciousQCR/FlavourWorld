@@ -95,7 +95,7 @@ function getRecipe(button){
   //       }
   //   });
   var recipe = button.id;
-
+  console.log("It ran");
   $.post("/recipe",
   {
     recipe : recipe
