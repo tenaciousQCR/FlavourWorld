@@ -86,15 +86,24 @@ function addResultTitles(jsondata, e){
 }
 
 function getRecipe(button){
-  $.ajax({
-        type: 'POST',
-        url: 'views/pages/recipe.ejs',
-        data: { recipeID: button.id},
-        success: function(response) {
-            console.log(response);
-        }
-    });
-}
+  // $.ajax({
+  //       type: 'POST',
+  //       url: 'views/pages/recipe.ejs',
+  //       data: { recipeID: button.id},
+  //       success: function(response) {
+  //           console.log(response);
+  //       }
+  //   });
+  var recipe = button.id;
+
+  $.post("pages/recipe",
+  {
+    recipe : recipe
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+};
 //
 // function popupFeature(e){
 //     var countryname = e.target.feature.properties.name;
