@@ -56,16 +56,16 @@ $( ".profileMenu" ).hover(
 );
 
 
-// function login_menu(){
-//   if(!loginMenu){
-//       $(".profileMenu").css("display", "block");
-//       loginMenu = true;
-//     }
-//     else{
-//       $(".profileMenu").css("display", "none");
-//       loginMenu=false;
-//     }
-// }
+function login_menu(){
+  if(!loginMenu){
+      $(".profileMenu").css("display", "block");
+      loginMenu = true;
+    }
+    else{
+      $(".profileMenu").css("display", "none");
+      loginMenu=false;
+    }
+}
 
 var windowHeight;
 
