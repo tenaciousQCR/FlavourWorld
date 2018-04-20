@@ -43,11 +43,10 @@ function menu_toggle(){
     }
 }
 
-$('.loginButton').click(function(){
-  $('.profileMenu').show();
-  if(e.target.class != "loginButton" {
-    $('.profileMenu').hide();
-  })
+$('.loginButton').mouseout(function() {
+  $('.profileMenu').hide();
+}).click(function(){
+$('.profileMenu').show();
 });
 
 
