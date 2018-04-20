@@ -81,7 +81,7 @@ app.get('/home', function(req, res) {
   res.render('views/pages/home');
 });
 
-app.get('/about', function(req, res) {
+app.post('/about', function(req, res) {
   res.render('views/pages/about');
 });
 
