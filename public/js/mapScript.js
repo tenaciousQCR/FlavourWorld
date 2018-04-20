@@ -98,7 +98,7 @@ function getRecipe(button){
   console.log("It ran" + recipe);
   $.post("/recipe",
   {
-    recipe : recipe
+    recipe : "Hey ho lets go"
   },
   function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
