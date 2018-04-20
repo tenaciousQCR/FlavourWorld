@@ -4,6 +4,7 @@ main {
 }
 
 .searchbox input#search{
+  position: relative;
   width: 220px;
   height: 50px;
   background: GoldenRod;
@@ -19,15 +20,6 @@ main {
   border-radius: 5px;
 }
 
-.searchbox .icon {
-  position: absolute
-  top: 50%;
-  float: right;
-  margin-left: 17px;
-  margin-top: 17px;
-  z-index: 1;
-  color: Brown;
-}
 
 #Page{
   height: 100%;
