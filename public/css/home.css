@@ -20,12 +20,12 @@ main {
 }
 
 .icon{
-  position: absolute
   float: right;
   margin-bottom: 5px;
   margin-top: -50px;
   z-index: 1;
   color: Brown;
+  position: absolute
 }
 
 #Page{
