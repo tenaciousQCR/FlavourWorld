@@ -113,14 +113,14 @@ app.get('/loginPage', function(req, res) {
   res.render('pages/loginPage');
 });
 
-app.post('/recipe', function(req, res){
+app.post('/findrecipeinfo', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.body.recipe + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
   console.log(url);
-  res.redirect('/generaterecipe');
+  res.redirect('/recipe?id=' + req.body.recipe);
 })
 
-app.get('/generaterecipe', function(req, res){
-  res.render('pages/legal');
+app.get('/recipe', function(req, res){
+  res.render('pages/recipe-1');
 })
 
 //------------------------------------------------------------------------------
