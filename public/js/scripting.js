@@ -43,14 +43,17 @@ function menu_toggle(){
     }
 }
 
-$('.profileMenu').mouseout(function() {
-  $('.profileMenu').hide();
+$('.loginButton').click(function(){
+  $('.profileMenu').show();
 });
 
- $('.loginButton').click(function(){
-$('.profileMenu').show();
-});
+$( ".profileMenu" ).hover(
+  function() {
 
+  }, function() {
+    $( ".profileMenu" ).hide();
+  }
+);
 
 
 // function login_menu(){
