@@ -99,10 +99,9 @@ function getRecipe(button){
   $.post("/recipe",
   {
     recipe : "recipe"
-  }.done(
-  function(data){
+  }).done(function(data){
     alert("This sent data I think " + data);
-  )});
+  )};
 };
 //
 // function popupFeature(e){
