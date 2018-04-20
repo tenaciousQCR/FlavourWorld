@@ -43,7 +43,7 @@ function menu_toggle(){
     }
 }
 
-$(".loginButton").on("click",function(){
+$(".loginButton").on("click", function(){
   $( ".profileMenu" ).show();
 });
 
@@ -55,16 +55,16 @@ $( ".profileMenu" ).hover(
   }
 );
 
-function login_menu(){
-  if(!loginMenu){
-      $(".profileMenu").css("display", "block");
-      loginMenu = true;
-    }
-    else{
-      $(".profileMenu").css("display", "none");
-      loginMenu=false;
-    }
-}
+// function login_menu(){
+//   if(!loginMenu){
+//       $(".profileMenu").css("display", "block");
+//       loginMenu = true;
+//     }
+//     else{
+//       $(".profileMenu").css("display", "none");
+//       loginMenu=false;
+//     }
+// }
 
 var windowHeight;
 
