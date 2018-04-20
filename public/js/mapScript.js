@@ -89,7 +89,7 @@ function getRecipe(button){
   var recipe = button.id;
   console.log("It ran " + recipe);
   $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: '/recipe',
         data:{'recipe': recipe},
         success: function() {
