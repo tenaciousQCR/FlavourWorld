@@ -92,7 +92,7 @@ function getRecipe(button){
   $.ajax({
         type: 'GET',
         url: '/recipe',
-        data:data
+        data:data,
         success: function() {
             window.console.log('Success');
         },
