@@ -90,7 +90,7 @@ function getRecipe(button){
   console.log("It ran " + recipe);
   $.ajax({
         type: 'POST',
-        url: '/recipe',
+        url: '/findrecipeinfo',
         data:{'recipe': recipe},
         success: function() {
             window.console.log('Success');
