@@ -8,6 +8,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: DarkGoldenRod;
+}
+
 body{
   height: 2000px
 }

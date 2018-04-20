@@ -2,6 +2,10 @@ main {
   height: 800px;
 }
 
+button:hover {
+    background-color: DarkGoldenRod;
+}
+
 .checked {
   color: orange;
 }
