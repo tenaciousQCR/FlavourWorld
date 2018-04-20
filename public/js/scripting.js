@@ -43,9 +43,11 @@ function menu_toggle(){
     }
 }
 
-$('.loginButton').mouseout(function() {
+$('.profileMenu').mouseout(function() {
   $('.profileMenu').hide();
-}).click(function(){
+});
+
+ $('.loginButton').click(function(){
 $('.profileMenu').show();
 });
 
