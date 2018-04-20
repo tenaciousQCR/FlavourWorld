@@ -96,6 +96,9 @@ function getRecipe(button){
         success: function(response) {
             console.log(response);
         }
+        failure: function(response){
+          console.log(response);
+        }
     });
 
   // $.post("/recipe",
