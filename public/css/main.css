@@ -105,7 +105,7 @@ body {
   margin: auto;
   min-width:100%;
   background-color: White;
-  background-image: url("background.jpeg");
+  background: url(https://s3.amazonaws.com/Syntaxxx/background-gold-bokeh.jpg);
   float: center;
   /* bottom: 0; */
 }
