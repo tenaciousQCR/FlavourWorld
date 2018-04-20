@@ -96,7 +96,7 @@ function getRecipe(button){
   //   });
   var recipe = button.id;
 
-  $.post("pages/recipe",
+  $.post("/recipe",
   {
     recipe : recipe
   },
