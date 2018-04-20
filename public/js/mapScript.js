@@ -100,6 +100,7 @@ function getRecipe(button){
   {
     recipe : recipe
   },
+  console.log("This ran too");
   function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
   });
