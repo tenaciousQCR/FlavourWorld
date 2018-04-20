@@ -12,6 +12,7 @@ main {
   float: right;
   color: GoldenRod;
   padding-left: 40px;
+  margin-bottom: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
