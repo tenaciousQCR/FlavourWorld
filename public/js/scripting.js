@@ -43,12 +43,13 @@ function menu_toggle(){
     }
 }
 
-$('.profileMenu').mouseout(function() {
-  $('.profileMenu').hide();
+$('.loginButton').click(function(){
+  $('.profileMenu').show();
 })
-  $('.loginButton').click(function(){
-$('.profileMenu').show();
+$('.loginButton a').mouseout(function() {
+  $('.profileMenu').hide();
 });
+
 
 
 // function login_menu(){
