@@ -23,8 +23,8 @@ main {
   position: absolute
   top: 50%;
   float: right;
-  margin-bottom: 5px;
-  margin-top: -50px;
+  margin-left: 17px;
+  margin-top: 17px;
   z-index: 1;
   color: Brown;
 }
