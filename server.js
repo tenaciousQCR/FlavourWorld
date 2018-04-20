@@ -114,7 +114,7 @@ app.get('/loginPage', function(req, res) {
 });
 
 app.post('/recipe', function(req, res){
-  var url = "https://api.yummly.com/v1/api/recipe/" + recipe + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
+  var url = "https://api.yummly.com/v1/api/recipe/" + req + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827"
   console.log(url);
   res.render('views/pages/recipe');
   // $.getJSON(url, function(jsondata){
