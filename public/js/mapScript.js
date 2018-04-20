@@ -95,12 +95,11 @@ function getRecipe(button){
   //       }
   //   });
   var recipe = button.id;
-  console.log("It ran");
+  console.log("It ran" + recipe);
   $.post("/recipe",
   {
     recipe : recipe
   },
-  console.log("This ran too");
   function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
   });
