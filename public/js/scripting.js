@@ -46,7 +46,7 @@ function menu_toggle(){
 $('.loginButton').click(function(){
   $('.profileMenu').show();
 })
-$('.loginButton a').mouseout(function() {
+$(document).click(function() {
   $('.profileMenu').hide();
 });
 
