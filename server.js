@@ -120,6 +120,7 @@ app.post('/findrecipeinfo', function(req, res){
 })
 
 app.get('/recipe', function(req, res){
+  console.log(req.query.id)
   res.render('pages/recipe-1');
 })
 
