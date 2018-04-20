@@ -43,7 +43,7 @@ function menu_toggle(){
     }
 }
 
-$('.loginButton').mouseout(function() {
+$('.loginButton .profileMenu').mouseout(function() {
   $('.profileMenu').hide();
 }).click(function(){
 $('.profileMenu').show();
