@@ -33,7 +33,6 @@ $( window ).resize(function() {
 
 
 function menu_toggle(){
-
     $("#sidebar").animate({width: "toggle", height: "toggle"}, 50);
     if(menuToggled){
       menuToggled = false;
@@ -42,10 +41,6 @@ function menu_toggle(){
       menuToggled = true;
     }
 }
-
-$('.loginButton').click(function(){
-  $('.profileMenu').show();
-});
 
 $( ".profileMenu" ).hover(
   function() {
