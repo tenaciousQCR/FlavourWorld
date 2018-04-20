@@ -101,7 +101,7 @@ function getRecipe(button){
     recipe : "recipe"
   }).done(function(data){
     alert("This sent data I think " + data);
-  )};
+  });
 };
 //
 // function popupFeature(e){
