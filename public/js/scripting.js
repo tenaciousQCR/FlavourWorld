@@ -45,9 +45,9 @@ function menu_toggle(){
 
 $('.loginButton').click(function(){
   $('.profileMenu').show();
-})
-$(document).click(function() {
-  $('.profileMenu').hide();
+  if(e.target.class != "loginButton" {
+    $('.profileMenu').hide();
+  })
 });
 
 
