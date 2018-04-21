@@ -106,7 +106,7 @@ body {
   min-width:100%;
   background-color: White;
   /* background: url(https://preview.ibb.co/d5gqP7/background1.jpg); */
-  background: url(background.jpeg);
+  background-image: url("wood.png");
   background-size: auto;
   float: center;
   /* bottom: 0; */
