@@ -57,43 +57,24 @@
 
         <div class="contentRecipe">
           <h2 id="preparationSteps">Preparation</h2>
-          <h3>Step 1</h3>
+          <h3>Prep Time</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            <%= jsonData.totalTime %>
           </p>
-          <h3>Step 2</h3>
+          <h3>Servings</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            <%= jsonData.yield %>
           </p>
-          <h3>Step 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <h3>Step 7</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <h3 href=<%= jsonData.source.sourceRecipeURL %>>Link to Instructions</h3>
         </div>
 
         <div class="contentRecipe">
           <h2 id="dietaryNotes">Dietary Notes</h2>
           <ul>
           <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
-            <p>
+            <li>
               <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%>
-            <p>
+            </li>
           <% }); %>
           </ul>
         </div>
