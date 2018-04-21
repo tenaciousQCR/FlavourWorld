@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: AntiqueWhite;
+  /*background-color: AntiqueWhite;*/
 }
 
 
@@ -39,7 +39,7 @@ input[type=text], input[type=password] {
 
 /* Login Button */
 
-button {
+.submitButton {
     background-color: Brown;
     color: White;
     font-family: 'Poiret One';
@@ -50,7 +50,7 @@ button {
     width: 100%;
 }
 
-button:hover {
+.submitButton:hover {
     background-color: Maroon;
 }
 
@@ -58,6 +58,11 @@ button:hover {
     width: auto;
     padding: 10px 18px;
     background-color: Brown;
+    color: White;
+    font-family: 'Poiret One';
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
 }
 
 
