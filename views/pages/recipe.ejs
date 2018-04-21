@@ -40,7 +40,7 @@
         </div>
 
         <div class="recipeImg">
-          <img src=<%=jsonData.images.hostedLargeUrl%> id="recipeImage">
+          <img src="images/PiB.jpg" id="recipeImage">
         </div>
 
         <div class="contentRecipe">
@@ -58,12 +58,13 @@
 
         <div class="contentRecipe">
           <h2 id="ingredientsList">Ingredients</h2>
+
           <ul>
-            <li>Anti-Matter</li>
-            <li>Gaff</li>
-            <li>Goof</li>
-            <li>Spoof</li>
-            <li>Harambe tears</li>
+            <% jsonData.ingredientLines.forEach(function(ingredient) { %>
+            <li>
+              <%= ingredient %>
+            </li>
+            <% }); %>
           </ul>
         </div>
 
