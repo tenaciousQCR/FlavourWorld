@@ -7,6 +7,13 @@ var jsondata;
 var meat = true;
 var gluten = true;
 var dairy = true;
+var egg = true;
+var fish = true;
+var shellfish = true;
+var soy = true;
+var sugar = true;
+var sesame = true;
+var nuts = true;
 //continental restrictions
 var asia = true;
 var africa = true;
