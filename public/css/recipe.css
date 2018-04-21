@@ -13,11 +13,11 @@ button:hover {
 }
 
 body{
-  height: 2000px
+  height: auto;
 }
 
 main {
-  height: 2400px;
+  height: auto;
 }
 
 #contentRecipe {
