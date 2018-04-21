@@ -44,17 +44,6 @@
         </div>
 
         <div class="contentRecipe">
-          <h2 id="dietaryNotes">Dietary Notes</h2>
-          <ul>
-          <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
-            <p>
-              <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%> 
-            <p>
-          <% }); %>
-          </ul>
-        </div>
-
-        <div class="contentRecipe">
           <h2 id="ingredientsList">Ingredients</h2>
 
           <ul>
@@ -96,6 +85,17 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+        </div>
+
+        <div class="contentRecipe">
+          <h2 id="dietaryNotes">Dietary Notes</h2>
+          <ul>
+          <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
+            <p>
+              <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%>
+            <p>
+          <% }); %>
+          </ul>
         </div>
 
         <a href="review"><button>Your Review!</button></a>
