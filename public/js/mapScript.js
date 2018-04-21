@@ -3,6 +3,25 @@ var geojson;
 var popup = L.popup();
 var mymap;
 var jsondata;
+//dietary restrictions
+var meat = true;
+var gluten = true;
+var dairy = true;
+//continental restrictions
+var asia = true;
+var africa = true;
+var northAmerica = true;
+var southAmerica = true;
+var antartica = true;
+var europe = true;
+var oceania = true;
+//time restrictions
+var breakfast = true;
+var brunch = true;
+var lunch = true;
+var dinner = true;
+var snack = true;
+
 
 //------------------------SYLISTIC CODE-------------------------------
 
@@ -86,7 +105,7 @@ function addResultTitles(jsondata, e){
 
 }
 
-
+//------------------------------------Filters-------------------------------------
 
 
 
