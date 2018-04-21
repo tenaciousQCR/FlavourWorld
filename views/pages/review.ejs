@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/review.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <!-- HEADER STARTS -->
+
+    <header class="custom-grid-container">
+      <% include ../partials/header %>
+    </header>
+
+
+<!-- MAIN STARTS -->
+
+    <main id="Page" class="grid-container">
+      <div id="optionsBar">
+        <button class="loginButton" onclick="login_menu()">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage">
+           <button>Login</button></a>
+           <a href="registerPage">
+           <button>Register</button> </a>
+        </div>
+       </div>
+      <div>
+        <h2>Review</h2>
+        <p>
+          This recipe was really easy to understand and the food is delicious, but the ingredients were a bit hard
+          to get hold of, maybe "substitute" ingredients addition could be implemented.
+        </p>
+      </div>
+      <div>
+        <p>
+          <img src="images/star-empty-single.png" id="star1">
+          <img src="images/star-empty-single.png" id="star2">
+          <img src="images/star-empty-single.png" id="star3">
+          <img src="images/star-empty-single.png" id="star4">
+          <img src="images/star-empty-single.png" id="star5">
+          <button id="submitButton">Submit</button>
+        </p>
+      </div>
+    </main>
+
+
+<!-- FOOTER STARTS -->
+
+    <footer id="PageFooter" class="custom-grid-container">
+      <% include ../partials/footer %>
+    </footer>
+
+
+<!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/starrating.js"></script>
+    <script src="js/scripting.js"></script>
+  </body>
+</html>

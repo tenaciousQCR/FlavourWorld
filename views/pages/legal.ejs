@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/legal.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+
+<!-- HEADER STARTS -->
+
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
+
+
+<!-- MAIN STARTS -->
+    <main id="Page" class="grid-container">
+
+      <div id="optionsBar">
+        <button class="loginButton" onclick="login_menu()">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage">
+           <button>Login</button></a>
+           <a href="registerPage">
+           <button>Register</button> </a>
+        </div>
+       </div>
+
+      <div>
+        <h2>Legal</h2>
+        <p>This end user license agreement (“EULA”) forms a binding contract between you and FLAVOURWORLD.COM Apps Ltd, a Scottish company with an address at 272 Bath Street, Glasgow, G2 4JR, United Kingdom (“FLAVOURWORLD.COM”). This EULA governs your download and/or use of the executable code for FLAVOURWORLD.COM’ mobile browser software application(s), however branded, and including any update or upgrade thereto (“Software”).</p>
+        <h2>Terms &amp; Conditions</h2>
+        <p>
+          <b>1. This is a contract.</b>
+          This EULA constitutes a contract between you and FLAVOURWORLD.COM. You may not use the Software if you do not accept the terms in this EULA. By downloading and/or using the Software, you agree to be bound by all the terms and conditions set forth in this EULA. If you are under sixteen (16) years of age, or at least sixteen (16) years of age but a minor where you live, you must have your parent or legal guardian accept this EULA on your behalf and approve your use of the Software.
+        </p>
+        <p>
+          <b>2. You are only granted a limited license to use the Software.</b>
+          Subject to the terms and conditions of this EULA, FLAVOURWORLD.COM hereby grants you a personal, limited, non-exclusive, non-transferable, non-sublicensable license to use the executable code version of the Software solely as installed on your mobile Internet enabled device. You may only use the Software as expressly authorized in this EULA.
+        </p>
+      </div>
+    </main>
+
+
+<!-- FOOTER STARTS -->
+
+    <footer id="PageFooter" class="custom-grid-container">
+      <% include ../partials/footer %>
+    </footer>
+
+
+<!--JS-->
+
+    <script src="js/scripting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+
+#popupList{
+  align-self: stretch;
+}
+
+#mainDiv{
+  height:100 px;
+  width: 300 px;
+  background-color: white;
+}
+
+
+
+.leaflet-popup-content-wrapper{
+    background: #e93434;
+    color: #ffffff;
+}
+
+.leaflet-popup-content{
+    padding: 6px;
+    align-items: flex-start;
+}

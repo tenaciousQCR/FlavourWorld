@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripting.js"></script>
+  </head>
+
+  <body>
+
+
+<!-- HEADER STARTS -->
+
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
+
+
+<!-- MAIN STARTS -->
+
+    <main id="Page" class="grid-container">
+      <div id="optionsBar">
+        <button class="loginButton" onclick="login_menu()">Profile</button>
+        <div class="profileMenu">
+           <a href="loginPage">
+           <button>Login</button></a>
+           <a href="registerPage">
+           <button>Register</button> </a>
+        </div>
+       </div>
+        <div class="Title grid-100 mobile-gride-50">
+          <h1 id="recipeTitle">Pigs in Blankets</h1>
+        </div>
+
+        <div class="recipeImg">
+          <img src="images/PiB.jpg" id="recipeImage">
+        </div>
+
+        <div class="contentRecipe">
+          <h2 id="dietaryNotes">Dietary Notes</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="contentRecipe">
+          <h2 id="ingredientsList">Ingredients</h2>
+          <ul>
+            <li>Anti-Matter</li>
+            <li>Gaff</li>
+            <li>Goof</li>
+            <li>Spoof</li>
+            <li>Harambe tears</li>
+          </ul>
+        </div>
+
+        <div class="contentRecipe">
+          <h2 id="preparationSteps">Preparation</h2>
+          <h3>Step 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h3>Step 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h3>Step 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <h3>Step 7</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <a href="review"><button>Your Review!</button></a>
+
+        <div class="contentRecipe">
+          <h2 id="review">User Reviews</h2>
+          <p>
+            I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
+            they did it back in the days...
+          </p>
+          <p>
+            Great dish. I'd recommend adding some fennel seeds to the tears and
+            letting them marinade for a couple hours. The fennel will fight off
+            the tears' bitter aftertaste!
+          </p>
+          <p>
+            I honestly thought this was a news website. What's with the food stuff?
+          </p>
+        </div>
+
+    </main>
+
+
+
+
+<!-- FOOTER STARTS -->
+
+  <footer id="PageFooter" class="custom-grid-container">
+   <% include ../partials/footer %>
+  </footer>
+  </body>
+</html>

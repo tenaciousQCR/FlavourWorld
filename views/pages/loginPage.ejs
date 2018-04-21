@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/loginPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<!-- HEADER STARTS -->
+
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
+
+  <main id="Page" class="grid-container">
+    <form action="/dologin" method="POST">
+
+      <!--Placeholder for login default image-->
+
+      <div class="imgcontainer">
+        <img src="images/loginImg.png" alt="Avatar" class="avatar">
+      </div>
+
+    <!--Username and password input boxes -->
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="submitButton">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+    <!--Here the cancel button should close the form-->
+
+      <div class="container">
+        <a href="home">
+        <button type="button" class="cancelbtn">Cancel</button>
+      </a>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </main>
+
+<footer id="PageFooter" class="custom-grid-container">
+  <% include ../partials/footer %>
+</footer>
+
+</html>
