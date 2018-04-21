@@ -115,8 +115,7 @@ app.get('/loginPage', function(req, res) {
 
 app.get('/recipe', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.query.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827";
-  var json_obj = JSON.parse(Get(url));
-console.log("this is the author name: "+json_obj.author_name);
+  var json_obj = getRecipeJson(url);
   res.render('pages/recipe', {
     json: json_obj
   });
@@ -144,9 +143,10 @@ var datatostore = {
   })
 });
 
-function Get(url){
-    var Httpreq = new XMLHttpRequest(); // a new request
-    Httpreq.open("GET",url,false);
-    Httpreq.send(null);
-    return Httpreq.responseText;
+function getRecipeJson(url){
+  var json_obj;
+    $.getJSON(url, function(jsonData){
+      json_obj = jsonData;
+    })
+    return json_obj;
 }
