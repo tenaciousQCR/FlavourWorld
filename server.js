@@ -115,9 +115,8 @@ app.get('/loginPage', function(req, res) {
 
 app.get('/recipe', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.query.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827";
-  var json_obj = getRecipeJson(url);
   res.render('pages/recipe', {
-    json: json_obj
+    url: url
   });
 })
 
