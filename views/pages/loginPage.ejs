@@ -1,43 +1,58 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
-  <link rel="stylesheet" type="text/css" href="css/loginPage.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/loginPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<form action="/dologin" method="POST">
+<!-- HEADER STARTS -->
 
-  <!--Placeholder for login default image-->
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
 
-  <div class="imgcontainer">
-    <img src="images/loginImg.png" alt="Avatar" class="avatar">
-  </div>
+  <main id="Page" class="grid-container">
+    <form action="/dologin" method="POST">
 
-<!--Username and password input boxes -->
+      <!--Placeholder for login default image-->
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+      <div class="imgcontainer">
+        <img src="images/loginImg.png" alt="Avatar" class="avatar">
+      </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <!--Username and password input boxes -->
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
 
-<!--Here the cancel button should close the form-->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
-  <div class="container">
-    <a href="home">
-    <button type="button" class="cancelbtn">Cancel</button>
-  </a>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+        <button type="submit" class="submitButton">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+    <!--Here the cancel button should close the form-->
+
+      <div class="container">
+        <a href="home">
+        <button type="button" class="cancelbtn">Cancel</button>
+      </a>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </main>
+
+<footer id="PageFooter" class="custom-grid-container">
+  <% include ../partials/footer %>
+</footer>
 
 </html>
