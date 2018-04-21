@@ -1,10 +1,14 @@
 <!doctype html>
 <html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/registerPage.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -12,6 +16,7 @@
     <header class="custom-grid-container">
       <% include ../partials/header %>
     </header>
+
     <main id="Page" class="grid-container">
       <h1>Registration form</h1>
       <form action="/registeruser" method="POST">
@@ -45,8 +50,8 @@
 
         <div class="container">
           <a href="home">
-          <button type="button" class="cancelbtn">Cancel</button>
-        </a>
+            <button type="button" class="cancelbtn">Cancel</button>
+          </a>
         </div>
       </form>
     </main>
