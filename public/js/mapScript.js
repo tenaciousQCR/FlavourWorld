@@ -74,46 +74,17 @@ function getResultsFromYummly(targetcountry, e){
 
 //Adds the found recipes from the JSON file to an HTML string and returns it
 function addResultTitles(jsondata, e){
-  var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1>";
+  var htmlstring = "<h1>" + e.target.feature.properties.name + "</h1><ul>";
   var length = jsondata.matches.length;
 
   for (var i = 0; i < length; i++){
     var title = jsondata.matches[i].recipeName;
-    htmlstring += "<a href=\"/recipe?id=" + jsondata.matches[i].id + "\">" + title + "</a>";
+    htmlstring += "<li><a href=\"/recipe?id=" + jsondata.matches[i].id + "\">" + title + "</a></li>";
   }
+  htmlstring += "</ul>"
   return htmlstring;
 
 }
-
-function getRecipe(button){
-  var recipe = button.id;
-  console.log("It ran " + recipe);
-  $.ajax({
-        type: 'GET',
-        url: '/recipe',
-        success: function() {
-            window.console.log('Success');
-        },
-        error: function(){
-          window.console.log('Failure');
-        }
-    });
-
-  // $.post("/recipe",
-  // {
-  //   recipe: "recipe"
-  // }).done(function(data){
-  //   alert("This sent data I think " + data);
-  // });
-};
-//
-// function popupFeature(e){
-//     var countryname = e.target.feature.properties.name;
-//     popup
-//         .setLatLng(e.latlng)
-//         .setContent('<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head><body id=\'popupBody\'><h1>Recipes</h1><div id=\'popupDiv\'><ol id= \'popupList\'><li>' + countryname + '</li><li><link>Item2</link></li><li><link>Item3</link></li></ol></div></body></html>')
-//         .openOn(mymap);
-// }
 
 
 
