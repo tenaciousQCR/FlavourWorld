@@ -4,6 +4,7 @@ const url = "mongodb://localhost:27017/profiles";
 const express = require('express'); //npm install express
 const session = require('express-session'); //npm install express-session
 const bodyParser = require('body-parser'); //npm install body-parser
+const getJSON = require('get-json');//npm install get-json
 const app = express();
 app.use(express.static('public'))
 var db;
@@ -114,9 +115,11 @@ app.get('/loginPage', function(req, res) {
 });
 
 app.get('/recipe', function(req, res){
-  console.log(req.query.id)
-  res.render('pages/recipe', {
-    recipeId: req.query.id
+  var url = "https://api.yummly.com/v1/api/recipe/" + req.query.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827";
+  getJSON(url, function(error, response){
+    res.render('pages/recipe', {
+      jsonData: response
+    });
   });
 })
 
@@ -141,3 +144,11 @@ var datatostore = {
     res.redirect('/loginPage')
   })
 });
+
+function getRecipeJson(url){
+  var json_obj;
+    $.getJSON(url, function(jsonData){
+      json_obj = jsonData;
+    })
+    return json_obj;
+}

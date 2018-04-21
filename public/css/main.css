@@ -132,7 +132,6 @@ body {
 #PageFooter{
   z-index:1502;
   width: 100%;
-  position:fixed;
   bottom: 0;
 }
 
@@ -140,8 +139,6 @@ body {
     /* For mobile phones: */
     #PageFooter{
       width: 100%;
-      position:fixed;
-      bottom: 0;
     }
   body{
     height: auto;
