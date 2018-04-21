@@ -1,13 +1,23 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
-  <link rel="stylesheet" type="text/css" href="css/loginPage.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/loginPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<form action="/dologin" method="POST">
+<!-- HEADER STARTS -->
+
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
+
+
+  <form action="/dologin" method="POST">
 
   <!--Placeholder for login default image-->
 
@@ -39,5 +49,9 @@
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+
+<footer id="PageFooter" class="custom-grid-container">
+  <% include ../partials/footer %>
+</footer>
 
 </html>
