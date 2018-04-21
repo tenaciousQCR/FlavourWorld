@@ -123,9 +123,10 @@ button:hover {
 }
 
 
-/* new responsive stuff ;) ;) ;) */
+/* new responsive stuff */
 @media only screen and (max-width: 1024px) {
-  /* For mobile: */
+
+/* For mobile: */
   #sidebar {
     position: absolute;
     z-index: 1500;
@@ -137,7 +138,8 @@ button:hover {
 
 
 @media only screen and (min-width: 1024px) {
-  /* For desktop: */
+
+/* For desktop: */
    main {
      height: 800px;
    }
