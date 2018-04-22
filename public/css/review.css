@@ -2,6 +2,22 @@ main {
   height: 800px;
 }
 
+form {
+  border: 3px solid #f1f1f1;
+  color: Brown;
+  font-family: 'Poiret One';
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
 button:hover {
     background-color: DarkGoldenRod;
 }
