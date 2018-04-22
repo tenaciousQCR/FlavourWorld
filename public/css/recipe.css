@@ -80,3 +80,10 @@ h3 {
   font-family: 'Poiret One';
   color: Brown;
 }
+
+.star {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 10px;
+}
