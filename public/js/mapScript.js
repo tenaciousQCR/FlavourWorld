@@ -206,12 +206,30 @@ function setFilter(button){
   //DIET
   if(button == "vegetarian"){
     vegetarian = !vegetarian;
+    if(vegetarian){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
   if(button == "vegan"){
     vegan = !vegan;
+    if(vegan){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
   if(button == "pescetarian"){
     pescetarian = !pescetarian;
+    if(pescetarian){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
 }
 
