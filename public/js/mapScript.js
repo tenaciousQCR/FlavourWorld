@@ -176,60 +176,60 @@ function setFilter(button){
   if(button == "dairy"){
     dairy = !dairy;
     if(dairy){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("dairy").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("dairy").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "egg"){
     egg = !egg;
     if(egg){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("egg").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("egg").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "fish"){
     fish = !fish;
     if(fish){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("fish").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("fish").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "soy"){
     soy = !soy;
     if(soy){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("soy").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("soy").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "sesame"){
     sesame = !sesame;
     if(sesame){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("sesame").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("sesame").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "nuts"){
     nuts = !nuts;
     if(nuts){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("nuts").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("nuts").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
@@ -237,43 +237,43 @@ function setFilter(button){
   if(button == "breakfast"){
     breakfast = !breakfast;
     if(breakfast){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("breakfast").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("breakfast").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "lunch"){
     lunch = !lunch;
     if(lunch){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("lunch").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("lunch").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "dinner"){
     dinner = !dinner;
     if(dinner){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("dinner").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("dinner").style.backgroundColor = "DarkGoldenRod"
     }
   }
 
   if(button == "snack"){
     snacks = !snack;
     if(snack){
-      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+      document.getElementById("snack").style.backgroundColor = "GoldenRod";
     }
     else{
-      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+      document.getElementById("snack").style.backgroundColor = "DarkGoldenRod"
     }
   }
-  
+
   //DIET
   if(button == "vegetarian"){
     vegetarian = !vegetarian;
