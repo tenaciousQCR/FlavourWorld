@@ -129,6 +129,7 @@ function filters(){
 function setFilter(button){
   console.log("Its a filterin bouy")
   if(button.getId == "gluten"){
+    console.log("glutey bootey");
     gluten = !gluten;
   }
 }
