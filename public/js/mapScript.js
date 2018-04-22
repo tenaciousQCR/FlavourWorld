@@ -165,6 +165,12 @@ function setFilter(button){
   //ALLERGENS
   if(button == "gluten"){
     gluten = !gluten;
+    if(gluten){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
   if(button == "dairy"){
     dairy = !dairy;
