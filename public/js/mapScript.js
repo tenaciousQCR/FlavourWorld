@@ -16,6 +16,10 @@ var breakfast = true;
 var lunch = true;
 var dinner = true;
 var snack = true;
+//Diet
+var vegetarian = false;
+var vegan = false;
+var pescetarian = false;
 
 
 //------------------------SYLISTIC CODE-------------------------------
@@ -142,6 +146,16 @@ function filters(){
   if(!snack){
     filterString += "&allowedCourse[]=course^course-Snacks";
   }
+  //DIET--------------------------------------------------------
+  if(vegetarian){
+    filterString += "&allowedDiet[]=387^Lacto-ovo vegetarian"
+  }
+  if(vegan){
+    filterString += "&allowedDiet[]=386^Vegan"
+  }
+  if(pescetarian){
+    filterString += "&allowedDiet[]=390^Pescetarian"
+  }
 
   return filterString
 }
@@ -182,6 +196,16 @@ function setFilter(button){
   }
   if(button == "snack"){
     snacks = !snack;
+  }
+  //DIET
+  if(button == "vegetarian"){
+    vegetarian = !vegetarian;
+  }
+  if(button == "vegan"){
+    vegan = !vegan;
+  }
+  if(button == "pescetarian"){
+    pescetarian = !pescetarian;
   }
 }
 
