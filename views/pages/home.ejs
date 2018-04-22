@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/leaflet-geojson-selector.css" />
     <meta name="viewport" content="width=device-width">
   </head>
-
   <body>
 
 
@@ -33,16 +32,17 @@
       <button class="sideButton" onclick="menu_toggle()">☰</button>
       <button class="loginButton" onclick="login_menu()">Profile</button>
       <div class="profileMenu">
-         <a href="loginPage">
-         <button>Login</button></a>
-         <a href="registerPage">
-         <button>Register</button> </a>
+         <a href="loginPage"><button>Login</button></a>
+         <a href="registerPage"><button>Register</button> </a>
       </div>
       <div class="searchbox" id='SiteNavigation'>
         <span class="icon"> <i class="search.container"></i></span>
         <input type="search" id="search" placeholder="Search..." />
       </div>
-     </div>
+    </div>
+
+
+<!-- ALLERGENS FILTERS -->
 
     <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
       <h4 id="dietary">Allergens</h4>
@@ -76,6 +76,9 @@
           </button>
         </div>
 
+
+<!-- CONTINENTAL FILTERS -->
+
       <h4 id="continental">Continental Restrictions</h4>
         <div class="Continental">
           <button type="button" id="asia">
@@ -107,6 +110,9 @@
           </button>
         </div>
 
+
+<!-- MEAL FILTERS -->
+
       <h4 id="time">Time Restrictions</h4>
         <div class="Time">
           <button type="button" onclick="setFilter(this.id);" id="breakfast">
@@ -128,11 +134,7 @@
     </div>
 
 
-<!--SITE NAVIGATION-->
-
-
-
-<!--MAP IMAGE-->
+<!--MAP-->
 
     <div class="mapContainer grid-70 mobile-grid-100" id="mapid">
       <!-- <img src="images/map.png" id="interactivemap"> -->

@@ -10,22 +10,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
+
 <!-- HEADER STARTS -->
 
   <header class="custom-grid-container">
     <% include ../partials/header %>
   </header>
 
+
+<!-- MAIN STARTS -->
+
   <main id="Page" class="grid-container">
     <form action="/dologin" method="POST">
 
-<!--Placeholder for login default image-->
+
+<!-- PLACEHOLDER FOR LOGIN IMAGE -->
 
       <div class="imgcontainer">
         <img src="images/loginImg.png" alt="Avatar" class="avatar">
       </div>
 
-    <!--Username and password input boxes -->
+
+<!-- USERNAME AND PASSWORD INPUT BOXES -->
 
       <div class="container">
         <label for="uname"><b>Username</b></label>
@@ -40,19 +46,21 @@
         </label>
       </div>
 
-    <!--Here the cancel button should close the form-->
+  <!-- CANCEL BUTTON LCOSES THE FORM -->
 
       <div class="container">
         <a href="home">
-        <button type="button" class="cancelbtn">Cancel</button>
-      </a>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+          <button type="button" class="cancelbtn">Cancel</button>
+        </a>
+        <span class="psw"> Forgot <a href="#"> password? </a></span>
       </div>
     </form>
   </main>
 
-<footer id="PageFooter" class="custom-grid-container">
-  <% include ../partials/footer %>
-</footer>
 
+  <!-- FOOTER STARTS -->
+
+  <footer id="PageFooter" class="custom-grid-container">
+    <% include ../partials/footer %>
+  </footer>
 </html>
