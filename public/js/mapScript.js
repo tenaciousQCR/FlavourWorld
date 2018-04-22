@@ -154,7 +154,7 @@ function filters(){
   if(!dinner){
     filterString += "&allowedCourse[]=course^course-Main Dishes";
   }
-  if(!snacks){
+  if(!snack){
     filterString += "&allowedCourse[]=course^course-Snacks";
   }
 
@@ -196,8 +196,8 @@ function setFilter(button){
   if(button == "dinner"){
     dinner = !dinner;
   }
-  if(button == "snacks"){
-    snacks = !snacks;
+  if(button == "snack"){
+    snacks = !snack;
   }
 
 
