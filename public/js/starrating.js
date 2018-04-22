@@ -26,74 +26,145 @@ var rating3 = 0;
 function showStar() {
 
 // STAR 11
- var x = $('#star1')
-
-  if (star1) {
+  if (star11) {
     rating = 1;
-    $('#star1').attr("src", "images/star-filled-single.png");
+    $('#star11').attr("src", "images/star-filled-single.png");
   }
   else {
-      $('#star1').attr("src", "images/star-empty-single.png");
+      $('#star11').attr("src", "images/star-empty-single.png");
   }
 
 // STAR 12
-  if (star2) {
+  if (star12) {
     rating = 2;
-    $('#star2').attr("src",  "images/star-filled-single.png");
+    $('#star12').attr("src",  "images/star-filled-single.png");
   }
   else {
-    $('#star2').attr("src", "images/star-empty-single.png");
+    $('#star12').attr("src", "images/star-empty-single.png");
   }
 
 // STAR 13
-  if (star3) {
+  if (star13) {
     rating = 3;
-    $('#star3').attr("src", "images/star-filled-single.png");
+    $('#star13').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star3').attr("src", "images/star-empty-single.png");
+    $('#star13').attr("src", "images/star-empty-single.png");
   }
 
 // STAR 14
-  if (star4) {
+  if (star14) {
     rating = 4;
-    $('#star4').attr("src", "images/star-filled-single.png");
+    $('#star14').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star4').attr("src", "images/star-empty-single.png");
+    $('#star14').attr("src", "images/star-empty-single.png");
   }
 
 // STAR 15
-  if (star5) {
+  if (star15) {
     rating = 5;
-    $('#star5').attr("src", "images/star-filled-single.png");
+    $('#star15').attr("src", "images/star-filled-single.png");
   }
   else {
-    $('#star5').attr("src", "images/star-empty-single.png");
+    $('#star15').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 21
+  if (star21) {
+    rating = 5;
+    $('#star21').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star21').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 22
+  if (star22) {
+    rating = 5;
+    $('#star22').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star22').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 23
+  if (star23) {
+    rating = 5;
+    $('#star23').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star23').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 24
+  if (star24) {
+    rating = 5;
+    $('#star24').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star24').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 25
+  if (star25) {
+    rating = 5;
+    $('#star25').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star25').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 31
+  if (star31) {
+    rating = 5;
+    $('#star31').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star31').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 32
+  if (star32) {
+    rating = 5;
+    $('#star32').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star32').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 33
+  if (star33) {
+    rating = 5;
+    $('#star33').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star33').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 34
+  if (star34) {
+    rating = 5;
+    $('#star34').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star34').attr("src", "images/star-empty-single.png");
+  }
+
+// STAR 35
+  if (star35) {
+    rating = 5;
+    $('#star35').attr("src", "images/star-filled-single.png");
+  }
+  else {
+    $('#star35').attr("src", "images/star-empty-single.png");
   }
 }
 
-// STAR 21
 
-// STAR 22
+// RATING FUNCTIONS:
 
-// STAR 23
-
-// STAR 24
-
-// STAR 25
-
-// STAR 31
-
-// STAR 32
-
-// STAR 33
-
-// STAR 34
-
-// STAR 35
-
-$("#star1").click(function() {
+$("#star11").click(function() {
   console.log("why tho?");
   star1 = true;
   star2 = false;
@@ -103,7 +174,7 @@ $("#star1").click(function() {
   showStar();
 });
 
-$("#star2").click(function() {
+$("#star12").click(function() {
   star1 = true;
   star2 = true;
   star3 = false;
@@ -112,7 +183,7 @@ $("#star2").click(function() {
   showStar();
 });
 
-$("#star3").click(function() {
+$("#star13").click(function() {
   star1 = true;
   star2 = true;
   star3 = true;
@@ -121,7 +192,7 @@ $("#star3").click(function() {
   showStar();
 });
 
-$("#star4").click(function() {
+$("#star14").click(function() {
   star1 = true;
   star2 = true;
   star3 = true;
@@ -130,7 +201,7 @@ $("#star4").click(function() {
   showStar();
 });
 
-$("#star5").click(function() {
+$("#star15").click(function() {
   star1 = true;
   star2 = true;
   star3 = true;
@@ -140,6 +211,103 @@ $("#star5").click(function() {
 });
 
 
+// RATING FUNCTIONS:
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+
+// RATING FUNCTIONS:
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+$("#star15").click(function() {
+  star1 = true;
+  star2 = true;
+  star3 = true;
+  star4 = true;
+  star5 = true;
+  showStar();
+});
+
+
+// SUBMIT BUTTON
 
   $("#submitButton").click(function() {
     if (rating == 0){
