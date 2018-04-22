@@ -4,29 +4,22 @@ var popup = L.popup();
 var mymap;
 var jsondata;
 //dietary restrictions
-var meat = true;
 var gluten = true;
 var dairy = true;
 var egg = true;
 var fish = true;
-var shellfish = true;
 var soy = true;
-var sugar = true;
 var sesame = true;
 var nuts = true;
-//continental restrictions
-var asia = true;
-var africa = true;
-var northAmerica = true;
-var southAmerica = true;
-var antartica = true;
-var europe = true;
-var oceania = true;
 //time restrictions
 var breakfast = true;
 var lunch = true;
 var dinner = true;
 var snack = true;
+//Diet
+var vegetarian = false;
+var vegan = false;
+var pescetarian = false;
 
 
 //------------------------SYLISTIC CODE-------------------------------
@@ -113,11 +106,12 @@ function addResultTitles(jsondata, e){
 
 //------------------------------------Filters-------------------------------------
 
+//Adds the filters to the API request based on those selected
 function filters(){
   var filterString = "";
 
   //ALLERGENS----------------------------------------------
-  
+
   if(!gluten){
     filterString += "&allowedAllergy[]=393^Gluten-Free"
   }
@@ -152,12 +146,22 @@ function filters(){
   if(!snack){
     filterString += "&allowedCourse[]=course^course-Snacks";
   }
+  //DIET--------------------------------------------------------
+  if(vegetarian){
+    filterString += "&allowedDiet[]=387^Lacto-ovo vegetarian"
+  }
+  if(vegan){
+    filterString += "&allowedDiet[]=386^Vegan"
+  }
+  if(pescetarian){
+    filterString += "&allowedDiet[]=390^Pescetarian"
+  }
 
   return filterString
 }
 
+//Enables or Disables filters when the button is clicked
 function setFilter(button){
-
   //ALLERGENS
   if(button == "gluten"){
     gluten = !gluten;
@@ -180,7 +184,6 @@ function setFilter(button){
   if(button == "nuts"){
     nuts = !nuts;
   }
-
   //TIMES
   if(button == "breakfast"){
     breakfast = !breakfast;
@@ -194,8 +197,16 @@ function setFilter(button){
   if(button == "snack"){
     snacks = !snack;
   }
-
-
+  //DIET
+  if(button == "vegetarian"){
+    vegetarian = !vegetarian;
+  }
+  if(button == "vegan"){
+    vegan = !vegan;
+  }
+  if(button == "pescetarian"){
+    pescetarian = !pescetarian;
+  }
 }
 
 
