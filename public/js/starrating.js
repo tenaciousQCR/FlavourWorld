@@ -162,158 +162,159 @@ function showStar() {
 }
 
 
-// RATING FUNCTIONS:
+// RATING FUNCTIONS: TASTE
 
-$("#star11").click(function() {
-  console.log("why tho?");
-  star1 = true;
-  star2 = false;
-  star3 = false;
-  star4 = false;
-  star5 = false;
-  showStar();
-});
+  $("#star11").click(function() {
+    console.log("why tho?");
+    star1 = true;
+    star2 = false;
+    star3 = false;
+    star4 = false;
+    star5 = false;
+    showStar();
+  });
 
-$("#star12").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = false;
-  star4 = false;
-  star5 = false;
-  showStar();
-});
+  $("#star12").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = false;
+    star4 = false;
+    star5 = false;
+    showStar();
+  });
 
-$("#star13").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = false;
-  star5 = false;
-  showStar();
-});
+  $("#star13").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = false;
+    star5 = false;
+    showStar();
+  });
 
-$("#star14").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = false;
-  showStar();
-});
+  $("#star14").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = false;
+    showStar();
+  });
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
-
-
-// RATING FUNCTIONS:
-
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
-
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
-
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
-
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
-
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star15").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
 
-// RATING FUNCTIONS:
+// RATING FUNCTIONS: COST
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star21").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star22").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star23").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star24").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
-$("#star15").click(function() {
-  star1 = true;
-  star2 = true;
-  star3 = true;
-  star4 = true;
-  star5 = true;
-  showStar();
-});
+  $("#star25").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
+
+
+// RATING FUNCTIONS: PREPARATION
+
+  $("#star31").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
+
+  $("#star32").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
+
+  $("#star33").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
+
+  $("#star34").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
+
+  $("#star35").click(function() {
+    star1 = true;
+    star2 = true;
+    star3 = true;
+    star4 = true;
+    star5 = true;
+    showStar();
+  });
 
 
 // SUBMIT BUTTON
 
   $("#submitButton").click(function() {
     if (rating == 0){
-      console.log("You didn't enter a rating yet");
+      console.log("You didn't enter any rating yet");
     }
     else{
       //insert it to the database to store
-      console.log("Rating submitted successfully.");
-    }});
+      console.log("Rating submitted successfully");
+    }
+  });
