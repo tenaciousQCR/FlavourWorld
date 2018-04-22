@@ -1,6 +1,10 @@
-/* main {
-  height: 1500px;
-} */
+main {
+  height: 800px;
+}
+
+body{
+  height: 1000px;
+}
 
 button:hover {
     background-color: DarkGoldenRod;
