@@ -1,7 +1,7 @@
 var jsonData;
-
+var rating = 1;
 $(document).ready(function(){
-  $.getJSON(url, function(jsonData){
-    jsonData = jsonData;
-  })
+  rating = jsonData.rating;
+  console.log(rating);
+  // document.getElementById("star1").style. = "";
 })
