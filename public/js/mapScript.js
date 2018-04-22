@@ -87,7 +87,7 @@ function popupFeature(e){
 
 //Uses the country name to search the Yummly API for recipes and then initiates the popup
 function getResultsFromYummly(targetcountry, e){
-  var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry;
+  var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry + filters();
   $.getJSON(url, function(jsondata){
     jsondata = jsondata;
     var htmlstring = addResultTitles(jsondata, e);
@@ -114,6 +114,22 @@ function addResultTitles(jsondata, e){
 
 //------------------------------------Filters-------------------------------------
 
+function filters(){
+  var filterString = "";
+
+  if(!gluten){
+    filterString += "&allowedAllergy[]=393^Gluten-Free"
+  }
+  if(!dairy){
+    filterString += "&allowedAllergy[]=396^Dairy-Free"
+  }
+}
+
+function setFilter(button){
+  if(button.id == "gluten"){
+    gluten = !gluten;
+  }
+}
 
 
 //----------------------------CREATING AND POPULATING MAP---------------------------------
