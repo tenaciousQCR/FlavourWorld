@@ -70,7 +70,7 @@
           <h2 id="dietaryNotes">Dietary Notes</h2>
           <ul>
           <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
-            <% if(attribute.value > 0){ %>
+            <% if(attribute.value > 0.0){ %>
             <li>
               <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%>
             </li>
