@@ -4,24 +4,13 @@ var popup = L.popup();
 var mymap;
 var jsondata;
 //dietary restrictions
-var meat = true;
 var gluten = true;
 var dairy = true;
 var egg = true;
 var fish = true;
-var shellfish = true;
 var soy = true;
-var sugar = true;
 var sesame = true;
 var nuts = true;
-//continental restrictions
-var asia = true;
-var africa = true;
-var northAmerica = true;
-var southAmerica = true;
-var antartica = true;
-var europe = true;
-var oceania = true;
 //time restrictions
 var breakfast = true;
 var lunch = true;
@@ -113,11 +102,12 @@ function addResultTitles(jsondata, e){
 
 //------------------------------------Filters-------------------------------------
 
+//Adds the filters to the API request based on those selected
 function filters(){
   var filterString = "";
 
   //ALLERGENS----------------------------------------------
-  
+
   if(!gluten){
     filterString += "&allowedAllergy[]=393^Gluten-Free"
   }
@@ -156,8 +146,8 @@ function filters(){
   return filterString
 }
 
+//Enables or Disables filters when the button is clicked
 function setFilter(button){
-
   //ALLERGENS
   if(button == "gluten"){
     gluten = !gluten;
@@ -180,7 +170,6 @@ function setFilter(button){
   if(button == "nuts"){
     nuts = !nuts;
   }
-
   //TIMES
   if(button == "breakfast"){
     breakfast = !breakfast;
@@ -194,8 +183,6 @@ function setFilter(button){
   if(button == "snack"){
     snacks = !snack;
   }
-
-
 }
 
 
