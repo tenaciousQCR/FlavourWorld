@@ -24,7 +24,6 @@ var europe = true;
 var oceania = true;
 //time restrictions
 var breakfast = true;
-var brunch = true;
 var lunch = true;
 var dinner = true;
 var snack = true;
