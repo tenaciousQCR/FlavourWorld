@@ -63,7 +63,7 @@
           <p>Servings:
             <%= jsonData.yield %>
           </p>
-          <a href=<%=jsonData.source.sourceRecipeURL%>>Link to Instructions</a>
+          <%- link_to(jsonData.source.sourceRecipeURL, "Link to Instructions") %>
         </div>
 
         <div class="contentRecipe">
