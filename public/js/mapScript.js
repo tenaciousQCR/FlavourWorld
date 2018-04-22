@@ -277,12 +277,30 @@ function setFilter(button){
   //DIET
   if(button == "vegetarian"){
     vegetarian = !vegetarian;
+    if(vegetarian){
+      document.getElementById("vegetarian").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("vegetarian").style.backgroundColor = "DarkGoldenRod"
+    }
   }
   if(button == "vegan"){
     vegan = !vegan;
+    if(vegan){
+      document.getElementById("vegan").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("vegan").style.backgroundColor = "DarkGoldenRod"
+    }
   }
   if(button == "pescetarian"){
     pescetarian = !pescetarian;
+    if(pescetarian){
+      document.getElementById("pescetarian").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("pescetarian").style.backgroundColor = "DarkGoldenRod"
+    }
   }
 }
 

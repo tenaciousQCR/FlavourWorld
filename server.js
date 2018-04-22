@@ -1,4 +1,5 @@
-//User database
+// USER DATABASE
+
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/profiles";
 const express = require('express'); //npm install express
@@ -11,14 +12,20 @@ var db;
 
 app.set('views');
 
-//this tells express we are using sesssions. These are variables that only belong to one user of the site at a time.
+
+// THIS TELLS EXPRESS WE ARE USING SESSIONS. THESE ARE VARIABLES THAT ONLY BELONG TO ONE USER OF THE SITE AT A TIME
+
 app.use(session({ secret: 'example' }));
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-// set the view engine to ejs
+
+
+// SET THE VIEW ENGINE TO EJS
+
 app.set('view engine', 'ejs');
 var db;
+
 
 //------------------------------------------------------------------------------
 
@@ -30,24 +37,31 @@ MongoClient.connect(url, function(err, database){
 });
 
 
-//this is our root route -- code goes here for logged in stuff
+//THIS IS OUR ROOT ROUTE -- CODE GOES HERE FOR LOGGED-IN STUFF
+
 app.get('/', function(req, res) {
-  //if the user is not logged in redirect them to the login page
+
+// IF THE USER IS NOT LOGGED-IN, THIS REDIRECTS THEM TO THE LOGIN PAGE
+
   if(!req.session.loggedin){
     res.redirect('/home');
     return;
   }
 });
 
+
 //------------------------------------------------------------------------------
 
-//logour route cause the page to Logout.
-//it sets our session.loggedin to false and then redirects the user to the login
+
+// LOGOUT ROUTE CAUSES THE PAGE TO LOGOUT
+// IT SETS OUR session.loggedin TO FALSE AND THEN REDIRECTS THE USER TO THE LOGIN
+
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
   res.redirect('/');
 });
+
 
 //------------------------------------------------------------------------------
 
@@ -77,7 +91,8 @@ app.post('/dologin', function(req, res) {
 });
 
 
-//Render pages
+//RENDER PAGES
+
 app.get('/home', function(req, res) {
   res.render('pages/home');
 });
@@ -132,10 +147,10 @@ app.get('/recipe', function(req, res){
 
 app.post('/registeruser', function(req, res) {
 
-  //check we are logged in
-  //if(!req.session.loggedin){res.redirect('/login');return;}
+//check we are logged in
+//if(!req.session.loggedin){res.redirect('/login');return;}
 
-  //we create the data string from the form components that have been passed in
+//we create the data string from the form components that have been passed in
 
 var datatostore = {
 "name":{"first":req.body.fname,"last":req.body.lname},
