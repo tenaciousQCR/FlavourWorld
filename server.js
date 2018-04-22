@@ -123,7 +123,7 @@ app.get('/recipe', function(req, res){
   getJSON(url, function(error, response){
     res.render('pages/recipe', {
       jsonData: response,
-      link: "cheeky bastards"
+      link: response.images.hostedLargeUrl
     });
   });
 })
