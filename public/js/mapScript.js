@@ -117,9 +117,7 @@ function filters(){
   var filterString = "";
 
   //ALLERGENS----------------------------------------------
-  if(!meat){
-    filterString += "&allowedAllergy[]="
-  }
+  
   if(!gluten){
     filterString += "&allowedAllergy[]=393^Gluten-Free"
   }
@@ -131,9 +129,6 @@ function filters(){
   }
   if(!fish){
     filterString += "&allowedAllergy[]=398^Seafood-Free"
-  }
-  if(!shellfish){
-    filterString += "&allowedAllergy[]="
   }
   if(!soy){
     filterString += "&allowedAllergy[]=400^Soy-Free"
