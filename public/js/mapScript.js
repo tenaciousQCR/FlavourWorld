@@ -172,37 +172,108 @@ function setFilter(button){
       document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
     }
   }
+
   if(button == "dairy"){
     dairy = !dairy;
+    if(dairy){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "egg"){
     egg = !egg;
+    if(egg){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "fish"){
     fish = !fish;
+    if(fish){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "soy"){
     soy = !soy;
+    if(soy){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "sesame"){
     sesame = !sesame;
+    if(sesame){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "nuts"){
     nuts = !nuts;
+    if(nuts){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   //TIMES
   if(button == "breakfast"){
     breakfast = !breakfast;
+    if(breakfast){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "lunch"){
     lunch = !lunch;
+    if(lunch){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "dinner"){
     dinner = !dinner;
+    if(dinner){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+
   if(button == "snack"){
     snacks = !snack;
+    if(snack){
+      document.getElementById("gluten").style.backgroundColor = "GoldenRod";
+    }
+    else{
+      document.getElementById("gluten").style.backgroundColor = "DarkGoldenRod"
+    }
   }
+  
   //DIET
   if(button == "vegetarian"){
     vegetarian = !vegetarian;
