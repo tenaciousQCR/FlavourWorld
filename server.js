@@ -131,6 +131,7 @@ app.get('/recipe', function(req, res){
 //------------------------------------------------------------------------------
 
 app.post('/registeruser', function(req, res) {
+
   //check we are logged in
   //if(!req.session.loggedin){res.redirect('/login');return;}
 
