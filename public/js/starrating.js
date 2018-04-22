@@ -27,7 +27,7 @@ function showStar() {
 
 // STAR 11
   if (star11) {
-    rating = 1;
+    rating1 = 1;
     $('#star11').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -36,7 +36,7 @@ function showStar() {
 
 // STAR 12
   if (star12) {
-    rating = 2;
+    rating1 = 2;
     $('#star12').attr("src",  "images/star-filled-single.png");
   }
   else {
@@ -45,7 +45,7 @@ function showStar() {
 
 // STAR 13
   if (star13) {
-    rating = 3;
+    rating1 = 3;
     $('#star13').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -54,7 +54,7 @@ function showStar() {
 
 // STAR 14
   if (star14) {
-    rating = 4;
+    rating1 = 4;
     $('#star14').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -63,7 +63,7 @@ function showStar() {
 
 // STAR 15
   if (star15) {
-    rating = 5;
+    rating1 = 5;
     $('#star15').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -72,7 +72,7 @@ function showStar() {
 
 // STAR 21
   if (star21) {
-    rating = 5;
+    rating2 = 1;
     $('#star21').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -81,7 +81,7 @@ function showStar() {
 
 // STAR 22
   if (star22) {
-    rating = 5;
+    rating2 = 2;
     $('#star22').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -90,7 +90,7 @@ function showStar() {
 
 // STAR 23
   if (star23) {
-    rating = 5;
+    rating2 = 3;
     $('#star23').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -99,7 +99,7 @@ function showStar() {
 
 // STAR 24
   if (star24) {
-    rating = 5;
+    rating2 = 4;
     $('#star24').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -108,7 +108,7 @@ function showStar() {
 
 // STAR 25
   if (star25) {
-    rating = 5;
+    rating2 = 5;
     $('#star25').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -117,7 +117,7 @@ function showStar() {
 
 // STAR 31
   if (star31) {
-    rating = 5;
+    rating3 = 1;
     $('#star31').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -126,7 +126,7 @@ function showStar() {
 
 // STAR 32
   if (star32) {
-    rating = 5;
+    rating3 = 2;
     $('#star32').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -135,7 +135,7 @@ function showStar() {
 
 // STAR 33
   if (star33) {
-    rating = 5;
+    rating3 = 3;
     $('#star33').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -144,7 +144,7 @@ function showStar() {
 
 // STAR 34
   if (star34) {
-    rating = 5;
+    rating3 = 4;
     $('#star34').attr("src", "images/star-filled-single.png");
   }
   else {
@@ -153,7 +153,7 @@ function showStar() {
 
 // STAR 35
   if (star35) {
-    rating = 5;
+    rating3 = 5;
     $('#star35').attr("src", "images/star-filled-single.png");
   }
   else {
