@@ -40,7 +40,7 @@
         </div>
 
         <div class="recipeImg">
-          <img src="images/PiB.jpg" id="recipeImage">
+          <img src="<%=jsonData.images.hostedLargeUrl%>" id="recipeImage">
         </div>
 
         <div class="contentRecipe">
@@ -63,7 +63,7 @@
           <p>Servings:
             <%= jsonData.yield %>
           </p>
-          <%=<h3 href=jsonData.source.sourceRecipeURL>%>Link to Instructions</h3>
+          <a href="<%= jsonData.source.sourceRecipeUrl %>">Link to Instructions</p>
         </div>
 
         <div class="contentRecipe">
