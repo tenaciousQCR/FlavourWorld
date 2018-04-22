@@ -7,7 +7,7 @@ $(function(){
     if($(window).width() < 1024){
       menu_toggle();
     }
-    //main_resize();
+    //
 });
 
 $( window ).resize(function() {
@@ -26,7 +26,7 @@ $( window ).resize(function() {
 
 $( window ).resize(function() {
   if($(window).height() != height && $(window).width() < 1024){
-    //main_resize();
+    //
     height = $(window).height();
   }
 });
