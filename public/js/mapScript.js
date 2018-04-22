@@ -126,7 +126,7 @@ function filters(){
 }
 
 function setFilter(button){
-  if(button.id == "gluten"){
+  if(button.getId == "gluten"){
     gluten = !gluten;
   }
 }
