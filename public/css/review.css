@@ -10,35 +10,7 @@ button:hover {
   color: orange;
 }
 
-#star1 {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  border: 10px;
-}
-
-#star2 {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  border: 10px;
-}
-
-#star3 {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  border: 10px;
-}
-
-#star4 {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  border: 10px;
-}
-
-#star5 {
+.star {
   height: 30px;
   width: 30px;
   cursor: pointer;
