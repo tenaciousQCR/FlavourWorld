@@ -129,7 +129,7 @@ function filters(){
 function setFilter(button){
   console.log("Its a filterin bouy")
   if(button == "gluten"){
-    console.log("glutey bootey");
+    console.log("glutey bootey" + gluten);
     gluten = false;
   }
 }
