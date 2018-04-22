@@ -1,17 +1,33 @@
 //initialise variables
-var star1 = false;
-var star2 = false;
-var star3 = false;
-var star4 = false;
-var star5 = false;
+var star11 = false;
+var star12 = false;
+var star13 = false;
+var star14 = false;
+var star15 = false;
 
-var rating = 0;
+var star21 = false;
+var star22 = false;
+var star23 = false;
+var star24 = false;
+var star25 = false;
+
+var star31 = false;
+var star32 = false;
+var star33 = false;
+var star34 = false;
+var star35 = false;
+
+var rating1 = 0;
+
+var rating2 = 0;
+
+var rating3 = 0;
 
 function showStar() {
-  //star 1
-  console.log("STAR MAN");
+
+// STAR 11
  var x = $('#star1')
-  console.log(x);
+
   if (star1) {
     rating = 1;
     $('#star1').attr("src", "images/star-filled-single.png");
@@ -20,7 +36,7 @@ function showStar() {
       $('#star1').attr("src", "images/star-empty-single.png");
   }
 
-//star2
+// STAR 12
   if (star2) {
     rating = 2;
     $('#star2').attr("src",  "images/star-filled-single.png");
@@ -29,7 +45,7 @@ function showStar() {
     $('#star2').attr("src", "images/star-empty-single.png");
   }
 
-//star3
+// STAR 13
   if (star3) {
     rating = 3;
     $('#star3').attr("src", "images/star-filled-single.png");
@@ -38,7 +54,7 @@ function showStar() {
     $('#star3').attr("src", "images/star-empty-single.png");
   }
 
-//star4
+// STAR 14
   if (star4) {
     rating = 4;
     $('#star4').attr("src", "images/star-filled-single.png");
@@ -47,7 +63,7 @@ function showStar() {
     $('#star4').attr("src", "images/star-empty-single.png");
   }
 
-//star5
+// STAR 15
   if (star5) {
     rating = 5;
     $('#star5').attr("src", "images/star-filled-single.png");
@@ -56,6 +72,27 @@ function showStar() {
     $('#star5').attr("src", "images/star-empty-single.png");
   }
 }
+
+// STAR 21
+
+// STAR 22
+
+// STAR 23
+
+// STAR 24
+
+// STAR 25
+
+// STAR 31
+
+// STAR 32
+
+// STAR 33
+
+// STAR 34
+
+// STAR 35
+
 $("#star1").click(function() {
   console.log("why tho?");
   star1 = true;
