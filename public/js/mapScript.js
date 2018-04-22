@@ -117,21 +117,91 @@ function addResultTitles(jsondata, e){
 function filters(){
   var filterString = "";
 
+  //ALLERGENS----------------------------------------------
+  if(!meat){
+    filterString += "&allowedAllergy[]="
+  }
   if(!gluten){
     filterString += "&allowedAllergy[]=393^Gluten-Free"
   }
   if(!dairy){
     filterString += "&allowedAllergy[]=396^Dairy-Free"
   }
+  if(!egg){
+    filterString += "&allowedAllergy[]=397^Egg-Free"
+  }
+  if(!fish){
+    filterString += "&allowedAllergy[]=398^Seafood-Free"
+  }
+  if(!shellfish){
+    filterString += "&allowedAllergy[]="
+  }
+  if(!soy){
+    filterString += "&allowedAllergy[]=400^Soy-Free"
+  }
+  if(!sesame){
+    filterString += "&allowedAllergy[]=399^Sesame-Free"
+  }
+  if(!nuts){
+    filterString += "&allowedAllergy[]=394^Peanut-Free"
+  }
+  //TIME RESTRICTIONS---------------------------------------
+  if(!breakfast){
+    filterString += "&allowedCourse[]=course^course-Breakfast and Brunch";
+  }
+  if(!lunch){
+    filterString += "&allowedCourse[]=course^course-Lunch";
+  }
+  if(!dinner){
+    filterString += "&allowedCourse[]=course^course-Main Dishes";
+  }
+  if(!snacks){
+    filterString += "&allowedCourse[]=course^course-Snacks";
+  }
+
   return filterString
 }
 
 function setFilter(button){
-  console.log("Its a filterin bouy")
+
+  //ALLERGENS
   if(button == "gluten"){
-    console.log("glutey bootey" + gluten);
     gluten = !gluten;
   }
+  if(button == "dairy"){
+    dairy = !dairy;
+  }
+  if(button == "egg"){
+    egg = !egg;
+  }
+  if(button == "fish"){
+    fish = !fish;
+  }
+  if(button == "soy"){
+    soy = !soy;
+  }
+  if(button == "sesame"){
+    sesame = !sesame;
+  }
+  if(button == "nuts"){
+    nuts = !nuts;
+  }
+
+  //TIMES
+  if(button == "breakfast"){
+    breakfast = !breakfast;
+  }
+  if(button == "lunch"){
+    lunch = !lunch;
+  }
+  if(button == "dinner"){
+    dinner = !dinner;
+  }
+  if(button == "snacks"){
+    snacks = !snacks;
+  }
+
+
 }
 
 
