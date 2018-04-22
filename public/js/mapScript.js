@@ -206,7 +206,8 @@ function setFilter(button){
   //DIET
   if(button == "vegetarian"){
     vegetarian = !vegetarian;
-    if(vegetarian){"vegetarian").style.backgroundColor = "GoldenRod";
+    if(vegetarian){
+      document.getElementById("vegetarian").style.backgroundColor = "GoldenRod";
     }
     else{
       document.getElementById("vegetarian").style.backgroundColor = "DarkGoldenRod"
