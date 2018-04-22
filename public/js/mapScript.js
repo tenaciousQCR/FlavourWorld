@@ -5,7 +5,7 @@ var mymap;
 var jsondata;
 //dietary restrictions
 var meat = true;
-var gluten = false;
+var gluten = true;
 var dairy = true;
 var egg = true;
 var fish = true;
