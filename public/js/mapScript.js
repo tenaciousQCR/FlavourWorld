@@ -123,6 +123,7 @@ function filters(){
   if(!dairy){
     filterString += "&allowedAllergy[]=396^Dairy-Free"
   }
+  return filterString
 }
 
 function setFilter(button){
