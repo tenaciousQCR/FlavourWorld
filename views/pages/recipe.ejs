@@ -2,7 +2,6 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -12,7 +11,6 @@
     <script src="js/scripting.js"></script>
     <script src="js/recipepage.js"></script>
   </head>
-
   <body>
 
 
@@ -34,76 +32,73 @@
            <a href="registerPage">
            <button>Register</button> </a>
         </div>
-       </div>
-        <div class="Title grid-100 mobile-gride-50">
-          <h1 id="recipeTitle"> <%= jsonData.name %> </h1>
-        </div>
+      </div>
 
-        <div class="recipeImg">
-          <img src="<%=jsonData.images[0].hostedLargeUrl%>" id="recipeImage">
-        </div>
+      <div class="Title grid-100 mobile-gride-50">
+        <h1 id="recipeTitle"> <%= jsonData.name %> </h1>
+      </div>
 
-        <div class="contentRecipe">
-          <h2 id="ingredientsList">Ingredients</h2>
+      <div class="recipeImg">
+        <img src="<%=jsonData.images[0].hostedLargeUrl%>" id="recipeImage">
+      </div>
 
-          <ul>
-            <% jsonData.ingredientLines.forEach(function(ingredient) { %>
-            <li>
-              <%= ingredient %>
-            </li>
-            <% }); %>
-          </ul>
-        </div>
+      <div class="contentRecipe">
+        <h2 id="ingredientsList">Ingredients</h2>
+        <ul>
+          <% jsonData.ingredientLines.forEach(function(ingredient) { %>
+          <li>
+            <%= ingredient %>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
 
-        <div class="contentRecipe">
-          <h2 id="preparationSteps">Preparation</h2>
-          <p>Prep Time:
-            <%= jsonData.totalTime %>
-          </p>
-          <p>Servings:
-            <%= jsonData.yield %>
-          </p>
-          <a href="<%= jsonData.source.sourceRecipeUrl %>">Link to Instructions</a>
-        </div>
+      <div class="contentRecipe">
+        <h2 id="preparationSteps">Preparation</h2>
+        <p>Prep Time:
+          <%= jsonData.totalTime %>
+        </p>
+        <p>Servings:
+          <%= jsonData.yield %>
+        </p>
+        <a href="<%= jsonData.source.sourceRecipeUrl %>">Link to Instructions</a>
+      </div>
 
-        <div class="contentRecipe">
-          <h2 id="dietaryNotes">Dietary Notes</h2>
-          <ul>
+      <div class="contentRecipe">
+        <h2 id="dietaryNotes">Dietary Notes</h2>
+        <ul>
           <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
-            <% if(attribute.value > 0.0){ %>
-            <li>
-              <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%>
-            </li>
+          <% if(attribute.value > 0.0){ %>
+          <li>
+            <%= attribute.description + ": " + attribute.value + " " + attribute.unit.pluralAbbreviation%>
+          </li>
           <% };}); %>
-          </ul>
-        </div>
+        </ul>
+      </div>
+
+      <div class="contentRecipe">
         <a href="<%= '/review?=' + id %>"><button>Your Review!</button></a>
-
-        <div class="contentRecipe">
-          <h2 id="review">User Reviews</h2>
-          <p>
-            I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
-            they did it back in the days...
-          </p>
-          <p>
-            Great dish. I'd recommend adding some fennel seeds to the tears and
-            letting them marinade for a couple hours. The fennel will fight off
-            the tears' bitter aftertaste!
-          </p>
-          <p>
-            I honestly thought this was a news website. What's with the food stuff?
-          </p>
-        </div>
-
+        <h2 id="review">User Reviews</h2>
+        <p>
+          I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
+          they did it back in the days...
+        </p>
+        <p>
+          Great dish. I'd recommend adding some fennel seeds to the tears and
+          letting them marinade for a couple hours. The fennel will fight off
+          the tears' bitter aftertaste!
+        </p>
+        <p>
+          I honestly thought this was a news website. What's with the food stuff?
+        </p>
+      </div>
     </main>
-
-
 
 
 <!-- FOOTER STARTS -->
 
- <footer id="PageFooter" class="custom-grid-container">
-   <% include ../partials/footer %>
-  </footer>
+   <footer id="PageFooter" class="custom-grid-container">
+     <% include ../partials/footer %>
+   </footer>
   </body>
 </html>
