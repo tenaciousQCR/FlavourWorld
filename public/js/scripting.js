@@ -63,11 +63,11 @@ function login_menu(){
 }
 
 var windowHeight;
-
-function main_resize(){
-  windowHeight = $(window).height();
-  document.getElementById('Page').style.height= auto;
-}
+//
+// function main_resize(){
+//   windowHeight = $(window).height();
+//   document.getElementById('Page').style.height= auto;
+// }
 
     // if($("#mapContainer").hasClass("grid-70")){
     //   $("#mapContainer").removeClass("mapContainer grid-70 mobile-grid-100");
