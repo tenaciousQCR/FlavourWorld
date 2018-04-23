@@ -105,18 +105,6 @@ app.get('/contact', function(req, res) {
   res.render('pages/contact');
 });
 
-app.get('/recipe-1', function(req, res) {
-  res.render('pages/recipe-1');
-});
-
-app.get('/recipe-2', function(req, res) {
-  res.render('pages/recipe-2');
-});
-
-app.get('/recipe-3', function(req, res) {
-  res.render('pages/recipe-3');
-});
-
 app.get('/legal', function(req, res) {
   res.render('pages/legal');
 });
@@ -138,7 +126,8 @@ app.get('/recipe', function(req, res){
   getJSON(url, function(error, response){
     res.render('pages/recipe', {
       jsonData: response,
-      id: req.query.id
+      id: req.query.id,
+      rating: req.query.rating
     });
   });
 })
