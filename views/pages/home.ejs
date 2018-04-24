@@ -30,11 +30,7 @@
   <main id="Page" class="grid-container">
     <div id="optionsBar">
       <button class="sideButton" onclick="menu_toggle()">☰</button>
-      <button class="loginButton" onclick="login_menu()">Profile</button>
-      <div class="profileMenu">
-         <a href="loginPage"><button>Login</button></a>
-         <a href="registerPage"><button>Register</button> </a>
-      </div>
+      <% include ../partials/header %>
       <div class="searchbox" id='SiteNavigation'>
         <span class="icon"> <i class="search.container"></i></span>
         <input type="search" id="search" placeholder="Search..." />
