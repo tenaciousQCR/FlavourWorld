@@ -122,8 +122,10 @@ button:hover {
 }
 
 .filterLogo{
-  width: 3%;
+  width: 5%;
   float: right;
+  padding: none;
+  margin: none;
 }
 
 /* new responsive stuff ;) ;) ;) */
