@@ -25,6 +25,9 @@ header, footer {
   padding-top:auto;
   padding-left: auto;
   padding-right: auto;
+  height: 100%;
+  min-height:50px;
+  display: inline-block;
 }
 
 #optionsBar{
