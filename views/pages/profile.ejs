@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/legal.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+
+<!-- HEADER STARTS -->
+
+  <header class="custom-grid-container">
+    <% include ../partials/header %>
+  </header>
+
+
+<!-- MAIN STARTS -->
+
+    <main id="Page" class="grid-container">
+      <div id="optionsBar">
+        <% include ../partials/profileMenu %>
+      </div>
+      <div>
+        <h1>Profile</h1>
+        <p>Hello <%= user.name.firstname %></p>
+        <p>Username: <%= user.login.username %></p>
+        <h2>Favourite Dishes</h2>
+        <p>
+        </p>
+        <p>
+        </p>
+      </div>
+    </main>
+
+
+<!-- FOOTER STARTS -->
+
+    <footer id="PageFooter" class="custom-grid-container">
+      <% include ../partials/footer %>
+    </footer>
+
+
+<!--JS-->
+
+    <script src="js/scripting.js"></script>
+  </body>
+</html>
