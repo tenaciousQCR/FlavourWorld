@@ -48,16 +48,11 @@ main {
   height:80%;
 }
 
-/* .loginButton{
-  height: 100%;
-  min-height:50px;
-  display: inline-block;
-} */
-
 .sideButton{
   height: 100%;
   min-height:50px;
   display: inline-block;
+  background-color: GoldenRod;
 }
 
 
