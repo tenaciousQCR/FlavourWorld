@@ -95,6 +95,9 @@ app.post('/dologin', function(req, res) {
 
 app.get('/home', function(req, res) {
   res.render('pages/home');
+  if(!req.session.loggedin){
+    document.getElementByClass(loginButton).innerText = 'Logout';
+  }
 });
 
 app.get('/about', function(req, res) {
