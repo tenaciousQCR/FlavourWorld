@@ -48,13 +48,14 @@ main {
   height:80%;
 }
 
-.profileButton{
+/* .profileButton{
   height: 100%;
   min-height:50px;
   display: inline-block;
-}
+} */
 
 .sideButton{
+  background-color: GoldenRod;
   height: 100%;
   min-height:50px;
   display: inline-block;
