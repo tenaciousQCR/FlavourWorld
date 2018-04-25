@@ -39,14 +39,11 @@
           Lunchables Ham and Cheese Crackers
         </p>
         <h2>Your Reviews</h2>
+        <% reviews.forEach(function(review){%>
         <p>
-          <%= reviews[0].recipe + " - " + reviews[0].text + " " + reviews[0].score + "/5"%>
+          <%= review.recipe + " - " + review.text + " " + reviews.score + "/5"%>
         </p>
-        <p>
-          After eating this i spent 3 days on the toilet, my insides have become
-          my outsides and i am now a 300 year old mongolian woman, i was a 42 year
-          old Kansas man named chuck. 3/5 - Alphabetti Spaghetti
-        </p>
+        <%});%>
       </div>
     </main>
 
