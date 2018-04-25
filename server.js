@@ -125,11 +125,8 @@ app.get('/review', function(req, res) {
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
   var cursor = db.collection('reviews').find();
-  while(cursor.hasNext()){
-    var reviews += (tojson(myCursor.next()));
-  }
 
-  console.log(reviews);
+  console.log(reviews.forEach(printjson));
     db.collection('users').findOne({
       "login.username": uname
     },
@@ -141,7 +138,7 @@ app.get('/profile', function(req, res) {
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
         user: result,
-        reviews: reviews
+        reviews: cursor
       })
     });
 });
