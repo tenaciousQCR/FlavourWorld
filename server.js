@@ -143,7 +143,7 @@ app.get('/profile', function(req, res) {
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
         user: result,
-        reviews: cursor
+        reviews: reviews
       })
     });
 });
