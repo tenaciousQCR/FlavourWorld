@@ -6,9 +6,16 @@ body{
   height: 1000px;
 }
 
-.logout{
+.logout {
   float: right;
-  height: 100%;
-  min-height:50px;
+  font-family: 'Poiret One';
+  font-size: 18px;
+  width: 12%;
+  padding: 10px;
+  margin-right: 40px;;
+  margin-left: auto;
+  color: White;
   background-color: GoldenRod;
+  display: block;
+  cursor: pointer;
 }
