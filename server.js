@@ -183,4 +183,4 @@ function getRecipeJson(url){
       json_obj = jsonData;
     })
     return json_obj;
-}
+};
