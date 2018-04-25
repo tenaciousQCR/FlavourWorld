@@ -74,7 +74,7 @@ app.post('/dologin', function(req, res) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){
-      res.redirect('/profile');
+      res.redirect('/loginPage');
       return
     }
 
@@ -83,7 +83,7 @@ app.post('/dologin', function(req, res) {
       req.session.loggedin = true;
       req.session.currentusername = uname;
       console.log("you are logged in");
-      res.redirect("/home");
+      res.redirect("/profile");
     }
 
     //otherwise send them back to login
