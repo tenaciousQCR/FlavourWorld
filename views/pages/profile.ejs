@@ -29,7 +29,7 @@
       </div>
       <div>
         <h1>Profile</h1>
-        <p>Hello <%= reviews[0].user %></p>
+        <p>Hello <%= user.name.first %></p>
         <p>Username: <%= user.login.username %></p>
         <h2>Favourite Dishes</h2>
         <p>
@@ -40,7 +40,7 @@
         </p>
         <h2>Your Reviews</h2>
         <p>
-          <%= reviews[0].text + " " + reviews[0].score + " " + reviews[0].recipe %>
+          <%= reviews[0].recipe + " - " reviews[0].text + " " + reviews[0].score + "/5"%>
         </p>
         <p>
           After eating this i spent 3 days on the toilet, my insides have become
