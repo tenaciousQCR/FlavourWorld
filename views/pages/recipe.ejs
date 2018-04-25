@@ -25,13 +25,7 @@
 
     <main id="Page" class="grid-container">
       <div id="optionsBar">
-        <button class="loginButton" onclick="login_menu()">Profile</button>
-        <div class="profileMenu">
-           <a href="loginPage">
-           <button>Login</button></a>
-           <a href="registerPage">
-           <button>Register</button> </a>
-        </div>
+        <% include ../partials/profileMenu %>
       </div>
 
       <div class="Title grid-100 mobile-gride-50">
@@ -79,6 +73,16 @@
       <div class="contentRecipe">
         <a href="<%= '/review?=' + id %>"><button>Your Review!</button></a>
         <h2 id="review">User Reviews</h2>
+        <div>
+          <h3 id="score">Average Score: <%= jsonData.rating %> </h3>
+          <p>
+            <img src="images/star-empty-single.png" id="star1" class="star">
+            <img src="images/star-empty-single.png" id="star2" class="star">
+            <img src="images/star-empty-single.png" id="star3" class="star">
+            <img src="images/star-empty-single.png" id="star4" class="star">
+            <img src="images/star-empty-single.png" id="star5" class="star">
+          </p>
+        </div>
         <p>
           I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
           they did it back in the days...

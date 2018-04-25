@@ -81,8 +81,9 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
+      req.session.currentusername = uname;
       console.log("you are logged in");
-      res.redirect("/home");
+      res.redirect("/profile");
     }
 
     //otherwise send them back to login
@@ -105,18 +106,6 @@ app.get('/contact', function(req, res) {
   res.render('pages/contact');
 });
 
-app.get('/recipe-1', function(req, res) {
-  res.render('pages/recipe-1');
-});
-
-app.get('/recipe-2', function(req, res) {
-  res.render('pages/recipe-2');
-});
-
-app.get('/recipe-3', function(req, res) {
-  res.render('pages/recipe-3');
-});
-
 app.get('/legal', function(req, res) {
   res.render('pages/legal');
 });
@@ -133,12 +122,29 @@ app.get('/review', function(req, res) {
   res.render('pages/review');
 });
 
+app.get('/profile', function(req, res) {
+  var uname = req.session.currentusername;
+    db.collection('users').findOne({
+      "login.username": uname
+    },
+    function(err, result) {
+      if (err) throw err;
+      console.log(result);
+      //console.log(uname+ ":" + result);
+      //finally we just send the result to the user page as "user"
+      res.render('pages/profile', {
+        user: result
+      })
+    });
+});
+
 app.get('/recipe', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.query.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827";
   getJSON(url, function(error, response){
     res.render('pages/recipe', {
       jsonData: response,
-      id: req.query.id
+      id: req.query.id,
+      rating: req.query.rating
     });
   });
 })
@@ -172,4 +178,4 @@ function getRecipeJson(url){
       json_obj = jsonData;
     })
     return json_obj;
-}
+};

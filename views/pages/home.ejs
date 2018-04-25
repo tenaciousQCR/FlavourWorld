@@ -29,12 +29,8 @@
 
   <main id="Page" class="grid-container">
     <div id="optionsBar">
-      <button class="sideButton" onclick="menu_toggle()" tabindex="5">☰</button>
-      <button class="loginButton" onclick="login_menu()" tabindex="2">Profile</button>
-      <div class="profileMenu">
-         <a href="loginPage" tabindex="3"><button>Login</button></a>
-         <a href="registerPage" tabindex="4"><button>Register</button> </a>
-      </div>
+      <button class="sideButton" onclick="menu_toggle()">☰</button>
+      <% include ../partials/profileMenu %>
       <div class="searchbox" id='SiteNavigation'>
         <span class="icon"> <i class="search.container"></i></span>
         <input type="search" id="search" placeholder="Search..." />
@@ -48,31 +44,31 @@
       <h4 id="dietary">Allergens</h4>
        <div class="Dietary">
           <button type="button" onclick="setFilter(this.id);" id="gluten">
-           Gluten
+           Gluten <img src="images/wheat.png" class="filterLogo" alt="gluten icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="dairy">
-           Dairy
+           Dairy <img src="images/dairy.png" class="filterLogo" alt="dairy icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="egg">
-           Egg
+           Egg <img src="images/egg.png" class="filterLogo" alt="egg icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="fish">
-           Seafood
+           Seafood <img src="images/seafood.png" class="filterLogo" alt="seafood icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="soy">
-           Soy
+           Soy <img src="images/soy.png" class="filterLogo" alt="soy icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="sesame">
-           Sesame
+           Sesame <img src="images/sesame.png" class="filterLogo" alt="sesame icon">
           </button>
 
           <button type="button" onclick="setFilter(this.id);" id="nuts">
-           Nuts
+           Nuts <img src="images/nuts.png" class="filterLogo" alt="nuts icon">
           </button>
         </div>
 
@@ -105,11 +101,11 @@
         <h4 id="time">Diet</h4>
           <div class="Diet">
             <button type="button" onclick="setFilter(this.id);" id="vegetarian">
-             Vegetarian
+             Vegetarian <img src="images/vegetarian.png" class="filterLogo" alt="vegetarian icon">
             </button>
 
             <button type="button" onclick="setFilter(this.id);" id="vegan">
-             Vegan
+             Vegan <img src="images/vegan.png" class="filterLogo" alt="vegan icon">
             </button>
 
             <button type="button" onclick="setFilter(this.id);" id="pescetarian">
