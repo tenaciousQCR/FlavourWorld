@@ -126,7 +126,7 @@ app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
   var cursor = db.collection('reviews').find();
   while(cursor.hasNext()){
-    print(tojson(myCursor.next()));
+    var reviews += (tojson(myCursor.next()));
   }
 
   console.log(reviews);
