@@ -123,16 +123,18 @@ app.get('/review', function(req, res) {
 });
 
 app.get('/profile', function(req, res) {
-var uname = req.session.currentusername;
-  db.collection('users').findOne({
-    "login.username": uname
-  }, function(err, result) {
-    if (err) throw err;
-    //console.log(uname+ ":" + result);
-    //finally we just send the result to the user page as "user"
-    res.render('pages/profile', {
-      user: result
-    })
+  var uname = req.session.currentusername;
+    db.collection('users').findOne({
+      "login.username": uname
+    },
+    function(err, result) {
+      if (err) throw err;
+      //console.log(uname+ ":" + result);
+      //finally we just send the result to the user page as "user"
+      res.render('pages/profile', {
+        user: result
+      })
+    });
 });
 
 app.get('/recipe', function(req, res){
