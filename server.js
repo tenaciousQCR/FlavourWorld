@@ -124,12 +124,15 @@ app.get('/review', function(req, res) {
 
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
+  var reviews;
+  db.collection('reviews').find({"username": uname}, function(err, result){ if (err) throw err; reviews = result};)
     db.collection('users').findOne({
       "login.username": uname
     },
     function(err, result) {
       if (err) throw err;
       console.log(result);
+      console.log(reviews);
       //console.log(uname+ ":" + result);
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
