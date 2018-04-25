@@ -9,10 +9,10 @@ body{
 .logout {
   float: right;
   font-family: 'Poiret One';
-  font-size: 20px;
+  font-size: 18px;
   width: 16%;
   padding: 10px;
-  margin-right: auto;
+  margin-right: 15px;;
   margin-left: auto;
   color: White;
   background-color: GoldenRod;
