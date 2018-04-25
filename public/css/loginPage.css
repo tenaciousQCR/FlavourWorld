@@ -44,7 +44,7 @@ input[type=text], input[type=password] {
 /* Login Button */
 
 .submitButton {
-    background-color: Brown;
+    background-color: GoldenRod;
     color: White;
     font-family: 'Poiret One';
     padding: 14px 20px;
