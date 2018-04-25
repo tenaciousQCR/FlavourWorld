@@ -24,25 +24,18 @@
     <form action="/dologin" method="POST">
 
 
-<!-- PLACEHOLDER FOR LOGIN IMAGE -->
-
-      <div class="imgcontainer">
-        <img src="images/loginImg.png" alt="Avatar" class="avatar">
-      </div>
-
-
 <!-- USERNAME AND PASSWORD INPUT BOXES -->
 
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" name="uname" tabindex="1" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" tabindex="2" required>
 
-        <button type="submit" class="submitButton">Login</button>
+        <button type="submit" class="submitButton" tabindex="3">Login</button>
         <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
+          <input type="checkbox" checked="checked" name="remember" tabindex="5"> Remember me
         </label>
       </div>
 
@@ -50,9 +43,9 @@
 
       <div class="container">
         <a href="home">
-          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="button" class="cancelbtn" tabindex="6">Cancel</button>
         </a>
-        <span class="psw"> Forgot <a href="#"> password? </a></span>
+        <span class="psw"> Forgot <a href="#" tabindex="7"> password? </a></span>
       </div>
     </form>
   </main>
