@@ -90,6 +90,24 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+//this is our profile route, it takes in a username and uses that to search the database for a specific user
+app.get('/profile', function(req, res) {
+  if(!req.session.loggedin) {res.redirect('/loginPage');return;}
+  //get the requested user based on their username, eg /profile?username=dioreticllama
+  var uname = req.query.uname;
+  //this query finds the first document in the array with that username.
+  //Because the username value sits in the login section of the user data we use login.username
+  db.collection('users').findOne({
+    "login.username": uname
+  }, function(err, result) {
+    if (err) throw err;
+    //console.log(uname+ ":" + result);
+    //finally we just send the result to the user page as "user"
+    res.render('views/pages/profile', {
+      user: result
+    })
+  });
+
 
 //RENDER PAGES
 
