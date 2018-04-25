@@ -133,7 +133,6 @@ var uname = req.session.currentusername;
     res.render('pages/profile', {
       user: result
     })
-
 });
 
 app.get('/recipe', function(req, res){
