@@ -124,7 +124,7 @@ app.get('/review', function(req, res) {
 
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
-  var reviews = db.collection('users').getIndexes();
+  var reviews = db.collection('users').find();
 
   console.log(reviews);
     db.collection('users').findOne({
@@ -137,7 +137,8 @@ app.get('/profile', function(req, res) {
       //console.log(uname+ ":" + result);
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
-        user: result
+        user: result,
+        reviews: reviews
       })
     });
 });
