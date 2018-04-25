@@ -124,8 +124,7 @@ app.get('/review', function(req, res) {
 
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
-  var reviews;
-  db.collection('reviews').find({}, function(err, result){ if (err) throw err; reviews = result})
+  var reviews = db.collection('reviews').find({});
     db.collection('users').findOne({
       "login.username": uname
     },
