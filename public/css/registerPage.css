@@ -32,7 +32,7 @@ input[type=text], input[type=password] {
 /* Login Button */
 
 .submitButton {
-    background-color: Brown;
+    background-color: GoldenRod;
     color: White;
     font-family: 'Poiret One';
     padding: 14px 20px;
@@ -43,13 +43,13 @@ input[type=text], input[type=password] {
 }
 
 .submitButton:hover {
-    background-color: Maroon;
+    background-color: DarkGoldenRod;
 }
 
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: Brown;
+    background-color: GoldenRod;
     color: White;
     font-family: 'Poiret One';
     margin: 8px 0;
@@ -57,6 +57,9 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
+.cancelbtn:hover {
+  background-color: DarkGoldenRod;
+}
 
 /* Forgot Password? */
 
