@@ -31,7 +31,7 @@
     <div id="optionsBar">
       <button class="sideButton" onclick="menu_toggle()" tabindex="5">☰</button>
       <% include ../partials/profileMenu %>
-      <div class="searchbox" id='SiteNavigation'>
+      <div class="searchbox" id='SiteNavigation' tabindex="20">
         <span class="icon"> <i class="search.container"></i></span>
         <input type="search" id="search" placeholder="Search..." />
       </div>
@@ -43,31 +43,31 @@
     <div class="sidebarContainer grid-30 mobile-grid-100" id="sidebar">
       <h4 id="dietary">Allergens</h4>
        <div class="Dietary">
-          <button type="button" onclick="setFilter(this.id);" id="gluten">
+          <button type="button" onclick="setFilter(this.id);" id="gluten" tabindex="6">
            Gluten <img src="images/wheat.png" class="filterLogo" alt="gluten icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="dairy">
+          <button type="button" onclick="setFilter(this.id);" id="dairy" tabindex="7">
            Dairy <img src="images/dairy.png" class="filterLogo" alt="dairy icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="egg">
+          <button type="button" onclick="setFilter(this.id);" id="egg" tabindex="8">
            Egg <img src="images/egg.png" class="filterLogo" alt="egg icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="fish">
+          <button type="button" onclick="setFilter(this.id);" id="fish" tabindex="9">
            Seafood <img src="images/seafood.png" class="filterLogo" alt="seafood icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="soy">
+          <button type="button" onclick="setFilter(this.id);" id="soy" tabindex="10">
            Soy <img src="images/soy.png" class="filterLogo" alt="soy icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="sesame">
+          <button type="button" onclick="setFilter(this.id);" id="sesame" tabindex="11">
            Sesame <img src="images/sesame.png" class="filterLogo" alt="sesame icon">
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="nuts">
+          <button type="button" onclick="setFilter(this.id);" id="nuts" tabindex="12">
            Nuts <img src="images/nuts.png" class="filterLogo" alt="nuts icon">
           </button>
         </div>
@@ -78,19 +78,19 @@
 
       <h4 id="time">Time Restrictions</h4>
         <div class="Time">
-          <button type="button" onclick="setFilter(this.id);" id="breakfast">
+          <button type="button" onclick="setFilter(this.id);" id="breakfast" tabindex="13">
            Breakfast & Brunch
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="lunch">
+          <button type="button" onclick="setFilter(this.id);" id="lunch" tabindex="14">
            Lunch
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="dinner">
+          <button type="button" onclick="setFilter(this.id);" id="dinner" tabindex="15">
            Dinner
           </button>
 
-          <button type="button" onclick="setFilter(this.id);" id="snack">
+          <button type="button" onclick="setFilter(this.id);" id="snack" tabindex="16">
            Snack
           </button>
         </div>
@@ -100,15 +100,15 @@
 
         <h4 id="time">Diet</h4>
           <div class="Diet">
-            <button type="button" onclick="setFilter(this.id);" id="vegetarian">
+            <button type="button" onclick="setFilter(this.id);" id="vegetarian" tabindex="17">
              Vegetarian <img src="images/vegetarian.png" class="filterLogo" alt="vegetarian icon">
             </button>
 
-            <button type="button" onclick="setFilter(this.id);" id="vegan">
+            <button type="button" onclick="setFilter(this.id);" id="vegan" tabindex="18">
              Vegan <img src="images/vegan.png" class="filterLogo" alt="vegan icon">
             </button>
 
-            <button type="button" onclick="setFilter(this.id);" id="pescetarian">
+            <button type="button" onclick="setFilter(this.id);" id="pescetarian" tabindex="19">
              Pescetarian
             </button>
           </div>
