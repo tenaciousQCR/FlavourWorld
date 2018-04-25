@@ -127,6 +127,8 @@ app.get('/profile', function(req, res) {
   var reviews;
   db.collection('reviews').find().toArray(
     function(err, result){
+      if(err) throw err;
+      console.log(result);
       reviews = result;
     }
   );
