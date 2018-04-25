@@ -83,7 +83,12 @@ header, footer {
   display: inline-block;
 }
 
-h2 {
+h2, h3 {
+  font-family: 'Poiret One';
+  color: Brown;
+}
+
+b {
   font-family: 'Poiret One';
   color: Brown;
 }
