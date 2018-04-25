@@ -133,7 +133,7 @@ app.get('/profile', function(req, res) {
     }
   );
 
-  console.log(reviews);
+  //console.log(reviews);
     db.collection('users').findOne({
       "login.username": uname
     },
