@@ -129,6 +129,7 @@ app.get('/profile', function(req, res) {
     },
     function(err, result) {
       if (err) throw err;
+      console.log(result);
       //console.log(uname+ ":" + result);
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
