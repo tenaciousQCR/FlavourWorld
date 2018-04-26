@@ -40,9 +40,9 @@
         </p>
         <h2>Your Reviews</h2>
         <% reviews.forEach(function(review){%>
-        <p>
+        <a href="<%='/recipe?=' + review.recipeID">
           <%= review.recipe + " - " + review.text + " " + review.score + "/5"%>
-        </p>
+        </a>
         <%});%>
       </div>
     </main>
