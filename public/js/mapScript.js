@@ -84,7 +84,7 @@ function clickOnMapItem(name){
 function popupFeature(e){
     console.log(e);
     var targetcountry = e.target.feature.properties.name;
-    console.log(e.bounds)
+    console.log(e._leaflet_id)
     getResultsFromYummly(targetcountry, e);
 
 }
