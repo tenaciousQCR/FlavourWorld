@@ -205,14 +205,14 @@ var datatostore = {
   })
 });
 
-app.post('/addfavourite', function(req, res){
+app.get('/addfavourite', function(req, res){
   var datatostore = {"name":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
   db.collection('favourites').insertOne(datatostore, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
     //when complete redirect to the index
-    res.redirect(redirectURL)
+    res.render(redirectURL)
   })
 });
 
