@@ -125,7 +125,7 @@ app.get('/review', function(req, res) {
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
   var reviews;
-  db.collection('reviews').find().toArray(
+  db.collection('reviews').find({"user": uname}).toArray(
     function(err, result){
       if(err) throw err;
       console.log(result);
