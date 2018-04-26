@@ -1,4 +1,4 @@
-// USER DATABASE
+//Server JavaScript
 
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/profiles";
