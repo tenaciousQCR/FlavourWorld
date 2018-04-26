@@ -320,6 +320,7 @@ function onEachFeature(feature, layer) {
         click: popupFeature,
     });
     layer.id = feature.properties.name;
+    console.log(layer.id)
 }
 
 //initiates and populates the map
