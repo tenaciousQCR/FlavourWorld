@@ -47,7 +47,6 @@ app.get('/', function(req, res) {
     req.session.loggedin = false;
     res.redirect('/home');
     return;
-
   }
 });
 
