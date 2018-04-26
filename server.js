@@ -114,7 +114,11 @@ app.get('/loginPage', function(req, res) {
 });
 
 app.get('/review', function(req, res) {
-  res.render('pages/review', {loggedin: req.session.loggedin});
+  res.render('pages/review', {
+    id: req.query.id,
+    name: req.query.name,
+    loggedin: req.session.loggedin
+  });
 });
 
 app.get('/profile', function(req, res) {
