@@ -36,6 +36,15 @@
         <img src="<%=jsonData.images[0].hostedLargeUrl%>" id="recipeImage">
       </div>
 
+      <div>
+        <%if(favourites != null){%>
+        <a href="/removefavourite" tabindex="-1"><button tabindex="21">Remove Favourite</button></a>
+        <%};%>
+        <%else(){%>
+          <a href="/addfavourite" tabindex="-1"><button tabindex="21">Add Favourite</button></a>
+        <%};%>
+      </div>
+
       <div class="contentRecipe">
         <h2 id="ingredientsList" tabindex="2">Ingredients</h2>
         <ul>
@@ -83,7 +92,7 @@
             <img src="images/star-empty-single.png" id="star5" class="star">
           </p>
         </div>
-        <h2>Your Reviews</h2>
+        <h2>Reviews</h2>
         <% reviews.forEach(function(review){%>
         <p>
           <%= review.user + " - " + review.text + " " + review.score + "/5"%>

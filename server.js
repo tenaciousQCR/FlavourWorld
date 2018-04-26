@@ -167,10 +167,18 @@ app.get('/recipe', function(req, res){
       reviews = result;
     }
   );
+  db.collection('favourites').find({"user": uname}).toArray(
+    function(err, result){
+      if(err) throw err;
+      console.log(result);
+      favourites = result;
+    }
+  );
   getJSON(url, function(error, response){
     res.render('pages/recipe', {
       jsonData: response,
       reviews: reviews,
+      favourites: favourites,
       id: req.query.id
     });
   });
@@ -194,6 +202,14 @@ var datatostore = {
     //when complete redirect to the index
     res.redirect('/loginPage')
   })
+});
+
+app.post('/addfavourite', function(req, res){
+  
+});
+
+app.post('/removefavourite', function(req, res){
+
 });
 
 //------------------------------------------------------------------------------
