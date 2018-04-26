@@ -37,10 +37,10 @@
       </div>
 
       <div>
-        <%if(favourites != null){%>
+        <%if(favourites != null & loggedin){%>
         <a href="/removefavourite" tabindex="-1"><button tabindex="21">Remove Favourite</button></a>
         <%}%>
-        <%if(favourites == null){%>
+        <%if(favourites == null & loggedin){%>
           <a href="/addfavourite" tabindex="-1"><button tabindex="21">Add Favourite</button></a>
         <%};%>
       </div>

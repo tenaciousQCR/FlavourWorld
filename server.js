@@ -179,7 +179,8 @@ app.get('/recipe', function(req, res){
       jsonData: response,
       reviews: reviews,
       favourites: favourites,
-      id: req.query.id
+      id: req.query.id,
+      loggedin: req.session.loggedin
     });
   });
 })
