@@ -75,7 +75,7 @@ function clickOnMapItem(name){
   layers.forEach(function(layer){
     if(layer._leaflet_id == name){
       console.log("It ran on: " + layer._leaflet_id + " with the name: " + name)
-      console.log(layer._bounds._northEast);
+      layer.latln = layer._bounds._northEast;
       layer.fireEvent('click');
     };
   });
