@@ -53,7 +53,7 @@ function showStar() {
   else {
     $('#star5').attr("src", "images/star-empty-single.png");
   }
-
+};
 
 // RATING FUNCTIONS: TASTE
 
