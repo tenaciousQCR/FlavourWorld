@@ -74,6 +74,7 @@ function clickOnMapItem(name){
   var layers = geojson.getLayers();
   layers.forEach(function(layer){
     if(layer._leaflet_id == name){
+      console.log("It ran on: " + layer._leaflet_id + " with the name: " + name)
       layer.fireEvent('click');
     };
   });
