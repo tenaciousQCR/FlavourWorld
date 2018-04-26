@@ -73,7 +73,7 @@ function resetHighlight(e) {
 function clickOnMapItem(name){
   var layers = geojson.getLayers();
   layers.forEach(function(layer){
-    console.log(layer.getLayerId(layer));
+    console.log(layer);
   });
 }
 
