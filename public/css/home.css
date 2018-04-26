@@ -19,7 +19,6 @@ main {
   border-radius: 5px;
 }
 
-
 #Page{
   height: 100%;
 }
@@ -73,32 +72,30 @@ button {
 
 .Dietary button {
   background-color: GoldenRod;
-  border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
   color: White;
-  padding: 10px 24px;
+  border: 2px solid Black;
+  padding: 15px 25px;
   cursor: pointer;
   width: 100%;
   display: block;
 }
-
-
-.Diet button {
-  background-color: DarkGoldenRod;
-  border: 1px solid Black;
-  font-family: 'Poiret One';
-  font-size: 15px;
-  color: White;
-  padding: 10px 24px;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-}
-
 
 .Time button {
   background-color: GoldenRod;
+  border: 1px solid Black;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  color: White;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.Diet button {
+  background-color: DarkGoldenRod;
   border: 1px solid Black;
   font-family: 'Poiret One';
   font-size: 15px;
