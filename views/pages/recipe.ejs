@@ -40,7 +40,7 @@
         <%if(favourites != null){%>
         <a href="/removefavourite" tabindex="-1"><button tabindex="21">Remove Favourite</button></a>
         <%}%>
-        <%else(){%>
+        <%if(favourites == null){%>
           <a href="/addfavourite" tabindex="-1"><button tabindex="21">Add Favourite</button></a>
         <%};%>
       </div>
