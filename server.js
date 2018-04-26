@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-// USER DATABASE
-=======
 //Server JavaScript
-
->>>>>>> 8789e8e9aadcb226ea79f0d3355886efb2a10531
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/profiles";
 const express = require('express'); //npm install express
@@ -44,16 +39,8 @@ MongoClient.connect(url, function(err, database){
 //THIS IS OUR ROOT ROUTE -- CODE GOES HERE FOR LOGGED-IN STUFF
 
 app.get('/', function(req, res) {
-<<<<<<< HEAD
 // IF THE USER IS NOT LOGGED-IN, THIS REDIRECTS THEM TO THE home PAGE
   if(!req.session.loggedin){
-=======
-
-// IF THE USER IS NOT LOGGED-IN, THIS REDIRECTS THEM TO THE LOGIN PAGE
-
-  if(req.session.loggedin == null){
-    req.session.loggedin = false;
->>>>>>> 8789e8e9aadcb226ea79f0d3355886efb2a10531
     res.redirect('/home');
     return;
   }
