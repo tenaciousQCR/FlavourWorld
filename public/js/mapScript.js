@@ -84,7 +84,7 @@ function clickOnMapItem(name){
 function popupFeature(e){
     console.log(e);
     var targetcountry = e.target.feature.properties.name;
-    console.log(e._bounds._northEast)
+    console.log(e._bounds)
     getResultsFromYummly(targetcountry, e);
 
 }
