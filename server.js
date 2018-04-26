@@ -167,7 +167,7 @@ app.get('/recipe', function(req, res){
       reviews = result;
     }
   );
-  db.collection('favourites').find({"user": uname}).toArray(
+  db.collection('favourites').find({"user": req.session.currentusername}).toArray(
     function(err, result){
       if(err) throw err;
       console.log(result);
@@ -205,7 +205,7 @@ var datatostore = {
 });
 
 app.post('/addfavourite', function(req, res){
-  
+
 });
 
 app.post('/removefavourite', function(req, res){
