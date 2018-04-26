@@ -319,7 +319,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: popupFeature,
     });
-    //layer.id = feature.properties.name;
+    layer.id = feature.properties.name;
 }
 
 //initiates and populates the map
