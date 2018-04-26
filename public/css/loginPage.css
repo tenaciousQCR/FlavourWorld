@@ -1,7 +1,11 @@
 /* General CSS */
+main {
+  height: 800px;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 1000px;
   /*background-color: AntiqueWhite;*/
 }
 
@@ -40,7 +44,7 @@ input[type=text], input[type=password] {
 /* Login Button */
 
 .submitButton {
-    background-color: Brown;
+    background-color: GoldenRod;
     color: White;
     font-family: 'Poiret One';
     padding: 14px 20px;
@@ -57,7 +61,7 @@ input[type=text], input[type=password] {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: Brown;
+    background-color: GoldenRod;
     color: White;
     font-family: 'Poiret One';
     margin: 8px 0;

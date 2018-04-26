@@ -29,7 +29,7 @@
       </div>
 
       <div class="Title grid-100 mobile-gride-50">
-        <h1 id="recipeTitle"> <%= jsonData.name %> </h1>
+        <h1 id="recipeTitle" tabindex="1"> <%= jsonData.name %> </h1>
       </div>
 
       <div class="recipeImg">
@@ -37,7 +37,7 @@
       </div>
 
       <div class="contentRecipe">
-        <h2 id="ingredientsList">Ingredients</h2>
+        <h2 id="ingredientsList" tabindex="2">Ingredients</h2>
         <ul>
           <% jsonData.ingredientLines.forEach(function(ingredient) { %>
           <li>
@@ -48,18 +48,18 @@
       </div>
 
       <div class="contentRecipe">
-        <h2 id="preparationSteps">Preparation</h2>
+        <h2 id="preparationSteps" tabindex="3">Preparation</h2>
         <p>Prep Time:
           <%= jsonData.totalTime %>
         </p>
         <p>Servings:
           <%= jsonData.yield %>
         </p>
-        <a href="<%= jsonData.source.sourceRecipeUrl %>">Link to Instructions</a>
+        <a href="<%= jsonData.source.sourceRecipeUrl %>" tabindex="4">Link to Instructions</a>
       </div>
 
       <div class="contentRecipe">
-        <h2 id="dietaryNotes">Dietary Notes</h2>
+        <h2 id="dietaryNotes" tabindex="5">Dietary Notes</h2>
         <ul>
           <% jsonData.nutritionEstimates.forEach(function(attribute){ %>
           <% if(attribute.value > 0.0){ %>
@@ -71,8 +71,8 @@
       </div>
 
       <div class="contentRecipe">
-        <a href="<%= '/review?=' + id %>"><button>Your Review!</button></a>
-        <h2 id="review">User Reviews</h2>
+        <a href="<%= '/review?=' + id %>" tabindex="-1"><button tabindex="6">Your Review!</button></a>
+        <h2 id="review" tabindex="7">User Reviews</h2>
         <div>
           <h3 id="score">Average Score: <%= jsonData.rating %> </h3>
           <p>
@@ -83,16 +83,16 @@
             <img src="images/star-empty-single.png" id="star5" class="star">
           </p>
         </div>
-        <p>
+        <p tabindex="8">
           I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
           they did it back in the days...
         </p>
-        <p>
+        <p tabindex="9">
           Great dish. I'd recommend adding some fennel seeds to the tears and
           letting them marinade for a couple hours. The fennel will fight off
           the tears' bitter aftertaste!
         </p>
-        <p>
+        <p tabindex="10">
           I honestly thought this was a news website. What's with the food stuff?
         </p>
       </div>

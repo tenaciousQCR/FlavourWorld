@@ -91,7 +91,6 @@ app.post('/dologin', function(req, res) {
   });
 });
 
-
 //RENDER PAGES
 
 app.get('/home', function(req, res) {
@@ -164,12 +163,9 @@ app.get('/recipe', function(req, res){
 //------------------------------------------------------------------------------
 
 app.post('/registeruser', function(req, res) {
-
 //check we are logged in
 //if(!req.session.loggedin){res.redirect('/login');return;}
-
 //we create the data string from the form components that have been passed in
-
 var datatostore = {
 "name":{"first":req.body.fname,"last":req.body.lname},
 "email":req.body.email,
@@ -184,6 +180,8 @@ var datatostore = {
   })
 });
 
+//------------------------------------------------------------------------------
+
 function getRecipeJson(url){
   var json_obj;
     $.getJSON(url, function(jsonData){
@@ -191,3 +189,31 @@ function getRecipeJson(url){
     })
     return json_obj;
 };
+
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+// app.post('/reviewDish', function(req, res) {
+// //we create the data string from the form components that have been passed in
+// //we need to find a way to pass in the dishname and the score
+// var datatostore = {
+//   "dish":req.session.currentusername,
+//   "username":req.session.currentusername,
+//   "review":{"description":req.body.reviewBox, "score":req.body.}}
+//
+// //once created we just run the data string against the database and all our new data will be saved/
+//   db.collection('reviews').insertOne(datatostore, function(err, result) {
+//     if (err) throw err;
+//     console.log('saved to database')
+//     //when complete redirect to the index
+//     res.redirect('/recipe')
+//   })
+// });
