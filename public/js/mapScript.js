@@ -314,6 +314,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: popupFeature,
     });
+    layer._leaflet_id = feature.properties.name;
 }
 
 //initiates and populates the map
