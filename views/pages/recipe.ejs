@@ -83,18 +83,12 @@
             <img src="images/star-empty-single.png" id="star5" class="star">
           </p>
         </div>
-        <p tabindex="8">
-          I wish I knew before that Pigs in Blankets neded Goofs. Wonder how
-          they did it back in the days...
+        <h2>Your Reviews</h2>
+        <% reviews.forEach(function(review){%>
+        <p>
+          <%= review.user + " - " + review.text + " " + review.score + "/5"%>
         </p>
-        <p tabindex="9">
-          Great dish. I'd recommend adding some fennel seeds to the tears and
-          letting them marinade for a couple hours. The fennel will fight off
-          the tears' bitter aftertaste!
-        </p>
-        <p tabindex="10">
-          I honestly thought this was a news website. What's with the food stuff?
-        </p>
+        <%});%>
       </div>
     </main>
 
