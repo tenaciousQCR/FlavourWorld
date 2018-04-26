@@ -8,7 +8,6 @@ const getJSON = require('get-json');//npm install get-json
 const app = express();
 app.use(express.static('public'))
 var db;
-
 app.set('views');
 
 
@@ -18,8 +17,6 @@ app.use(session({ secret: 'example' }));
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-
-req.session.loggedin = false;
 
 // SET THE VIEW ENGINE TO EJS
 app.set('view engine', 'ejs');
@@ -78,6 +75,7 @@ app.post('/dologin', function(req, res) {
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
+      loggedin = true;
       req.session.currentusername = uname;
       console.log("you are logged in");
       res.redirect("/profile");
@@ -91,31 +89,32 @@ app.post('/dologin', function(req, res) {
 //RENDER PAGES
 
 app.get('/home', function(req, res) {
-  res.render('pages/home');
+  res.render('pages/home', {loggedin: req.session.loggedin});
+
 });
 
 app.get('/about', function(req, res) {
-  res.render('pages/about');
+  res.render('pages/about', {loggedin: req.session.loggedin});
 });
 
 app.get('/contact', function(req, res) {
-  res.render('pages/contact');
+  res.render('pages/contact', {loggedin: req.session.loggedin});
 });
 
 app.get('/legal', function(req, res) {
-  res.render('pages/legal');
+  res.render('pages/legal', {loggedin: req.session.loggedin});
 });
 
 app.get('/registerPage', function(req, res) {
-  res.render('pages/registerPage');
+  res.render('pages/registerPage', {loggedin: req.session.loggedin});
 });
 
 app.get('/loginPage', function(req, res) {
-  res.render('pages/loginPage');
+  res.render('pages/loginPage', {loggedin: req.session.loggedin});
 });
 
 app.get('/review', function(req, res) {
-  res.render('pages/review');
+  res.render('pages/review', {loggedin: req.session.loggedin});
 });
 
 app.get('/profile', function(req, res) {
@@ -150,7 +149,8 @@ app.get('/profile', function(req, res) {
       res.render('pages/profile', {
         user: result,
         reviews: reviews,
-        favourites: favourites
+        favourites: favourites,
+        loggedin: req.session.loggedin
       })
     });
 });
