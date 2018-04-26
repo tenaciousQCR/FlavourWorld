@@ -337,8 +337,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: popupFeature,
     });
-    layer._leaflet_id = feature.properties.name;
-    console.log(layer.id)
+    layer._leaflet_id = feature.properties.name_long;
 }
 
 //initiates and populates the map
