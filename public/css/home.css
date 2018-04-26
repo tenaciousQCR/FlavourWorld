@@ -73,7 +73,7 @@ button {
 .Dietary button {
   background-color: GoldenRod;
   font-family: 'Poiret One';
-  font-size: 15px;
+  font-size: 20px;
   color: White;
   border: 1px solid Brown;
   padding: 15px 25px;
@@ -84,10 +84,10 @@ button {
 
 .Time button {
   background-color: GoldenRod;
-  border: 1px solid Brown;
   font-family: 'Poiret One';
-  font-size: 15px;
+  font-size: 20px;
   color: White;
+  border: 1px solid Brown;
   padding: 15px 25px;
   cursor: pointer;
   width: 100%;
@@ -96,10 +96,10 @@ button {
 
 .Diet button {
   background-color: DarkGoldenRod;
-  border: 1px solid Brown;
   font-family: 'Poiret One';
-  font-size: 15px;
+  font-size: 20px;
   color: White;
+  border: 1px solid Brown;
   padding: 15px 25px;
   cursor: pointer;
   width: 100%;
