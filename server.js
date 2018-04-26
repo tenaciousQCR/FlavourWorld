@@ -119,7 +119,10 @@ app.get('/loginPage', function(req, res) {
 });
 
 app.get('/review', function(req, res) {
-  res.render('pages/review');
+  res.render('pages/review', {
+    id: req.query.id,
+    name: req.query.name
+  });
 });
 
 app.get('/profile', function(req, res) {

@@ -33,6 +33,8 @@
           <div class="container">
             <label for="reviewbox"><b>Your Review</b></label>
             <input type="text" placeholder="What did you think of this dish?" tabindex="1" name="reviewbox" required>
+            <input type="hidden" name="id" value="<%= id %>">
+            <input type="hidden" name="name" value="<%= name %>">
           </div>
 
 
@@ -47,6 +49,7 @@
             <img src="images/star-empty-single.png" id="star14" class="star" tabindex="5">
             <img src="images/star-empty-single.png" id="star15" class="star" tabindex="6">
           </p>
+          <input id="starrating" type="hidden" name="score" value=0>
         </div>
         <div>
           <p>
