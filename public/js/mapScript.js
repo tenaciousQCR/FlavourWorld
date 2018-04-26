@@ -319,7 +319,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: popupFeature,
     });
-    layer.id = feature.properties.name;
+    layer._leaflet_id = feature.properties.name;
     console.log(layer.id)
 }
 
