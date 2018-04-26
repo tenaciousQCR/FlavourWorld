@@ -118,7 +118,9 @@ function addResultTitles(jsondata, e){
 
 function getLatLng(e){
   if(e.latlng == undefined){
-    return e.target._bounds._northEast;
+    var lat = (e.target._bounds._northEast.lat + e.target._bounds.southWest.lat)/2;
+    var lng = (e.target._bounds._northEast.lat + e.target._bounds.southWest.lat)/2
+    return {lat,lng}
   }
   else{
     return e.latlng
