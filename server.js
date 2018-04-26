@@ -44,6 +44,7 @@ app.get('/', function(req, res) {
 // IF THE USER IS NOT LOGGED-IN, THIS REDIRECTS THEM TO THE LOGIN PAGE
 
   if(!req.session.loggedin){
+    req.session.loggedin = false;
     res.redirect('/home');
     return;
   }
