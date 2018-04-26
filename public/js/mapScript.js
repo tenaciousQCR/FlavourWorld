@@ -75,6 +75,7 @@ function clickOnMapItem(name){
   layers.forEach(function(layer){
     if(layer._leaflet_id == name){
       console.log("It ran on: " + layer._leaflet_id + " with the name: " + name)
+      console.log(layer._bounds._northEast);
       layer.fireEvent('click');
     };
   });
@@ -84,7 +85,6 @@ function clickOnMapItem(name){
 function popupFeature(e){
     console.log(e);
     var targetcountry = e.target.feature.properties.name;
-    console.log(e.target._bounds._northEast)
     getResultsFromYummly(targetcountry, e);
 
 }
