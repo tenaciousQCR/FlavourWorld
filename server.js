@@ -170,7 +170,7 @@ app.get('/recipe', function(req, res){
   getJSON(url, function(error, response){
     res.render('pages/recipe', {
       jsonData: response,
-      reviews = reviews
+      reviews: reviews
     });
   });
 })
