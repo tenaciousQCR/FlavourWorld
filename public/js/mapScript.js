@@ -71,7 +71,10 @@ function resetHighlight(e) {
 //---------------------------POPUP CODE-----------------------------------
 
 function clickOnMapItem(name){
-  console.log(geojson.getLayers());
+  var layers = geojson.getLayers();
+  layers.forEach(function(layer){
+    console.log(layer.getLayerId(layer));
+  });
 }
 
 //Called when a country is clicked, finds the country that is clicked and passes it to the next function
