@@ -81,7 +81,7 @@ function clickOnMapItem(name){
 
 //Called when a country is clicked, finds the country that is clicked and passes it to the next function
 function popupFeature(e){
-    console.log(e.id);
+    console.log(e._leaflet_id);
     var targetcountry = e.target.feature.properties.name;
     getResultsFromYummly(targetcountry, e);
 
