@@ -167,7 +167,7 @@ app.get('/recipe', function(req, res){
       reviews = result;
     }
   );
-  db.collection('favourites').findOne({"user": req.session.currentusername},
+  db.collection('favourites').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
       console.log(result);
