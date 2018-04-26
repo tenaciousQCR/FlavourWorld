@@ -82,7 +82,7 @@ function clickOnMapItem(name){
 
 //Called when a country is clicked, finds the country that is clicked and passes it to the next function
 function popupFeature(e){
-    var targetcountry = e.target.feature.properties.name_long;
+    var targetcountry = e.target.feature.properties.name;
     getResultsFromYummly(targetcountry, e);
 
 }
@@ -335,7 +335,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: popupFeature,
     });
-    layer._leaflet_id = feature.properties.name_long;
+    layer._leaflet_id = feature.properties.name;
 }
 
 //initiates and populates the map
