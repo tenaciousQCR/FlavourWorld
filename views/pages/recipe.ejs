@@ -80,7 +80,9 @@
       </div>
 
       <div class="contentRecipe">
-        <a href="<%= '/review?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Your Review!</button></a>
+        <%if(loggedin){%>
+          <a href="<%= '/review?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Your Review!</button></a>
+        <%}%>
         <h2 id="review" tabindex="7">User Reviews</h2>
         <div>
           <h3 id="score">Average Score: <%= jsonData.rating %> </h3>
