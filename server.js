@@ -245,11 +245,11 @@ app.post('/reviewDish', function(req, res) {
 //we need to find a way to pass in the dishname and the score
 var redirectURL = "/recipe?id=" + req.body.id;
 var datatostore = {
-  "username":req.session.currentusername,
+  "user":req.session.currentusername,
   "recipeID":req.body.id,
   "recipe":req.body.name,
   "score":req.body.score,
-  "text":req.body.reviewBox}
+  "text":req.body.reviewbox}
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('reviews').insertOne(datatostore, function(err, result) {
