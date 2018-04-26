@@ -37,10 +37,10 @@
       </div>
 
       <div>
-        <%if(favourites != []){%>
+        <%if(favourites.user != undefined){%>
         <a href="/removefavourite" tabindex="-1"><button tabindex="21">Remove Favourite</button></a>
         <%}%>
-        <%if(favourites == []){%>
+        <%if(favourites.user == undefined){%>
           <a href="/addfavourite" tabindex="-1"><button tabindex="21">Add Favourite</button></a>
         <%};%>
       </div>
