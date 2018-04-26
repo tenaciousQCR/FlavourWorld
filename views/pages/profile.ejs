@@ -24,7 +24,7 @@
 
     <main id="Page" class="grid-container">
       <div id="optionsBar">
-        <% include ../partials/profileMenu %>johb
+        <% include ../partials/profileMenu %>
         <button class="logout" action="/logout">Logout</button>
       </div>
       <div>
@@ -33,18 +33,18 @@
         <p>Username: <%= user.login.username %></p>
         <h2>Favourite Dishes</h2>
         <ul>
-        <% if(favourites != null){favourites.forEach(function(favourite){%>
+        <%favourites.forEach(function(favourite){%>
         <li><a href="<%='/recipe?id=' + favourite.recipeID%>">
           <%= favourite.recipe %>
         </a></li>
-        <%}});%>
+        <%});%>
       </ul>
         <h2>Your Reviews</h2>
-        <% if(reviews != null){reviews.forEach(function(review){%>
+        <%reviews.forEach(function(review){%>
         <p><a href="<%='/recipe?id=' + review.recipeID%>">
           <%= review.recipe + " - " + review.text + " " + review.score + "/5"%>
         </a></p>
-        <%}});%>
+        <%});%>
       </div>
     </main>
 
