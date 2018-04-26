@@ -32,12 +32,11 @@
         <p>Hello <%= user.name.first %></p>
         <p>Username: <%= user.login.username %></p>
         <h2>Favourite Dishes</h2>
-        <p>
-          Spam and Eggs
-        </p>
-        <p>
-          Lunchables Ham and Cheese Crackers
-        </p>
+        <% favourites.forEach(function(favourite){%>
+        <a href="<%='/recipe?id=' + favourite.recipeID%>">
+          <%= favourite.recipe %>
+        </a>
+        <%});%>
         <h2>Your Reviews</h2>
         <% reviews.forEach(function(review){%>
         <a href="<%='/recipe?id=' + review.recipeID%>">

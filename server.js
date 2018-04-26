@@ -124,11 +124,19 @@ app.get('/review', function(req, res) {
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
   var reviews;
+  var favourites;
   db.collection('reviews').find({"user": uname}).toArray(
     function(err, result){
       if(err) throw err;
       console.log(result);
       reviews = result;
+    }
+  );
+  db.collection('favourites').find({"user": uname}).toArray(
+    function(err, result){
+      if(err) throw err;
+      console.log(result);
+      favourites = result;
     }
   );
 
@@ -144,7 +152,8 @@ app.get('/profile', function(req, res) {
       //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
         user: result,
-        reviews: reviews
+        reviews: reviews,
+        favourites: favourites
       })
     });
 });
