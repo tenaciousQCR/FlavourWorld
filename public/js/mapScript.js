@@ -74,7 +74,6 @@ function clickOnMapItem(name){
   var layers = geojson.getLayers();
   layers.forEach(function(layer){
     if(layer._leaflet_id == name){
-      console.log("It ran on: " + layer._leaflet_id + " with the name: " + name)
       layer.latln = layer._bounds._northEast;
       layer.fireEvent('click');
     };
@@ -83,7 +82,6 @@ function clickOnMapItem(name){
 
 //Called when a country is clicked, finds the country that is clicked and passes it to the next function
 function popupFeature(e){
-    console.log(e);
     var targetcountry = e.target.feature.properties.name_long;
     getResultsFromYummly(targetcountry, e);
 
