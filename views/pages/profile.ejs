@@ -33,18 +33,18 @@
         <p>Username: <%= user.login.username %></p>
         <h2>Favourite Dishes</h2>
         <ul>
-        <% favourites.forEach(function(favourite){%>
+        <% if(favourites != null){favourites.forEach(function(favourite){%>
         <li><a href="<%='/recipe?id=' + favourite.recipeID%>">
           <%= favourite.recipe %>
         </a></li>
-        <%});%>
+        <%}});%>
       </ul>
         <h2>Your Reviews</h2>
-        <% reviews.forEach(function(review){%>
+        <% if(reviews != null){reviews.forEach(function(review){%>
         <p><a href="<%='/recipe?id=' + review.recipeID%>">
           <%= review.recipe + " - " + review.text + " " + review.score + "/5"%>
         </a></p>
-        <%});%>
+        <%}});%>
       </div>
     </main>
 
