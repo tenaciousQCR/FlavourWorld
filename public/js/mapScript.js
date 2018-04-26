@@ -96,7 +96,7 @@ function getResultsFromYummly(targetcountry, e){
     jsondata = jsondata;
     var htmlstring = addResultTitles(jsondata, e);
     popup
-        .setLatLng(e.latlng)
+        .setLatLng(getLatLng(e))
         .setContent(htmlstring)
         .openOn(mymap);
   });
@@ -114,6 +114,15 @@ function addResultTitles(jsondata, e){
   htmlstring += "</ul>"
   return htmlstring;
 
+}
+
+function getLatLng(e){
+  if(e.latlng == undefined){
+    return e.target._bounds._northEast;
+  }
+  else{
+    return e.latlng
+  }
 }
 
 //------------------------------------Filters-------------------------------------
