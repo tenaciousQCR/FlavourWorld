@@ -118,9 +118,10 @@ function addResultTitles(jsondata, e){
 
 function getLatLng(e){
   if(e.latlng == undefined){
-    var lat = (e.target._bounds._northEast.lat + e.target._bounds._southWest.lat)/2;
-    var lng = (e.target._bounds._northEast.lng + e.target._bounds._southWest.lng)/2
-    return {lat,lng}
+    // var lat = (e.target._bounds._northEast.lat + e.target._bounds._southWest.lat)/2;
+    // var lng = (e.target._bounds._northEast.lng + e.target._bounds._southWest.lng)/2
+    // return {lat,lng}
+    return e.target._latlngs[0][0][0];
   }
   else{
     return e.latlng
