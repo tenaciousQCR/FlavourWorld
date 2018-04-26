@@ -76,7 +76,7 @@ function clickOnMapItem(name){
     if(layer._leaflet_id == name){
       console.log("It ran on: " + layer._leaflet_id + " with the name: " + name)
       layer.fireEvent('click');
-      layer.latlng = layer._latlngs[0].[0]
+      layer.latlng = {50.00,50.00};
     };
   });
 }
