@@ -219,7 +219,7 @@ app.get('/addfavourite', function(req, res){
 app.get('/removefavourite', function(req, res){
   var datatoremove = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
-  db.collection('favourites').removeOne(datatostore, function(err, result) {
+  db.collection('favourites').removeOne(datatoremove, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
     //when complete redirect to the index
