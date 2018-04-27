@@ -7,7 +7,7 @@ var star4 = false;
 var star5 = false;
 
 $(document).ready(function(){
-  console.log(score);
+  console.log(score.getValue());
   getRating();
   showStar();
   console.log(rating);
