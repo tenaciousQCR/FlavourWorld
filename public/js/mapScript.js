@@ -474,6 +474,99 @@ function countryfilter(targetcountry){
   if(targetcountry == "Brazil"){
     return "Brazillian"
   }
+  if(targetcountry == "Kyrgyzstan"){
+    return "Kyrgyz"
+  }
+  if(targetcountry == "Kyrgyzstan"){
+    return "Kyrgyz"
+  }
+  if(targetcountry == "Tajikistan"){
+    return "Tajik"
+  }
+  if(targetcountry == "Pakistan"){
+    return "Pakistani"
+  }
+  if(targetcountry == "Kazakhstan"){
+    return "Kazakh"
+  }
+  if(targetcountry == "Mongolia"){
+    return "Mongolian"
+  }
+  if(targetcountry == "Nepal"){
+    return "Nepalese"
+  }
+  if(targetcountry == "Bangladesh"){
+    return "Bangladeshi"
+  }
+  if(targetcountry == "Myanmar"){
+    return "Burmese"
+  }
+  if(targetcountry == "Sri Lanka"){
+    return "Sri Lankan"
+  }
+  if(targetcountry == "Cambodia"){
+    return "Cambodian"
+  }
+  if(targetcountry == "Malaysia"){
+    return "Malaysian"
+  }
+  if(targetcountry == "Indonesia"){
+    return "Indonesian"
+  }
+  if(targetcountry == "Vietnam"){
+    return "Vietnamese"
+  }
+  if(targetcountry == "Philippines"){
+    return "Filipino"
+  }
+  if(targetcountry == "Papua New Guinea"){
+    return "Papua New Guinean"
+  }
+  if(targetcountry == "New Caledonia"){
+    return "New Caledonian"
+  }
+  if(targetcountry == "Chile"){
+    return "Chilean"
+  }
+  if(targetcountry == "Peru"){
+    return "Peruvian"
+  }
+  if(targetcountry == "Suriname"){
+    return "Surinamese"
+  }
+  if(targetcountry == "Guatemala"){
+    return "Guatemalan"
+  }
+  if(targetcountry == "Honduras"){
+    return "Honduran"
+  }
+  if(targetcountry == "Jamaica"){
+    return "Jamaican"
+  }
+  if(targetcountry == "Taiwan"){
+    return "Taiwanese"
+  }
+  if(targetcountry == "Lao PDR"){
+    return "Laotian"
+  }
+  if(targetcountry == "Cambodia"){
+    return "Cambodian"
+  }
+  if(targetcountry == "Dem. Rep. Korea"){
+    return "North Korean"
+  }
+  if(targetcountry == "Azerbaijan"){
+    return "Azerbaijani"
+  }
+  if(targetcountry == "Armenia"){
+    return "Armenian"
+  }
+  if(targetcountry == "Montenegro"){
+    return "Montenegrin"
+  }
+  if(targetcountry == "Macedonia"){
+    return "Macedonian"
+  }
   else{
     return targetcountry
   }
