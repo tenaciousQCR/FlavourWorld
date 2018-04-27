@@ -25,6 +25,7 @@ var db;
 
 //------------------------------------------------------------------------------
 
+//Connects to the mongo database and then enables the server
 MongoClient.connect(url, function(err, database){
  if(err) throw err;
  db = database;
@@ -56,9 +57,7 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-
-//------------------------------------------------------------------------------
-
+//Enables user log in
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.uname;
@@ -86,7 +85,7 @@ app.post('/dologin', function(req, res) {
   });
 });
 
-//RENDER PAGES
+//RENDER PAGES ROUTES -----------------------------------------------------------
 
 app.get('/home', function(req, res) {
   res.render('pages/home', {loggedin: req.session.loggedin});
@@ -113,6 +112,7 @@ app.get('/loginPage', function(req, res) {
   res.render('pages/loginPage', {loggedin: req.session.loggedin});
 });
 
+//Brings user to the review page, brings id and name of recipe for database entry
 app.get('/review', function(req, res) {
   res.render('pages/review', {
     id: req.query.id,
@@ -121,6 +121,7 @@ app.get('/review', function(req, res) {
   });
 });
 
+//Brings the user to the profile page. Checks database for users favourites and reviews to display them.
 app.get('/profile', function(req, res) {
   var uname = req.session.currentusername;
   var reviews;
@@ -159,6 +160,7 @@ app.get('/profile', function(req, res) {
     });
 });
 
+//Generates recipe page based on yummly api. Pulls in relevant recipes and checks if the current user has favourited and/or reviewed the recipe
 app.get('/recipe', function(req, res){
   var url = "https://api.yummly.com/v1/api/recipe/" + req.query.id + "?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827";
   var reviews;
@@ -175,6 +177,7 @@ app.get('/recipe', function(req, res){
       favourites = result;
     }
   );
+  //Finds the review made by the current user
   db.collection('reviews').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
@@ -214,6 +217,7 @@ var datatostore = {
   })
 });
 
+//Adds a favourite recipe to the database with the current user and recipe
 app.get('/addfavourite', function(req, res){
   var datatostore = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
@@ -225,6 +229,7 @@ app.get('/addfavourite', function(req, res){
   })
 });
 
+//Removes a favourite recipe from the database based on the current user and recipe
 app.get('/removefavourite', function(req, res){
   var datatoremove = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
@@ -236,6 +241,7 @@ app.get('/removefavourite', function(req, res){
   })
 });
 
+//Allows for the user to delete a review they have made. Accessed from the recipe page that the review was for
 app.get('/deletereview', function(req, res){
   var datatoremove = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
@@ -249,13 +255,13 @@ app.get('/deletereview', function(req, res){
 
 //------------------------------------------------------------------------------
 
-function getRecipeJson(url){
-  var json_obj;
-    $.getJSON(url, function(jsonData){
-      json_obj = jsonData;
-    })
-    return json_obj;
-};
+// function getRecipeJson(url){
+//   var json_obj;
+//     $.getJSON(url, function(jsonData){
+//       json_obj = jsonData;
+//     })
+//     return json_obj;
+// };
 
 //------------------------------------------------------------------------------
 
