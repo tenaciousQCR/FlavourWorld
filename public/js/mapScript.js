@@ -328,6 +328,7 @@ function setFilter(button){
 }
 
 //Hardcoding countries for better results when using the API
+//I recommend collapsing this section
 function countryfilter(targetcountry){
   if(targetcountry == "France"){
     return "French&allowedCuisine[]=cuisine^cuisine-french"
