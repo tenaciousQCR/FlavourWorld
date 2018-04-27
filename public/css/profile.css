@@ -19,3 +19,16 @@ body{
   display: block;
   cursor: pointer;
 }
+
+button {
+    font-family: 'Poiret One';
+    font-size: 20px;
+    padding: 10px 24px;
+    color: White;
+    background-color: Brown;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: DarkGoldenRod;
+}
