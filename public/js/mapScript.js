@@ -567,6 +567,12 @@ function countryfilter(targetcountry){
   if(targetcountry == "Macedonia"){
     return "Macedonian"
   }
+  if(targetcountry == "Finland"){
+    return "Finnish"
+  }
+  if(targetcountry == "Norway"){
+    return "Norwegian"
+  }
   else{
     return targetcountry
   }
