@@ -368,7 +368,7 @@ function onEachFeature(feature, layer) {
 
 //initiates and populates the map
 $.getJSON('../js/custom.geo.json',function(data){
-            mymap = L.map('mapid').setMinZoom(2).setMaxBounds([[90,180], [-90,-179]]).setView([32,-35], 3);
+            mymap = L.map('mapid').setMinZoom(2).setMaxBounds([[110,200], [-110,-200]]).setView([32,-35], 3);
             var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ', maxZoom: 16 });
 
             Esri_WorldGrayCanvas.addTo(mymap);
