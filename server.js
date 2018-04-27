@@ -172,14 +172,14 @@ app.get('/recipe', function(req, res){
   db.collection('favourites').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
-      console.log(result == null)
+      console.log(result)
       favourites = result;
     }
   );
   db.collection('reviews').find({"user": req.session.currentusername, "recipeID": req.query.id}).toArray(
     function(err, result){
       if(err) throw err;
-      console.log(result == null);
+      console.log(result);
       userreviews = result;
     }
   );
