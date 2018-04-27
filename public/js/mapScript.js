@@ -393,7 +393,7 @@ function countryfilter(targetcountry){
   if(targetcountry == "Serbia"){
     return "Serbian"
   }
-  if(tagetcountry == "Bosnia and Herz."){
+  if(targetcountry == "Bosnia and Herz."){
     return "Bosnian"
   }
   else{
