@@ -216,23 +216,23 @@ var datatostore = {
   })
 });
 
-// app.get('/deleteaccount', function(req, res){
-//   db.collection('favourites').removeAll({"user": req.session.currentusername}, function(err, result) {
-//     if (err) throw err;
-//     console.log('removed from database')
-//   });
-//   db.collection('reviews').removeAll({"user": req.session.currentusername}, function(err, result) {
-//     if (err) throw err;
-//     console.log('removed from database')
-//   });
-//   db.collection('users').removeOne({"user": req.session.currentusername}, function(err, result) {
-//     if (err) throw err;
-//     console.log('Account Deleted')
-//     req.session.loggedin = false;
-//     req.session.destroy();
-//     res.redirect('/');
-//   });
-// });
+app.get('/deleteaccount', function(req, res){
+  db.collection('favourites').removeAll({"user": req.session.currentusername}, function(err, result) {
+    if (err) throw err;
+    console.log('removed from database')
+  });
+  db.collection('reviews').removeAll({"user": req.session.currentusername}, function(err, result) {
+    if (err) throw err;
+    console.log('removed from database')
+  });
+  db.collection('users').removeOne({"user": req.session.currentusername}, function(err, result) {
+    if (err) throw err;
+    console.log('Account Deleted')
+    req.session.loggedin = false;
+    req.session.destroy();
+    res.redirect('/');
+  });
+});
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').insertOne(datatostore, function(err, result) {
@@ -240,7 +240,6 @@ var datatostore = {
     console.log('saved to database')
     //when complete redirect to the index
     res.redirect('/loginPage')
-  })
 });
 
 //Adds a favourite recipe to the database with the current user and recipe
