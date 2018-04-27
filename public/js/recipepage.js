@@ -1,6 +1,5 @@
 var jsonData;
 var rating = 0;
-
 var star1 = false;
 var star2 = false;
 var star3 = false;
@@ -10,14 +9,14 @@ var star5 = false;
 $(document).ready(function(){
   console.log(rating);
   getRating();
-  console.log(rating);
   showStar();
+  console.log(rating);
+  console.log(jsonData.rating);
   // document.getElementById("star1").style. = "";
 })
 
 function getRating(){
   rating = document.getElementById('score').value;
-
   if(rating == 5){
     star1 = true;
     star2 = true;
