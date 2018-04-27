@@ -176,7 +176,7 @@ app.get('/recipe', function(req, res){
       favourites = result;
     }
   );
-  db.collection('reviews').find({"user": req.session.currentusername, "recipeID": req.query.id}).toArray(
+  db.collection('reviews').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
       console.log(result);
