@@ -89,7 +89,7 @@ function popupFeature(e){
 
 //Uses the country name to search the Yummly API for recipes and then initiates the popup
 function getResultsFromYummly(targetcountry, e){
-  var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + targetcountry + filters();
+  var url = "https://api.yummly.com/v1/api/recipes?_app_id=b96a6669&_app_key=68fc92d94c14efafd327d91916587827&q=" + countryfilter(targetcountry) + filters();
   $.getJSON(url, function(jsondata){
     jsondata = jsondata;
     var htmlstring = addResultTitles(jsondata, e);
@@ -322,6 +322,15 @@ function setFilter(button){
     else{
       document.getElementById("pescetarian").style.backgroundColor = "DarkGoldenRod"
     }
+  }
+}
+
+function countryfilter(targetcountry){
+  if(targetcountry ==  "Czech Rep."){
+    return "Czech"
+  }
+  else{
+    return targetcountry
   }
 }
 
