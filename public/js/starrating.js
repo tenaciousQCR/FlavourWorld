@@ -7,6 +7,8 @@ var star5 = false;
 
 var rating = 0;
 
+
+//Shows and hides stars
 function showStar() {
 
 // STAR 1
@@ -56,7 +58,7 @@ function showStar() {
 };
 
 
-// RATING FUNCTIONS: TASTE
+// RATING FUNCTIONS
 
   $("#star1").click(function() {
     console.log("why tho?");

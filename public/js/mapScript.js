@@ -70,6 +70,7 @@ function resetHighlight(e) {
 
 //---------------------------POPUP CODE-----------------------------------
 
+//Emulates a map click for the searchbar to work
 function clickOnMapItem(name){
   var layers = geojson.getLayers();
   layers.forEach(function(layer){
@@ -114,6 +115,7 @@ function addResultTitles(jsondata, e){
 
 }
 
+//Determines the latlng of the popup based on whether it was searched or clicked on the map
 function getLatLng(e){
   if(e.latlng == undefined){
     var lat = (e.target._bounds._northEast.lat + e.target._bounds._southWest.lat)/2;
@@ -325,7 +327,7 @@ function setFilter(button){
   }
 }
 
-//Hardcoding countries for better results
+//Hardcoding countries for better results when using the API
 function countryfilter(targetcountry){
   if(targetcountry == "France"){
     return "French&allowedCuisine[]=cuisine^cuisine-french"
@@ -658,8 +660,3 @@ $.getJSON('../js/custom.geo.json',function(data){
 
             geojson = L.geoJson(data, {style: style, onEachFeature: onEachFeature}).addTo(mymap);
 })
-
-// var mymap = L.map('mapid').setView([32,-35], 3);
-// var Esri_WorldGrayCanvas = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {attribution:'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ', maxZoom: 16 });
-//
-// Esri_WorldGrayCanvas.addTo(mymap);

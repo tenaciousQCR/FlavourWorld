@@ -47,7 +47,7 @@ app.get('/', function(req, res) {
 //------------------------------------------------------------------------------
 
 // LOGOUT ROUTE CAUSES THE PAGE TO LOGOUT
-// IT SETS OUR session.loggedin TO FALSE AND THEN REDIRECTS THE USER TO THE LOGIN
+// IT SETS OUR session.loggedin TO FALSE AND THEN REDIRECTS THE USER TO THE ROOT
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
@@ -85,7 +85,6 @@ app.post('/dologin', function(req, res) {
 //RENDER PAGES ROUTES -----------------------------------------------------------
 app.get('/home', function(req, res) {
   res.render('pages/home', {loggedin: req.session.loggedin});
-
 });
 
 app.get('/about', function(req, res) {
@@ -134,16 +133,11 @@ app.get('/profile', function(req, res) {
       favourites = result;
     }
   );
-
-  //console.log(reviews);
     db.collection('users').findOne({
       "login.username": uname
     },
     function(err, result) {
       if (err) throw err;
-
-      //console.log(uname+ ":" + result);
-      //finally we just send the result to the user page as "user"
       res.render('pages/profile', {
         user: result,
         reviews: reviews,
@@ -190,7 +184,7 @@ app.get('/recipe', function(req, res){
   });
 })
 
-//------------------------------------------------------------------------------
+//--------------------------USER ACCOUNTS ROUTES---------------------------------------------
 
 app.post('/registeruser', function(req, res) {
 //check we are logged in
@@ -205,13 +199,11 @@ var datatostore = {
   db.collection('users').insertOne(datatostore, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
-    //when complete redirect to the index
+    //when complete redirect to the login page
     res.redirect('/loginPage')
   })
 });
 
-//Delete function, which allows to delete the account from database
-//along with their reviews and favourites
 app.get('/deleteaccount', function(req, res){
   db.collection('favourites').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
@@ -237,7 +229,7 @@ app.get('/addfavourite', function(req, res){
   db.collection('favourites').insertOne(datatostore, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
-    //when complete redirect to the index
+    //when complete redirect back to the recipe page
     res.redirect(redirectURL)
   })
 });
@@ -249,7 +241,7 @@ app.get('/removefavourite', function(req, res){
   db.collection('favourites').removeOne(datatoremove, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
-    //when complete redirect to the index
+    //when complete redirect back to the recipe page
     res.redirect(redirectURL)
   })
 });
