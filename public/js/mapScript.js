@@ -573,6 +573,16 @@ function countryfilter(targetcountry){
   if(targetcountry == "Norway"){
     return "Norwegian"
   }
+  if(targetcountry == "Canada"){
+    return "Canadian"
+  }
+  if(targetcountry == "Venezuela"){
+    return "Venezuelan"
+  }
+  if(targetcountry == "Colombia"){
+    return "Colombian"
+  }
+
   else{
     return targetcountry
   }
