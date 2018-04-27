@@ -450,6 +450,24 @@ function countryfilter(targetcountry){
   if(targetcountry == "Oman"){
     return "Omani"
   }
+  if(targetcountry == "Slovenia"){
+    return "Slovenian"
+  }
+  if(targetcountry == "Albania"){
+    return "Albanian"
+  }
+  if(targetcountry == "Bulgaria"){
+    return "Bulgarian"
+  }
+  if(returncountry == "Egypt"){
+    return "Egyptian"
+  }
+  if(returncountry == "Lithuania"){
+    return "Lithuanian"
+  }
+  if(returncountry == "Latvia"){
+    return "Latvian"
+  }
   else{
     return targetcountry
   }
