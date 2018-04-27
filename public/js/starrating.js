@@ -9,7 +9,7 @@ var rating = 0;
 
 function showStar() {
 
-// STAR 11
+// STAR 1
   if (star1) {
     rating = 1;
     $('#star1').attr("src", "images/star-filled-single.png");
@@ -18,7 +18,7 @@ function showStar() {
       $('#star1').attr("src", "images/star-empty-single.png");
   }
 
-// STAR 12
+// STAR 2
   if (star2) {
     rating = 2;
     $('#star2').attr("src",  "images/star-filled-single.png");
@@ -27,7 +27,7 @@ function showStar() {
     $('#star2').attr("src", "images/star-empty-single.png");
   }
 
-// STAR 13
+// STAR 3
   if (star3) {
     rating = 3;
     $('#star3').attr("src", "images/star-filled-single.png");
@@ -36,7 +36,7 @@ function showStar() {
     $('#star3').attr("src", "images/star-empty-single.png");
   }
 
-// STAR 14
+// STAR 4
   if (star4) {
     rating = 4;
     $('#star4').attr("src", "images/star-filled-single.png");
@@ -45,7 +45,7 @@ function showStar() {
     $('#star4').attr("src", "images/star-empty-single.png");
   }
 
-// STAR 15
+// STAR 5
   if (star5) {
     rating = 5;
     $('#star5').attr("src", "images/star-filled-single.png");
