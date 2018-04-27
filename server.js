@@ -232,7 +232,7 @@ app.get('/deleteaccount', function(req, res) {
     req.session.destroy();
     res.redirect('/');
   })
-})
+});
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').insertOne(datatostore, function(err, result) {
