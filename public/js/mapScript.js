@@ -360,7 +360,7 @@ function countryfilter(targetcountry){
   if(targetcountry == "Japan"){
     return "Japanese&allowedCuisine[]=cuisine^cuisine-japanese"
   }
-  if(targetcoutnry == "India"){
+  if(targetcountry == "India"){
     return "Indian&allowedCuisine[]=cuisine^cuisine-indian"
   }
   if(targetcountry == "Spain"){
