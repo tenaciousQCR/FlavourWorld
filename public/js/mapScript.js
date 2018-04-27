@@ -632,6 +632,9 @@ function countryfilter(targetcountry){
   if(targetcountry == "Syria"){
     return "Syrian"
   }
+  if(targetcountry == "Libya"){
+    return "Libyan"
+  }
 
   else{
     return targetcountry
