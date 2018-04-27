@@ -166,7 +166,6 @@ app.get('/recipe', function(req, res){
   db.collection('reviews').find({"recipeID": req.query.id}).toArray(
     function(err, result){
       if(err) throw err;
-      console.log(result);
       reviews = result;
     }
   );
