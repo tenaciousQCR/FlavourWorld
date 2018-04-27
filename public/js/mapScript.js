@@ -459,14 +459,20 @@ function countryfilter(targetcountry){
   if(targetcountry == "Bulgaria"){
     return "Bulgarian"
   }
-  if(returncountry == "Egypt"){
+  if(targetcountry == "Egypt"){
     return "Egyptian"
   }
-  if(returncountry == "Lithuania"){
+  if(targetcountry == "Lithuania"){
     return "Lithuanian"
   }
-  if(returncountry == "Latvia"){
+  if(targetcountry == "Latvia"){
     return "Latvian"
+  }
+  if(targetcountry == "Estonia"){
+    return "Estonian"
+  }
+  if(targetcountry == "Brazil"){
+    return "Brazillian"
   }
   else{
     return targetcountry
