@@ -171,8 +171,14 @@ app.get('/recipe', function(req, res){
   db.collection('favourites').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
-      console.log(result);
       favourites = result;
+    }
+  );
+  db.collection('reviews').find({"user": req.session.currentusername, "recipeID": req.query.id}).toArray(
+    function(err, result){
+      if(err) throw err;
+      console.log(result);
+      userreviews = result;
     }
   );
   getJSON(url, function(error, response){
@@ -180,6 +186,7 @@ app.get('/recipe', function(req, res){
       jsonData: response,
       reviews: reviews,
       favourites: favourites,
+      userreviews = result,
       id: req.query.id,
       loggedin: req.session.loggedin
     });
