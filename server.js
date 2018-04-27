@@ -217,11 +217,11 @@ var datatostore = {
 });
 
 app.get('/deleteaccount', function(req, res){
-  db.collection('favourites').removeAll({"user": req.session.currentusername}, function(err, result) {
+  db.collection('favourites').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
   });
-  db.collection('reviews').removeAll({"user": req.session.currentusername}, function(err, result) {
+  db.collection('reviews').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
   });
