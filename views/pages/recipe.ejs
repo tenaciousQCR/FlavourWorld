@@ -98,6 +98,9 @@
           </p>
         </div>
         <h3>Reviews</h3>
+        <%if(reviews == []){%>
+          <p> No Reviews! </p>
+          <%};%>
         <% reviews.forEach(function(review){%>
         <p>
           <%= review.user + " - " + review.text + " " + review.score + "/5"%>
