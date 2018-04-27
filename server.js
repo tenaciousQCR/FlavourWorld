@@ -216,22 +216,22 @@ var datatostore = {
   })
 });
 
-app.get('/deleteaccount', function(req, res) {
+app.get('/deleteaccount', function(req, res){
   db.collection('favourites').removeAll({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
-  })
+  });
   db.collection('reviews').removeAll({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
-  })
+  });
   db.collection('users').removeOne({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('Account Deleted')
     req.session.loggedin = false;
     req.session.destroy();
     res.redirect('/');
-  })
+  });
 });
 
 //once created we just run the data string against the database and all our new data will be saved/
