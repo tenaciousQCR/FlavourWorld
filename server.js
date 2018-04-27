@@ -50,7 +50,6 @@ app.get('/', function(req, res) {
 
 // LOGOUT ROUTE CAUSES THE PAGE TO LOGOUT
 // IT SETS OUR session.loggedin TO FALSE AND THEN REDIRECTS THE USER TO THE LOGIN
-
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
