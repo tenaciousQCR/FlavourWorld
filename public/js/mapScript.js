@@ -342,11 +342,53 @@ function countryfilter(targetcountry){
   if(targetcountry == "United Kingdom"){
     return "English%20Scottish"
   }
+  if(targetcountry == "Ireland"){
+    return "Irish&allowedCuisine[]=cuisine^cuisine-irish"
+  }
+  if(targetcountry == "Hungary"){
+    return "Hungarian&allowedCuisine[]=cuisine^cuisine-hungarian"
+  }
+  if(targetcountry == "Greece"){
+    return "Greek&allowedCuisine[]=cuisine^cuisine-greek"
+  }
+  if(targetcountry == "Portugal"){
+    return "Portuguese&allowedCuisine[]=cuisine^cuisine-portuguese"
+  }
+  if(targetcountry == "China"){
+    return "Chinese&allowedCuisine[]=cuisine^cuisine-chinese"
+  }
+  if(targetcountry == "Japan"){
+    return "Japanese&allowedCuisine[]=cuisine^cuisine-japanese"
+  }
+  if(targetcoutnry == "India"){
+    return "Indian&allowedCuisine[]=cuisine^cuisine-indian"
+  }
+  if(targetcountry == "Spain"){
+    return "Spanish&allowedCuisine[]=cuisine^cuisine-spanish"
+  }
+  if(targetcountry == "Sweden"){
+    return "Swedish&allowedCuisine[]=cuisine^cuisine-swedish"
+  }
+  if(targetcountry == "Thailand"){
+    return "Thai&allowedCuisine[]=cuisine^cuisine-thai"
+  }
+  if(targetcountry == "Cuba"){
+    return "Cuban&allowedCuisine[]=cuisine^cuisine-cuban"
+  }
+  if(targetcountry == "Morocco"){
+    return "Moroccan&allowedCuisine[]=cuisine^cuisine-moroccan"
+  }
+  if(targetcountry == "United States"){
+    return "American&allowedCuisine[]=cuisine^cuisine-american"
+  }
   if(targetcountry == "Georgia"){
     return "Georgian"
   }
   if(targetcountry == "Turkey"){
     return "Turkish"
+  }
+  if(targetcountry == "Serbia"){
+    return "Serbian"
   }
   else{
     return targetcountry
