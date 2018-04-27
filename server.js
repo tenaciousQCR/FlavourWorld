@@ -178,7 +178,7 @@ app.get('/recipe', function(req, res){
   db.collection('reviews').find({"user": req.session.currentusername, "recipeID": req.query.id}).toArray(
     function(err, result){
       if(err) throw err;
-      console.log(result);
+      console.log(result + " " + req.session.currentusername + " " + req.query.id);
       userreviews = result;
     }
   );
