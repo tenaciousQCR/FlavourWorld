@@ -225,7 +225,7 @@ app.get('/deleteaccount', function(req, res){
     if (err) throw err;
     console.log('removed from database')
   });
-  db.collection('users').removeOne({"user": req.session.currentusername}, function(err, result) {
+  db.collection('users').remove({"login.username": req.session.currentusername}, function(err, result) {
     if (err) throw err;
     console.log('Account Deleted')
     req.session.loggedin = false;
