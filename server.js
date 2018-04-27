@@ -186,7 +186,7 @@ app.get('/recipe', function(req, res){
       jsonData: response,
       reviews: reviews,
       favourites: favourites,
-      userreviews = result,
+      userreviews: result,
       id: req.query.id,
       loggedin: req.session.loggedin
     });
