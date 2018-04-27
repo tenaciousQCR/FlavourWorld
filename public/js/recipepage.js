@@ -15,7 +15,7 @@ $(document).ready(function(){
 })
 
 function getRating(){
-  rating = document.getElementById('score').value;
+  rating = $('#score').attr('value');
   if(rating == 5){
     star1 = true;
     star2 = true;
