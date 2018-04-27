@@ -6,12 +6,6 @@ body{
   height: 1000px;
 }
 
-h1 {
-    font-family: 'Poiret One';
-    font-size: 18px;
-    color: GoldenRod;
-}
-
 .logout {
   float: right;
   font-family: 'Poiret One';
