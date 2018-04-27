@@ -234,14 +234,6 @@ app.get('/deleteaccount', function(req, res){
   });
 });
 
-//once created we just run the data string against the database and all our new data will be saved/
-  db.collection('users').insertOne(datatostore, function(err, result) {
-    if (err) throw err;
-    console.log('saved to database')
-    //when complete redirect to the index
-    res.redirect('/loginPage')
-});
-
 //Adds a favourite recipe to the database with the current user and recipe
 app.get('/addfavourite', function(req, res){
   var datatostore = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
