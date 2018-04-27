@@ -40,11 +40,13 @@
         <%});%>
         </ul>
         <h2 tabindex="5">Your Reviews</h2>
+        <ul>
         <%reviews.forEach(function(review){%>
-        <p><a href="<%='/recipe?id=' + review.recipeID%>">
-          <%= review.recipe + " - " + review.text + " " + review.score + "/5"%>
-        </a></p>
+        <li><a href="<%='/recipe?id=' + review.recipeID%>">
+          <%= review.recipe %>
+        </a><%=" - " + review.text + " " + review.score + "/5"%></li>
         <%});%>
+        </ul>
       </div>
     </main>
 
