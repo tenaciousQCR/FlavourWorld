@@ -9,7 +9,6 @@ var star5 = false;
 $(document).ready(function(){
   getRating();
   showStar();
-  // document.getElementById("star1").style. = "";
 })
 
 function getRating(){
