@@ -7,11 +7,10 @@ var star4 = false;
 var star5 = false;
 
 $(document).ready(function(){
-  console.log(rating);
+  console.log(score);
   getRating();
   showStar();
   console.log(rating);
-  console.log(jsonData.rating);
   // document.getElementById("star1").style. = "";
 })
 
