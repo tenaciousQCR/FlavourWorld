@@ -325,9 +325,28 @@ function setFilter(button){
   }
 }
 
+//Hardcoding countries for better results
 function countryfilter(targetcountry){
   if(targetcountry ==  "Czech Rep."){
     return "Czech"
+  }
+  if(targetcountry == "France"){
+    return "French&allowedCuisine[]=cuisine^cuisine-french"
+  }
+  if(targetcountry == "Germany"){
+    return "German&allowedCuisine[]=cuisine^cuisine-german"
+  }
+  if(targetcountry == "Italy"){
+    return "Italian&allowedCuisine[]=cuisine^cuisine-italian"
+  }
+  if(targetcountry == "United Kingdom"){
+    return "English%20Scottish"
+  }
+  if(targetcountry == "Georgia"){
+    return "Georgian"
+  }
+  if(targetcountry == "Turkey"){
+    return "Turkish"
   }
   else{
     return targetcountry
