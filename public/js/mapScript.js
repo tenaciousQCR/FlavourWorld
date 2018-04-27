@@ -381,6 +381,9 @@ function countryfilter(targetcountry){
   if(targetcountry == "United States"){
     return "American&allowedCuisine[]=cuisine^cuisine-american"
   }
+  if(targetcountry == "Russia"){
+    return "Russian"
+  }
   if(targetcountry == "Georgia"){
     return "Georgian"
   }
@@ -389,6 +392,9 @@ function countryfilter(targetcountry){
   }
   if(targetcountry == "Serbia"){
     return "Serbian"
+  }
+  if(tagetcountry == "Bosnia and Herz."){
+    return "Bosnian"
   }
   else{
     return targetcountry
