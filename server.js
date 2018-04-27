@@ -210,6 +210,8 @@ var datatostore = {
   })
 });
 
+//Delete function, which allows to delete the account from database
+//along with their reviews and favourites
 app.get('/deleteaccount', function(req, res){
   db.collection('favourites').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
