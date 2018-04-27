@@ -582,6 +582,18 @@ function countryfilter(targetcountry){
   if(targetcountry == "Colombia"){
     return "Colombian"
   }
+  if(targetcountry == "Argentina"){
+    return "Argentinian"
+  }
+  if(targetcountry == "Chile"){
+    return "Chilean"
+  }
+  if(targetcountry == "Ecuador"){
+    return "Ecuadorian"
+  }
+  if(targetcountry == "Angola"){
+    return "Angolan"
+  }
 
   else{
     return targetcountry
