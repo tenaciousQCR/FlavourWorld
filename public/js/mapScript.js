@@ -591,6 +591,42 @@ function countryfilter(targetcountry){
   if(targetcountry == "Angola"){
     return "Angolan"
   }
+  if(targetcountry == "Poland"){
+    return "Polish"
+  }
+  if(targetcountry == "Austria"){
+    return "Austrian"
+  }
+  if(targetcountry == "Afghanistan"){
+    return "Afghan"
+  }
+  if(targetcountry == "Uzbekistan"){
+    return "Uzbek"
+  }
+  if(targetcountry == "Kuwait"){
+    return "Kuwaiti"
+  }
+  if(targetcountry == "Rwanda"){
+    return "Rwandan"
+  }
+  if(targetcountry == "Burundi"){
+    return "Burundian"
+  }
+  if(targetcountry == "South Africa"){
+    return "South African"
+  }
+  if(targetcountry == "Eritrea"){
+    return "Eritrean"
+  }
+  if(targetcountry == "Somalia" || targetcountry == "Somaliland"){
+    return "Somalian"
+  }
+  if(targetcountry == "Kenya"){
+    return "Kenyan"
+  }
+  if(targetcountry == "Uganda"){
+    return "Ugandan"
+  }
 
   else{
     return targetcountry
