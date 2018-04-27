@@ -7,10 +7,8 @@ var star4 = false;
 var star5 = false;
 
 $(document).ready(function(){
-  console.log($('#score').attr('value'));
   getRating();
   showStar();
-  console.log(rating);
   // document.getElementById("star1").style. = "";
 })
 
