@@ -88,7 +88,7 @@
         <%}%>
         <h2 id="review" tabindex="7">User Reviews</h2>
         <div>
-          <h3 id="score" value="<%= jsonData.rating %>">Yummly Score: <%= jsonData.rating %> </h3>
+          <h3 id="score" value="<%= jsonData.rating %>">Yummly Score </h3>
           <p>
             <img src="images/star-empty-single.png" id="star1" class="star">
             <img src="images/star-empty-single.png" id="star2" class="star">
@@ -97,7 +97,7 @@
             <img src="images/star-empty-single.png" id="star5" class="star">
           </p>
         </div>
-        <h2>Reviews</h2>
+        <h3>Reviews</h3>
         <% reviews.forEach(function(review){%>
         <p>
           <%= review.user + " - " + review.text + " " + review.score + "/5"%>
