@@ -125,14 +125,12 @@ app.get('/profile', function(req, res) {
   db.collection('reviews').find({"user": uname}).toArray(
     function(err, result){
       if(err) throw err;
-      console.log(result);
       reviews = result;
     }
   );
   db.collection('favourites').find({"user": uname}).toArray(
     function(err, result){
       if(err) throw err;
-      console.log(result);
       favourites = result;
     }
   );
@@ -143,7 +141,6 @@ app.get('/profile', function(req, res) {
     },
     function(err, result) {
       if (err) throw err;
-      console.log(result);
 
       //console.log(uname+ ":" + result);
       //finally we just send the result to the user page as "user"
@@ -216,11 +213,11 @@ var datatostore = {
 app.get('/deleteaccount', function(req, res){
   db.collection('favourites').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
-    console.log('removed from database')
+    console.log('Favourites removed from database')
   });
   db.collection('reviews').remove({"user": req.session.currentusername}, function(err, result) {
     if (err) throw err;
-    console.log('removed from database')
+    console.log('Reviews removed from database')
   });
   db.collection('users').remove({"login.username": req.session.currentusername}, function(err, result) {
     if (err) throw err;
@@ -266,18 +263,6 @@ app.get('/deletereview', function(req, res){
     res.redirect(redirectURL)
   })
 });
-
-//------------------------------------------------------------------------------
-
-// function getRecipeJson(url){
-//   var json_obj;
-//     $.getJSON(url, function(jsonData){
-//       json_obj = jsonData;
-//     })
-//     return json_obj;
-// };
-
-//------------------------------------------------------------------------------
 
 app.post('/reviewDish', function(req, res) {
 //we create the data string from the form components that have been passed in
