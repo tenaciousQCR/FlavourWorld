@@ -426,6 +426,30 @@ function countryfilter(targetcountry){
   if(targetcountry == "Netherlands"){
     return "Dutch"
   }
+  if(targetcountry == "Switzerland"){
+    return "Swiss"
+  }
+  if(targetcountry == "Bahamas"){
+    return "Bahamian"
+  }
+  if(targetcountry == "Zambia"){
+    return "Zambian"
+  }
+  if(targetcountry == "Iran"){
+    return "Iranian"
+  }
+  if(targetcountry == "Saudi Arabia"){
+    return "Arabian"
+  }
+  if(targetcountry == "Lebanon"){
+    return "Lebanese"
+  }
+  if(targetcountry == "Yemen"){
+    return "Yemeni"
+  }
+  if(targetcountry == "Oman"){
+    return "Omani"
+  }
   else{
     return targetcountry
   }
