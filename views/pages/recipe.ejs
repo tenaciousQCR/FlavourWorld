@@ -81,7 +81,10 @@
 
       <div class="contentRecipe">
         <%if(userreviews == null & loggedin){%>
-          <a href="<%= '/review?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Your Review!</button></a>
+          <a href="<%= '/review?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Add Review</button></a>
+        <%}%>
+        <%if(userreviews != null & loggedin){%>
+          <a href="<%= '/deletereview?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Delete Review</button></a>
         <%}%>
         <h2 id="review" tabindex="7">User Reviews</h2>
         <div>

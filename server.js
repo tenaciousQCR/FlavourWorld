@@ -172,14 +172,12 @@ app.get('/recipe', function(req, res){
   db.collection('favourites').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
-      console.log(result)
       favourites = result;
     }
   );
   db.collection('reviews').findOne({"user": req.session.currentusername, "recipeID": req.query.id},
     function(err, result){
       if(err) throw err;
-      console.log(result);
       userreviews = result;
     }
   );
@@ -230,6 +228,17 @@ app.get('/removefavourite', function(req, res){
   var datatoremove = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
   var redirectURL = "/recipe?id=" + req.query.id;
   db.collection('favourites').removeOne(datatoremove, function(err, result) {
+    if (err) throw err;
+    console.log('removed from database')
+    //when complete redirect to the index
+    res.redirect(redirectURL)
+  })
+});
+
+app.get('/deletereview', function(req, res){
+  var datatoremove = {"user":req.session.currentusername, "recipeID":req.query.id, "recipe": req.query.name};
+  var redirectURL = "/recipe?id=" + req.query.id;
+  db.collection('reviews').removeOne(datatoremove, function(err, result) {
     if (err) throw err;
     console.log('removed from database')
     //when complete redirect to the index
