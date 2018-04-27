@@ -34,8 +34,7 @@ MongoClient.connect(url, function(err, database){
 });
 
 
-//THIS IS OUR ROOT ROUTE -- CODE GOES HERE FOR LOGGED-IN STUFF
-
+//THIS IS OUR ROOT ROUTE
 app.get('/', function(req, res) {
 // IF THE USER IS NOT LOGGED-IN, THIS REDIRECTS THEM TO THE home PAGE
   if(!req.session.loggedin){
@@ -46,7 +45,6 @@ app.get('/', function(req, res) {
 
 
 //------------------------------------------------------------------------------
-
 
 // LOGOUT ROUTE CAUSES THE PAGE TO LOGOUT
 // IT SETS OUR session.loggedin TO FALSE AND THEN REDIRECTS THE USER TO THE LOGIN
@@ -85,7 +83,6 @@ app.post('/dologin', function(req, res) {
 });
 
 //RENDER PAGES ROUTES -----------------------------------------------------------
-
 app.get('/home', function(req, res) {
   res.render('pages/home', {loggedin: req.session.loggedin});
 
