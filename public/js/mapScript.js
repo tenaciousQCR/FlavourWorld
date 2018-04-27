@@ -396,6 +396,36 @@ function countryfilter(targetcountry){
   if(targetcountry == "Bosnia and Herz."){
     return "Bosnian"
   }
+  if(targetcountry == "Iraq"){
+    return "Iraqi"
+  }
+  if(targetcountry == "Malaysia"){
+    return "Malaysian"
+  }
+  if(targetcountry == "Sudan" || targetcountry == "S. Sudan"){
+    return "Sudanese"
+  }
+  if(targetcountry == "Moldova"){
+    return "Moldovan"
+  }
+  if(targetcountry == "Bolivia"){
+    return "Bolivian"
+  }
+  if(targetcountry == "Panama"){
+    return "Panamanian"
+  }
+  if(targetcountry == "Guatemala"){
+    return "Guatemalan"
+  }
+  if(targetcountry == "Australia"){
+    return "Australian"
+  }
+  if(targetcountry == "New Zealand"){
+    return "New Zealander"
+  }
+  if(targetcountry == "Netherlands"){
+    return "Dutch"
+  }
   else{
     return targetcountry
   }
