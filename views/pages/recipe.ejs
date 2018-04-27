@@ -80,7 +80,7 @@
       </div>
 
       <div class="contentRecipe">
-        <%if(loggedin){%>
+        <%if(userreviews == null & loggedin){%>
           <a href="<%= '/review?id=' + id + '&name=' + jsonData.name%>" tabindex="-1"><button tabindex="6">Your Review!</button></a>
         <%}%>
         <h2 id="review" tabindex="7">User Reviews</h2>
