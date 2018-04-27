@@ -327,9 +327,6 @@ function setFilter(button){
 
 //Hardcoding countries for better results
 function countryfilter(targetcountry){
-  if(targetcountry ==  "Czech Rep."){
-    return "Czech"
-  }
   if(targetcountry == "France"){
     return "French&allowedCuisine[]=cuisine^cuisine-french"
   }
@@ -380,6 +377,9 @@ function countryfilter(targetcountry){
   }
   if(targetcountry == "United States"){
     return "American&allowedCuisine[]=cuisine^cuisine-american"
+  }
+  if(targetcountry ==  "Czech Rep."){
+    return "Czech"
   }
   if(targetcountry == "Russia"){
     return "Russian"
@@ -584,9 +584,6 @@ function countryfilter(targetcountry){
   }
   if(targetcountry == "Argentina"){
     return "Argentinian"
-  }
-  if(targetcountry == "Chile"){
-    return "Chilean"
   }
   if(targetcountry == "Ecuador"){
     return "Ecuadorian"
